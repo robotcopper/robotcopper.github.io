@@ -11,6 +11,14 @@ theme: null
 readme_index:
   with_frontmatter: true
 
+source              : .
+destination         : config/_site
+collections_dir     : config
+layouts_dir         : config/_layouts
+includes_dir        : config/_includes
+sass:
+  sass_dir: config/_sass
+
 plugins:
   - jemoji
   - jekyll-avatar
