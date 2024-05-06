@@ -8,4 +8,3 @@ gem "pathutil", github: "sdogruyol/pathutil", ref: '6ab144a7706c2bc5fa0dfdfa498e
 group :jekyll_plugins do
     gem "github-pages"
   end
-

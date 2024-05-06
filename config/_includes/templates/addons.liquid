@@ -5,7 +5,7 @@
         </div>
         <div class="branch p-1">
             <span class="name">
-                {{ docs.source.branch }}
+                {% comment %} {{ docs.source.branch }} {% endcomment %}
             </span>
             <i class="fa fa-caret-down"></i>
         </div>
@@ -25,19 +25,23 @@
                     {{ __.issues | default: "Issues" }}
                 </a>
             </dd>
-            <dd>
+
+            {% comment %} <dd>
                 <a href="{{ docs.zip_url }}" title="{{ __.size | default: 'Size' }}: {{ rest.size }} Kb">
                     <i class="fa fa-download"></i>
                     {{ __.download | default: "Download" }}
                 </a>
-            </dd>
+            </dd> {% endcomment %}
+
         </dl>
         <hr>
         <div class="license f6 pb-2">
             This
             <a href="{{ site.baseurl }}/" title="{{ site.title }}">Software</a>
-            is under the terms of
-            <a href="{{ docs.repository_url }}">{{ docs.license.name | default: "The Unlicense" }}</a>.
+            is under the 
+            {% comment %} <a href="{{ docs.repository_url }}">{{ docs.license.name | default: "The Unlicense" }}</a>. {% endcomment %}
+            <a href="{{ docs.repository_url }}/blob/{{docs.source.branch}}/LICENSE">{{docs.license.name | default: "BSD 3-Clause" }}</a>
+            terms
         </div>
     </div>
 </div>

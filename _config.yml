@@ -3,10 +3,9 @@ description: My site
 
 theme: null
 
-# debug:
-#   compress: true
-#   dist: false
-#   shortcodes: true
+# github:
+#   repo: robotcopper/robotcopper.github.io
+#   branch: gh_page
 
 readme_index:
   with_frontmatter: true

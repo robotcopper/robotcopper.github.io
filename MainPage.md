@@ -2,8 +2,9 @@
 layout: default
 permalink: /index.html # allow renaming of the cover page file
 ---
-
-# About Me
+<center>
+ <h1 style="font-size: 36px; font-weight: bold;"> About Me </h1>
+</center>
 
 [![jsDelivr](https://data.jsdelivr.com/v1/package/gh/JV-conseil/jekyll-theme-read-the-docs/badge)](https://www.jsdelivr.com/package/gh/JV-conseil/jekyll-theme-read-the-docs)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=JV-conseil.jekyll-theme-read-the-docs)
@@ -25,8 +26,10 @@ permalink: /index.html # allow renaming of the cover page file
 
 ## What it does?
 
+{: style="margin-left: 100px" }
 This theme is inspired by [sphinx-rtd-theme](https://github.com/jekyll-theme-read-the-docs/sphinx_rtd_theme) and refactored with:
 
+{: style="margin-left: 100px" }
 - [@primer/css](https://github.com/primer/css)
 - [github-pages](https://github.com/github/pages-gem) ([dependency versions](https://pages.github.com/versions/))
 
