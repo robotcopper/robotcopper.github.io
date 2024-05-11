@@ -61,17 +61,26 @@ position: fixed;
   }
 }
 
+
+
 @media (max-width: 768px){
+
   .sidebar-wrap-2 {
     width: $shifted-width;
     &.shift2 {
       width: $theme-menu-width + 20px !important;
+      button#toggle {
+        display: none !important;
+      }
     }
   }
   .sidebar-2 {
     width: $shifted-width;
     &.shift2 {
       width: $theme-menu-width + 20px !important;
+      button#toggle {
+        display: none !important;
+      }
     }
   }
   .content-wrap {
@@ -79,12 +88,18 @@ position: fixed;
     margin-right: $shifted-width;
     &.shift2 {
       margin-right:$theme-menu-width + 20px !important;
+      button#toggle {
+        display: none !important;
+      }
     }
   }
   .archive {
     width: 0 ;
     &.shift2 {
       width: 295px !important;
+      button#toggle {
+        display: none !important;
+      }
     }
   }
 }
