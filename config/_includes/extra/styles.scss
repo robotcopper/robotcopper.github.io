@@ -15,10 +15,10 @@ $shifted-width: 25px;
 //modifiying rtd_theme to make it full screen anytime
 .content-wrap {
   max-width: 1400px !important;
-  margin-right: $theme-menu-width + 20px;
+  margin-right: $shifted-width;
 
-  &.shift {
-    margin-right: $shifted-width !important;
+  &.shift2 {
+    margin-right: $theme-menu-width + 20px !important;
   }
 
 }
@@ -42,20 +42,20 @@ right: 0;
 position: fixed;
   top: 0;
   bottom: 0;
-  width: $theme-menu-width + 20px;
+  width: $shifted-width;
   max-height:  100%;
 
-  &.shift {
-    width: $shifted-width;
+  &.shift2 {
+    width: $theme-menu-width + 20px;
   }
 
   .sidebar-2 > :last-child {
     margin-bottom: 5em;
     // 20px for scroll
-    width: $theme-menu-width + 20px;
+    width: $shifted-width;
     height: 100%;
-    &.shift {
-      width: $shifted-width;
+    &.shift2 {
+      width:  $theme-menu-width + 20px;
     }
 
   }
@@ -64,27 +64,27 @@ position: fixed;
 @media (max-width: 768px){
   .sidebar-wrap-2 {
     width: $shifted-width;
-    &.shift {
-      width: $theme-menu-width + 20px;
+    &.shift2 {
+      width: $theme-menu-width + 20px !important;
     }
   }
   .sidebar-2 {
     width: $shifted-width;
-    &.shift {
-      width: $theme-menu-width + 20px;
+    &.shift2 {
+      width: $theme-menu-width + 20px !important;
     }
   }
   .content-wrap {
     max-width: 1400px !important;
     margin-right: $shifted-width;
-    &.shift {
+    &.shift2 {
       margin-right:$theme-menu-width + 20px !important;
     }
   }
   .archive {
-    width: 0 !important;
-    &.shift {
-      width: 295px;
+    width: 0 ;
+    &.shift2 {
+      width: 295px !important;
     }
   }
 }
@@ -138,9 +138,11 @@ position: fixed;
 .archive {
   position: fixed;
   right: 0;
-  width: 295px;
-  &.shift {
-    width: 0;
+  width: 0;
+  height: 100%;
+  background:#262c31; //#24292e;// transparent;//$gray-400;// #3c454e;
+  &.shift2 {
+    width: 295px;
   }
 
 }
