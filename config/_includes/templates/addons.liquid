@@ -6,16 +6,34 @@
             {% comment %} <i class="fa fa-book"></i> {{ site.title }} {% endcomment %}
             <img src="{{ site.baseurl }}/config/assets/images/icon-96x96.png" width="15" height="15" style="filter: brightness(100%) contrast(100%) grayscale(10%)"> {{ site.title }}
         </div>
+        
         <div class="branch p-1">
-            <span class="name">
-                {% comment %} {{ docs.source.branch }} {% endcomment %}
-            </span>
+            {% comment %} <span class="name">
+                {{ docs.source.branch }}
+            </span> {% endcomment %}
             <i class="fa fa-caret-down"></i>
         </div>
     </div>
     <div class="addons d-flex flex-column height-full p-2 d-none">
         <dl>
-            <dt>{{ __.github | default: "GitHub" }}</dt>
+            <img src="https://visitor-badge.laobi.icu/badge?page_id=FlorisJousselin_website" alt="visitors">
+            
+            {% comment %} <a href="https://github.com/robotcopper" aria-label="github" target="_blank" rel="noopener" style="color: #fff">
+                <i class="fa fa-github"></i>
+            </a> {% endcomment %}
+
+            <hr>
+
+            <div class="generator f6 text-justify">
+                Built with
+                <a href="https://jekyllrb.com/" rel="noreferrer" target="_blank" title="jekyll }">Jekyll</a>
+                , host with
+                <a href="https://pages.github.com" rel="noreferrer" target="_blank" title="github-pages v{{ docs.versions.github-pages }}">GitHub Pages</a>
+                using a custom theme based on
+                <a href="https://github.com/{{ theme_alias | split: '@' | first }}" rel="noreferrer" target="_blank" title="{{ generator }} v{{ version }}"> jekyll-rtd-theme </a>
+            </div>
+
+            {% comment %} <dt>{{ __.github | default: "GitHub" }}</dt>
             <dd>
                 <a href="{{ docs.repository_url }}" title="{{ __.stars | default: 'Stars' }}: {{ rest.stargazers_count }}">
                     <i class="fa fa-github"></i>
@@ -27,7 +45,7 @@
                     <i class="fa fa-question-circle-o"></i>
                     {{ __.issues | default: "Issues" }}
                 </a>
-            </dd>
+            </dd> {% endcomment %}
 
             {% comment %} <dd>
                 <a href="{{ docs.zip_url }}" title="{{ __.size | default: 'Size' }}: {{ rest.size }} Kb">
@@ -38,13 +56,15 @@
 
         </dl>
         <hr>
-        <div class="license f6 pb-2">
+        <div class="license f6 pb-2 text-justify">
+            
             This
             <a href="{{ site.baseurl }}/" title="{{ site.title }}">Software</a>
             is under the 
             {% comment %} <a href="{{ docs.repository_url }}">{{ docs.license.name | default: "The Unlicense" }}</a>. {% endcomment %}
             <a href="{{ docs.repository_url }}/blob/{{docs.source.branch}}/LICENSE">{{docs.license.name | default: "BSD 3-Clause" }}</a>
             terms 
+
         </div>
     </div>
 </div>

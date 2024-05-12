@@ -23,12 +23,28 @@ $shifted-width: 25px;
 .content-wrap {
   max-width: 1400px !important;
   margin-right: $shifted-width;
-  // background-color: #1b1f23;
+  // background-color: #212529;
+  background-color: #1b1b1e;
+
+  // font-family:  "Source Sans Pro","Microsoft Yahei",sans-serif;
 
   &.shift2 {
     margin-right: $theme-menu-width + 20px !important;
   }
 
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6, .markdown-body dt {
+  font-family: "Source Sans Pro","Microsoft Yahei",sans-serif !important;
+}
+body{
+  font-family: "Source Sans Pro","Microsoft Yahei",sans-serif !important;
+}
+.markdown-body blockquote {
+  color: #fff ;
+}
+.markdown-body table {
+  color: #3c454e ;
 }
 
 .sidebar-2 {
@@ -184,4 +200,11 @@ position: fixed;
 
 .addons-wrap .status {
   background-color: #042927 !important;
+}
+
+.container {
+  color: #fff;
+}
+.breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
+  color: #fff;
 }
