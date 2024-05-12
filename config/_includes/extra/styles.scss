@@ -10,6 +10,13 @@ $text-gray: $gray-600 !default;
 $blue-500: #0366d6 !default; // Default: Passes AA with #fff
 $text-blue: $blue-500 !default;
 
+// $DarkSlateGray: #47504F;
+$DarkSlateGray: #354847;
+$SlateGray: #4E5857;
+$Teal: #376B69;
+$TurquoiseGreen: #00948E;
+$TurquoiseCyan: #00AAA3;
+
 $shifted-width: 25px;
 
 //modifiying rtd_theme to make it full screen anytime
@@ -120,7 +127,8 @@ position: fixed;
   height: 100%; 
 
   // For `<button>` elements
-  background: transparent;
+  // background: transparent;
+  background: #042927;
   border: 0;
 
   &:hover {
@@ -160,4 +168,17 @@ position: fixed;
     width: 295px;
   }
 
+}
+
+.header {
+  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg2.jpg') !important;
+  // background: $Teal url('{{ site.baseurl }}/config/assets/images/header-bg2.png') 0 0 repeat-x !important;
+}
+
+.toctree .caption {
+  color: $TurquoiseCyan !important;
+}
+
+.addons-wrap .status {
+  background-color: #042927 !important;
 }
