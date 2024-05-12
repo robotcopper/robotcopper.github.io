@@ -12,7 +12,7 @@
             | append: " · "
             | append: site.title | truncate: 110 -%}
     {%- else -%}
-        {%- assign title = page.title | default: page.name
+        {%- assign title = page.title | default: page.name 
             | append: " · "
             | append: site.title | truncate: 110 -%}
 {%- endcase -%}

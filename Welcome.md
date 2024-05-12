@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: /index.html # allow renaming of the cover page file
+title: Welcome
 ---
 <center>
  <h1 style="font-size: 36px; font-weight: bold;"> About Me </h1>
