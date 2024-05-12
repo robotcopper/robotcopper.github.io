@@ -1,5 +1,7 @@
 ---
 sort: 7
+title: Avatar
+time: 2024-02-03
 ---
 
 # Avatar Test

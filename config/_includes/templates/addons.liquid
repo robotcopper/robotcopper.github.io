@@ -1,3 +1,5 @@
+{%- include common/rest/site_pages.liquid -%}
+
 <div class="addons-wrap d-flex flex-column overflow-y-auto">
     <div class="status d-flex flex-justify-between p-2">
         <div class="title p-1">
@@ -42,7 +44,7 @@
             is under the 
             {% comment %} <a href="{{ docs.repository_url }}">{{ docs.license.name | default: "The Unlicense" }}</a>. {% endcomment %}
             <a href="{{ docs.repository_url }}/blob/{{docs.source.branch}}/LICENSE">{{docs.license.name | default: "BSD 3-Clause" }}</a>
-            terms
+            terms 
         </div>
     </div>
 </div>

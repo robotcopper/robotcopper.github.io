@@ -2,6 +2,7 @@
 layout: default
 permalink: /index.html # allow renaming of the cover page file
 title: Welcome
+time: 2024-05-12
 ---
 <center>
  <h1 style="font-size: 36px; font-weight: bold;"> About Me </h1>
