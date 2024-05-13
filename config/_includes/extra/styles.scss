@@ -1,16 +1,15 @@
 $theme-menu-width: 300px;
-$black: #1b1f23 !default;
+$black: #1b1f23 ;
 $theme-white: lighten($black, 99%);
 $theme-black: lighten($black, 15%);
 $theme-menu-background: darken($theme-black, 10%);
-$lh-condensed-ultra: 1 !default;
-$gray-400: #959da5 !default;
-$gray-600: #586069 !default;
-$text-gray: $gray-600 !default;
-$blue-500: #0366d6 !default; // Default: Passes AA with #fff
-$text-blue: $blue-500 !default;
+$lh-condensed-ultra: 1 ;
+$gray-400: #959da5 ;
+$gray-600: #586069 ;
+$text-gray: $gray-600 ;
+$blue-500: #0366d6 ; // Default: Passes AA with #fff
+$text-blue: $blue-500 ;
 
-// $DarkSlateGray: #47504F;
 $DarkSlateGray: #354847;
 $SlateGray: #4E5857;
 $Teal: #376B69;
@@ -24,7 +23,8 @@ $shifted-width: 25px;
   max-width: 1400px !important;
   margin-right: $shifted-width;
   // background-color: #212529;
-  background-color: #1b1b1e;
+  // background-color: rgb(85, 110, 122);
+  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg3.jpg') !important;
 
   // font-family:  "Source Sans Pro","Microsoft Yahei",sans-serif;
 
@@ -41,10 +41,31 @@ body{
   font-family: "Source Sans Pro","Microsoft Yahei",sans-serif !important;
 }
 .markdown-body blockquote {
-  color: #fff ;
+  color: #bec4be !important;
 }
 .markdown-body table {
-  color: #3c454e ;
+  color: #3c454e !important;
+}
+.toctree .caption {
+  color: $TurquoiseCyan !important;
+}
+.addons-wrap .status {
+  background-color: #042927 !important;
+}
+.container {
+  color: #bec4be !important;
+}
+.breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
+  color: #bec4be !important;
+}
+.toctree > ul .toc.current a.current {
+  background: #ccd2d8 !important;
+}
+.toc.level-1.current > ul {
+  background: #bec4be !important;
+}
+.toc.level-1.current > a {
+  background: #bec4be !important;
 }
 
 .sidebar-2 {
@@ -180,7 +201,8 @@ position: fixed;
   right: 0;
   width: 0;
   height: 100%;
-  background:#262c31; //#24292e;// transparent;//$gray-400;// #3c454e;
+  // background:#262c31; //#24292e;// transparent;//$gray-400;// #3c454e;
+  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg5.jpg') !important;
   display: none;
   &.shift2 {
     width: 295px;
@@ -194,17 +216,3 @@ position: fixed;
   // background: $Teal url('{{ site.baseurl }}/config/assets/images/header-bg2.png') 0 0 repeat-x !important;
 }
 
-.toctree .caption {
-  color: $TurquoiseCyan !important;
-}
-
-.addons-wrap .status {
-  background-color: #042927 !important;
-}
-
-.container {
-  color: #fff;
-}
-.breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
-  color: #fff;
-}
