@@ -20,12 +20,13 @@ $shifted-width: 25px;
 
 //modifiying rtd_theme to make it full screen anytime
 .content-wrap {
-  max-width: 1400px !important;
+  max-width: 100% !important;
   margin-right: $shifted-width;
   // background-color: #212529;
   // background-color: rgb(85, 110, 122);
-  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg3.jpg') !important;
-
+  // background-image: url('{{ site.baseurl }}/config/assets/images/header-bg5.jpg') !important;
+  // background-repeat: repeat !important;
+  background: transparent;
   // font-family:  "Source Sans Pro","Microsoft Yahei",sans-serif;
 
   &.shift2 {
@@ -44,7 +45,7 @@ body{
   color: #bec4be !important;
 }
 .markdown-body table {
-  color: #3c454e !important;
+  color: #bec4be !important;
 }
 .toctree .caption {
   color: $TurquoiseCyan !important;
@@ -54,6 +55,8 @@ body{
 }
 .container {
   color: #bec4be !important;
+  background:#202529 url('{{ site.baseurl }}/config/assets/images/header-bg5.jpg') !important;
+  background-repeat: repeat !important;
 }
 .breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
   color: #bec4be !important;
@@ -67,6 +70,31 @@ body{
 .toc.level-1.current > a {
   background: #bec4be !important;
 }
+//citation color
+.markdown-body pre {
+  background-color: rgba(97.6, 97.6, 97.6, 0.2);
+}
+.markdown-body .highlight pre, .markdown-body pre {
+  background-color: rgba(97.6, 97.6, 97.6, 0.2);
+}
+.highlight {
+  background-color: rgba(97.6, 97.6, 97.6, 0.2);
+}
+//table color
+.markdown-body table tr {
+  background-color: transparent;
+}
+.markdown-body table tr:nth-child(2n) {
+  background-color: transparent;
+}
+//code color
+.markdown-body code, .markdown-body tt {
+  background-color: rgba(97.6, 97.6, 97.6, 0.3);
+}
+.header {
+  background: #2d5a57 url('{{ site.baseurl }}/config/assets/images/header-bg2.jpg') !important;
+}
+
 
 .sidebar-2 {
   color: $theme-white;
@@ -202,17 +230,12 @@ position: fixed;
   width: 0;
   height: 100%;
   // background:#262c31; //#24292e;// transparent;//$gray-400;// #3c454e;
-  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg5.jpg') !important;
+  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg3.jpg') !important;
   display: none;
   &.shift2 {
     width: 295px;
     display: block !important;
   }
 
-}
-
-.header {
-  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg2.jpg') !important;
-  // background: $Teal url('{{ site.baseurl }}/config/assets/images/header-bg2.png') 0 0 repeat-x !important;
 }
 
