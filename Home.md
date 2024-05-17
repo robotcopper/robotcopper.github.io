@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /index.html # allow renaming of the cover page file
-title: "&nbsp<i class='fas fa-home'></i>&nbsp; Home" 
+title: "&nbsp;<i class='fas fa-home'></i>&nbsp; Home" 
 time: 2024-05-12
 ---
 <center>

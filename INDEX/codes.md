@@ -1,5 +1,6 @@
 ---
 sort: 3
+title: Code Blocks
 ---
 
 # Code Blocks

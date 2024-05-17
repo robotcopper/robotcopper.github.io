@@ -1,5 +1,6 @@
 ---
 sort: 5
+title: Emoji Test
 ---
 
 # Emoji Test

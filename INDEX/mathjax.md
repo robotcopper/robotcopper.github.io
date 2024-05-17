@@ -1,5 +1,6 @@
 ---
 sort: 10
+title: Mathjax Test
 ---
 
 # Mathjax Test

@@ -1,5 +1,6 @@
 ---
 sort: 8
+title: Mentions Test
 ---
 
 # Mentions Test

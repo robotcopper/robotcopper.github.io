@@ -1,5 +1,6 @@
 ---
 sort: 4
+title: Mermaid Test
 ---
 
 # Mermaid Test
