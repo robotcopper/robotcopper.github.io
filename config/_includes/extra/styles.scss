@@ -61,18 +61,30 @@ body{
 .breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
   color: #bec4be !important;
 }
+//toctree color
 .toctree > ul .toc.current a.current {
-  background: #ccd2d8 !important;
-}
-.toc.level-1.current > ul {
-  background: #bec4be !important;
+  background: rgba(232, 233, 235, 0.1) !important;
+  border-top: 1px solid rgba(255,255,255,0.5) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.5) !important;
 }
 .toc.level-1.current > a {
-  background: #bec4be !important;
+  background: rgba(190, 196, 190, 0.1) !important;
+}
+.toc.level-1.current > ul {
+  background: rgba(190, 196, 190, 0.1) !important;
+}
+.toctree > ul > .toc.current {
+  background: transparent !important;
+}
+.toctree > ul .toc.current a {
+  color: #fff;
 }
 //citation color
 .markdown-body pre {
   background-color: rgba(97.6, 97.6, 97.6, 0.2);
+}
+.markdown-body pre > code {
+  color: #bec4be;
 }
 .markdown-body .highlight pre, .markdown-body pre {
   background-color: rgba(97.6, 97.6, 97.6, 0.2);
@@ -94,7 +106,9 @@ body{
 .header {
   background: #2d5a57 url('{{ site.baseurl }}/config/assets/images/header-bg2.jpg') !important;
 }
-
+.sidebar {
+  background: rgba(38, 44, 49, 0.5); //#262c31;
+}
 
 .sidebar-2 {
   color: $theme-white;
@@ -216,12 +230,7 @@ position: fixed;
 .bouton{
   position: fixed;
   height: 100%;
-  left: -5px;
-  // top: 0;
-  // bottom: 0;
-  width: 20px;
   max-height:  100%;
-
 }
 
 .archive {
