@@ -17,8 +17,10 @@ layout: tasks/compress
                 Home
             {%- elsif page.title == "<img src='/config/assets/images/micro-ROS_logo.png' alt='Logo' style='height: 12px; vertical-align: botom; transform: translateY(0px);'> micro-ROS" -%}
                 micro-ROS
-            {%- elsif page.title == "<img src='/config/assets/images/ROS_logo.png' alt='Logo' style='height: 12px; vertical-align: botom; transform: translateY(0px);'> ROS2:&nbsp; <img src='/config/assets/images/NAV2_logo.png' alt='Logo' style='height: 12px; vertical-align: botom; transform: translateY(0px);'> NAV2" -%}
-                ROS2: NAV2
+            {%- elsif page.title == "<img src='/config/assets/images/ROS_logo.png' alt='Logo' style='height: 12px; vertical-align: botom; transform: translateY(0px);'> ROS2" -%}
+                ROS2
+            {%- elsif page.title == "<img src='/config/assets/images/NAV2_logo.png' alt='Logo' style='height: 12px; vertical-align: botom; transform: translateY(0px);'> NAV2: MPPI Hyperparameter Tuning" -%}
+                MPPI
             {%- else -%}
                 {{ page.title }}
             {%- endif -%}
