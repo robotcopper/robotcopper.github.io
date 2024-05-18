@@ -109,6 +109,23 @@ body{
 .sidebar {
   background: rgba(38, 44, 49, 0.5); //#262c31;
 }
+//toasts color
+.toasts.note {
+  background-color: rgba(231, 242, 250, 0.9) !important;
+  color: #586069 !important;
+}
+.toasts.tip {
+  background-color: rgba(219, 250, 244, 0.9) !important;
+  color: #586069 !important;
+}
+.toasts.warning {
+  background-color: rgba(251, 233, 217, 0.9) !important;
+  color: #586069 !important;
+}
+.toasts.danger {
+  background-color: rgba(253, 243, 242, 0.9) !important;
+  color: #586069 !important;
+}
 
 .sidebar-2 {
   color: $theme-white;
