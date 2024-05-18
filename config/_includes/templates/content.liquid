@@ -1,3 +1,11 @@
+<style>
+    .special-hr {
+        border: none;
+        border-top: 2px solid rgba(137, 168, 167, 0.863);
+        border-radius: 2px;
+    }
+</style>
+
 <div class="content-wrap">
     <div class="header d-flex flex-justify-between p-2 hide-lg hide-xl" aria-label="top navigation">
         <button id="toggle" aria-label="Toggle menu" class="btn-octicon p-2 m-0 text-white" type="button">
@@ -9,7 +17,10 @@
     </div>
     <div class="content p-3 p-sm-5">
         {% include templates/breadcrumbs.liquid %}
-        <hr>
+
+        {% comment %} <hr> {% endcomment %}
+        <hr class="special-hr">
+        
         <div role="main" itemscope="itemscope" itemtype="https://schema.org/Article">
             <div class="markdown-body" itemprop="articleBody">
                 {{ content }}
