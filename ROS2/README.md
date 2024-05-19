@@ -3,10 +3,3 @@ title: "<img src='/config/assets/images/ROS_logo.png' alt='Logo' style='height: 
 ---
 
 # ROS2
-
-```py
-import sklearn
-
-for i in range(2):
-print("lol")
-```
