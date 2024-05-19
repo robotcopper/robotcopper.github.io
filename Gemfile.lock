@@ -296,6 +296,7 @@ DEPENDENCIES
   jekyll-rtd-theme!
   nokogiri (~> 1.16.5)
   pathutil!
+  rouge
   webrick
 
 BUNDLED WITH
