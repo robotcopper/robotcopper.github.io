@@ -1,134 +1,61 @@
 ---
 layout: default
 permalink: /index.html # allow renaming of the cover page file
-title: "&nbsp;<i class='fas fa-home'></i>&nbsp; Home" 
+title: "&nbsp;<i class='fas fa-home'></i>&nbsp; Home"
 time: 2024-05-12
 ---
+
 <center>
- <h1 style="font-size: 36px; font-weight: bold;"> About Me </h1>
+  <h2 id="custom-title" style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none;">What You Can Find Here</h2>
 </center>
 
-<!--
-![CI](https://github.com/JV-conseil/jekyll-theme-read-the-docs/workflows/CI/badge.svg?branch=develop)
-[![License BSD 3-Clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](LICENSE)
--->
+<div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-> Read the Docs 📖 like Jekyll Theme for GitHub Pages
+  <div style="flex: 1; min-width: 300px; background-color: #F0F8FF; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+    <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
+    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
+      Projects Documentation
+    </span>
+    <p style="color: #666;">Explore detailed documentation on my open-source projects, covering various aspects of electronics and robotics.</p>
+  </div>
 
-## What it does?
+  <div style="flex: 1; min-width: 300px; background-color: #F5F5DC; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+    <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
+    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
+      Templates
+    </span>
+    <p style="color: #666;">Find templates that I've created to help streamline your own projects, all available under the BSD 3-Clause license.</p>
+  </div>
 
-{: style="margin-left: 100px" }
-This theme is inspired by [sphinx-rtd-theme](https://github.com/jekyll-theme-read-the-docs/sphinx_rtd_theme) and refactored with:
+  <div style="flex: 1; min-width: 300px; background-color: #FFFACD; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+    <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
+    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
+      Articles and Tutorials
+    </span>
+    <p style="color: #666;">Read articles and tutorials that I have written, sharing knowledge and insights on robotics, mechatronics, and more.</p>
+  </div>
 
-{: style="margin-left: 100px" }
-- [@primer/css](https://github.com/primer/css)
-- [github-pages](https://github.com/github/pages-gem) ([dependency versions](https://pages.github.com/versions/))
+</div>
 
-## Quick start
 
-```yml
-remote_theme: https://github.com/JV-conseil/jekyll-theme-read-the-docs
-```
+<hr>
 
-You can [generate][rundocs/starter] with the same files and folders from [rundocs/starter][rundocs/starter]
+<center>
+  <h2 id="custom-title" style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none;">About Me</h2>
+</center>
 
-## Usage
+<div style="background-color: rgba(176, 19, 159, 0.12); padding: 10px; border: 1px solid #fff; border-radius: 10px;">
+  I'm an Electronics Engineer specialized in Robotics and Machine Learning, and I'm passionate about it.
+  Dedicated to advancing the field of robotics, my goal is to prove that cutting-edge technology is accessible to everyone when entering robotics and machine learning.
+</div>
+<br>
+Je cite systématiquement le travail m'ayant inspiré ou aidé pour parvenir à mes résultats. J'espère que vous en ferez de même si mon travail a pu vous aider.
 
-Documentation that can guide how to create with Github pages, please refer to [rundocs/jekyll-rtd-theme](https://github.com/rundocs/jekyll-rtd-theme) for details
+**HARP**, standing for **Holonomic Autonomous Robotic Platform**, is my current main project:
+the objective I aim is to demystify robotics by showing that everyone is able to reach state-of-the-art robots.
 
-## Features
+This project is designed to participate in **Eurobot** and blends **Mechatronics** (Electronics, Mechanics, IT, and Control Systems), **Programming**, and **Machine Learning**.
 
-- Shortcodes (Toasts card, mermaid)
-- Pages Plugins (emoji, gist, avatar, mentions)
-- Auto generate sidebar
-- [Attribute List Definitions](https://kramdown.gettalong.org/syntax.html#attribute-list-definitions) (Primer/css utilities, Font Awesome 4)
-- Service worker (caches)
-- SEO (404, robots.txt, sitemap.xml)
-- Canonical Link (Open Graph, Twitter Card, Schema data)
+Take a look here to find out more about the **HARP project**.
 
-## Options
-
-| name          | default value        | description       |
-| ------------- | -------------------- | ----------------- |
-| `title`       | repo name            |                   |
-| `description` | repo description     |                   |
-| `url`         | user domain or cname |                   |
-| `baseurl`     | repo name            |                   |
-| `lang`        | `en`                 |                   |
-| `direction`   | `auto`               | `ltr` or `rtl`    |
-| `highlighter` | `rouge`              | Cannot be changed |
-
-```yml
-# folders sort
-readme_index:
-  with_frontmatter: true
-
-meta:
-  key1: value1
-  key2: value2
-  .
-  .
-  .
-
-google:
-  gtag:
-  adsense:
-  site_verification:
-
-# GDPR compliant alternative to Google Analytics
-mouseflow:
-  project_api_key:
-
-posthog:
-  project_api_key:
-
-telemetry:
-  app_id:
-  user_identifier:
-
-umami:
-  website_id:
-
-mathjax: # this will prased to json, default: {}
-
-# NOTE: mermaid custom link are no longer supported
-# instead mermaid is updated to the lastest version
-# available through cdn.jsdelivr.net
-# mermaid:
-#   custom:     # mermaid link
-#   initialize: # this will prased to json, default: {}
-
-scss:   # also _includes/extra/styles.scss
-script: # also _includes/extra/script.js
-
-translate:
-  # shortcodes
-  danger:
-  note:
-  tip:
-  warning:
-  # 404
-  not_found:
-  # copyright
-  revision:
-  # search
-  searching:
-  search:
-  search_docs:
-  search_results:
-  search_results_found: # the "#" in this translate will replaced with results size!
-  search_results_not_found:
-
-plugins:
-  - jemoji
-  - jekyll-avatar
-  - jekyll-mentions
-```
-
-## Sponsorship
-
-If this project helps you, you can offer me a cup of coffee ☕️ :-)
-
-<!-- links -->
-
-[rundocs/starter]: https://github.com/rundocs/starter
+---
