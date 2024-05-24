@@ -41,14 +41,56 @@ time: 2024-05-12
 <hr>
 
 <center>
-  <h2 id="custom-title" style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none;">About Me</h2>
+  <h2 id="custom-title" style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none;">My Profile</h2>
 </center>
 
 <div style="background-color: rgba(176, 19, 159, 0.12); padding: 10px; border: 1px solid #fff; border-radius: 10px;">
   I'm an Electronics Engineer specialized in Robotics and Machine Learning, and I'm passionate about it.
-  Dedicated to advancing the field of robotics, my goal is to prove that cutting-edge technology is accessible to everyone when entering robotics and machine learning.
+  Dedicated to advancing the field of robotics, my goal is to prove that cutting-edge technology in robotics and machine learning is accessible to everyone.
 </div>
 <br>
+
+
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; background-color: transparent; padding: 0px; border-radius: 10px;">
+  
+  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+    <div style="overflow: hidden; margin-bottom: 10px;">
+        <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i>
+        <h2 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">ENSEIRB-MATMECA, 2022-2025</h2>
+    </div>
+    <p style="color: #666;">Analog and Digital Electronics, Programming and Automatic</p>
+    <a href="URL_ENSEIRB" style="color: #666;">ENSEIRB-MATMECA's website</a>
+  </div>
+
+  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+    <div style="overflow: hidden; margin-bottom: 10px;">
+      <i class="fas fa-book" style="font-size: 30px; float: left; margin-right: 10px;"></i>
+      <h2 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">Preparatory Classes to Engineer Schools, 2020-2022</h2>
+    </div>
+    <p style="color: #666;">Mathematics, Engineer Sciences and Physics</p>
+  </div>
+
+  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+    <div style="overflow: hidden; margin-bottom: 10px;">
+      <i class="fas fa-hand-holding" style="font-size: 30px; float: left; margin-right: 10px;"></i>
+      <h2 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">Volunteer Commitment, 2022-2023</h2>
+    </div>
+    <p style="color: #666;">Treasurer of a Robotics Association: EIRBOT</p>
+    <p style="color: #666;">Fabmanager of a Fablab: EIRLAB</p>
+  </div>
+
+  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+    <div style="overflow: hidden; margin-bottom: 10px;">
+      <i class="fas fa-robot" style="font-size: 30px; float: left; margin-right: 10px;"></i>
+      <h2 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">French Robotics Cup</h2>
+    </div>
+    <p style="color: #666;">Team prototyping of an autonomous robot</p>
+  </div>
+
+</div>
+
+<hr>
+
 Je cite systématiquement le travail m'ayant inspiré ou aidé pour parvenir à mes résultats. J'espère que vous en ferez de même si mon travail a pu vous aider.
 
 **HARP**, standing for **Holonomic Autonomous Robotic Platform**, is my current main project:
@@ -57,5 +99,3 @@ the objective I aim is to demystify robotics by showing that everyone is able to
 This project is designed to participate in **Eurobot** and blends **Mechatronics** (Electronics, Mechanics, IT, and Control Systems), **Programming**, and **Machine Learning**.
 
 Take a look here to find out more about the **HARP project**.
-
----
