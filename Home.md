@@ -5,6 +5,8 @@ title: "&nbsp;<i class='fas fa-home'></i>&nbsp; Home"
 time: 2024-05-12
 ---
 
+<br>
+
 ## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">What You Can Find Here<span>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
@@ -14,7 +16,9 @@ time: 2024-05-12
     <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
       Projects Documentation
     </span>
-    <p style="color: #666;">Explore detailed documentation on my open-source projects, covering various aspects of electronics and robotics.</p>
+    <p style="color: #666;">
+      Explore detailed documentation on my open-source projects, covering various aspects of electronics and robotics.
+    </p>
   </div>
 
   <div style="flex: 1; min-width: 300px; background-color: #F5F5DC; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
@@ -22,7 +26,9 @@ time: 2024-05-12
     <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
       Templates
     </span>
-    <p style="color: #666;">Find templates that I've created to help streamline your own projects, all available under the BSD 3-Clause license.</p>
+    <p style="color: #666;">
+      Find templates that I've created to help streamline your own projects, all available under the BSD 3-Clause license.
+    </p>
   </div>
 
   <div style="flex: 1; min-width: 300px; background-color: #FFFACD; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
@@ -30,13 +36,16 @@ time: 2024-05-12
     <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
       Articles and Tutorials
     </span>
-    <p style="color: #666;">Read articles and tutorials that I have written, sharing knowledge and insights on robotics, mechatronics, and more.</p>
+    <p style="color: #666;">
+      Read articles and tutorials that I have written, sharing knowledge and insights on robotics, mechatronics, and more.
+    </p>
   </div>
 
 </div>
 
 
 <hr>
+<br>
 
 ## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">My Profile<span>
 
@@ -52,35 +61,64 @@ time: 2024-05-12
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
         <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i>
-        <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">ENSEIRB-MATMECA, 2022-2025</h1>
+        <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+          ENSEIRB-MATMECA, 2022-2025
+        </h1>
     </div>
-    <p style="color: #666;">Analog and Digital Electronics, Programming and Automatic</p>
-    <a href="URL_ENSEIRB" style="color: #666;">ENSEIRB-MATMECA's website</a>
+    <p style="color: #666;">
+      Analog and Digital Electronics, Programming and Automatic
+    </p>
+    <a href="URL_ENSEIRB" style="color: #666;">
+      ENSEIRB-MATMECA's website
+    </a>
   </div>
 
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
       <i class="fas fa-book" style="font-size: 30px; float: left; margin-right: 10px;"></i>
-      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">Preparatory Classes to Engineer Schools, 2020-2022</h1>
+      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+        Preparatory Classes to Engineer Schools, 2020-2022
+      </h1>
     </div>
-    <p style="color: #666;">Mathematics, Engineer Sciences and Physics</p>
+    <p style="color: #666;">
+      Mathematics, Engineer Sciences and Physics
+    </p>
   </div>
 
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
-      <i class="fas fa-hand-holding" style="font-size: 30px; float: left; margin-right: 10px;"></i>
-      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">Volunteer Commitment, 2022-2023</h1>
+      <i class="fas fa-hand-holding" 
+        style="font-size: 30px; float: left; margin-right: 10px;">
+      </i>
+      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+        Volunteer Commitment, 2022-2023
+      </h1>
     </div>
-    <p style="color: #666;">Treasurer of a Robotics Association: EIRBOT</p>
-    <p style="color: #666;">Fabmanager of a Fablab: EIRLAB</p>
+    <p style="color: #666;">
+      Treasurer of a Robotics Association: EIRBOT
+    </p>
+    <p style="color: #666;">
+      Fabmanager of a Fablab: EIRLAB
+    </p>
   </div>
 
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
-      <i class="fas fa-robot" style="font-size: 30px; float: left; margin-right: 10px;"></i>
-      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">French Robotics Cup</h1>
+      <i class="fas fa-robot" 
+        style="font-size: 30px; float: left; margin-right: 10px;">
+      </i>
+      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+        <a href="https://www.coupederobotique.fr/" 
+          style="color: #5D6D7E; text-decoration: none;" 
+          onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
+          onmouseout="this.style.color='#5D6D7E'; this.style.textDecoration='none';">
+          French Robotics Cup
+        </a>
+      </h1>
     </div>
-    <p style="color: #666;">Team prototyping of an autonomous robot</p>
+    <p style="color: #666;">
+      Team prototyping of an autonomous robot
+    </p>
   </div>
 
 </div>

@@ -89,6 +89,12 @@ body{
 .markdown-body .highlight pre, .markdown-body pre {
   background-color: rgba(97.6, 97.6, 97.6, 0.2);
 }
+.markdown-body h2 {
+  border-bottom: none;
+}
+.markdown-body .anchor {
+  display: none !important;
+}
 .highlight {
   background-color: rgba(97.6, 97.6, 97.6, 0.2);
 }
