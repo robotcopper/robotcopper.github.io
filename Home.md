@@ -66,7 +66,7 @@ time: 2024-05-12
             style="color: #5D6D7E; text-decoration: none;" 
             onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
             onmouseout="this.style.color='#5D6D7E'; this.style.textDecoration='none';">
-            ENSEIRB-MATMECA, 2021-2024
+            ENSEIRB-MATMECA (2021-2024)
           </a>
         </h1>
     </div>
@@ -83,24 +83,36 @@ time: 2024-05-12
       </h1>
     </div>
     <p style="color: #666;">
-      Mathematics, Engineer Sciences and Physics
+      Mathematics, Physics and Engineer Sciences
     </p>
   </div>
 
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
       <i class="fas fa-hand-holding" 
-        style="font-size: 30px; float: left; margin-right: 10px;">
+        style="font-size: 30px; float: left; margin-right: 10px; margin-top: -10px; color: #309090;">
       </i>
       <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
-        Volunteer Commitment, 2022-2023
+        Volunteer Commitment (2022-2023)
       </h1>
     </div>
     <p style="color: #666;">
-      Treasurer of a Robotics Association: EIRBOT
+      Treasurer of a Robotics Association:
+      <a href="https://eirbot.github.io/" 
+        style="color:#666; text-decoration: none;" 
+        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
+        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
+        EIRBOT
+      </a>
     </p>
     <p style="color: #666;">
-      Fabmanager of a Fablab: EIRLAB
+      Fabmanager of a Fablab:
+      <a href="https://www.eirlab.net/" 
+        style="color:#666; text-decoration: none;" 
+        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
+        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
+        EIRLAB
+      </a>
     </p>
   </div>
 
