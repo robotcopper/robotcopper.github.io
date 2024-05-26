@@ -11,7 +11,7 @@ time: 2024-05-12
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
-  <div style="flex: 1; min-width: 300px; background-color: #F0F8FF; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+  <div style="flex: 1; min-width: 300px; background-color: #A3C6C4; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
     <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
       Projects Documentation
@@ -21,7 +21,7 @@ time: 2024-05-12
     </p>
   </div>
 
-  <div style="flex: 1; min-width: 300px; background-color: #F5F5DC; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+  <div style="flex: 1; min-width: 300px; background-color: #BADDDD; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
     <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
       Templates
@@ -31,7 +31,7 @@ time: 2024-05-12
     </p>
   </div>
 
-  <div style="flex: 1; min-width: 300px; background-color: #FFFACD; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
+  <div style="flex: 1; min-width: 300px; background-color: #C5E8E8; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
     <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
       Articles and Tutorials
@@ -44,14 +44,13 @@ time: 2024-05-12
 </div>
 
 
-<hr>
+---
 <br>
 
 ## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">My Profile<span>
 
 <div style="background-color: rgba(176, 19, 159, 0.12); padding: 10px; border: 1px solid #fff; border-radius: 10px;">
-  I'm an Electronics Engineer specialized in Robotics and Machine Learning, and I'm passionate about it.
-  Dedicated to advancing the field of robotics, my goal is to prove that cutting-edge technology in robotics and machine learning is accessible to everyone.
+  I'm a French Electronics Engineer specializing in Robotics and Machine Learning, and I'm passionate about these. My goal is to demystify robotics and machine learning and clear up misunderstandings surrounding these technologies.
 </div>
 <br>
 
@@ -60,24 +59,27 @@ time: 2024-05-12
   
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
-        <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i>
+        <!-- <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i> -->
+        <img src="/config/assets/images/Enseirb_dark.png" style="height: 30px; float: left; margin-right: 10px; background: transparent;">
         <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
-          ENSEIRB-MATMECA, 2022-2025
+          <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" 
+            style="color: #5D6D7E; text-decoration: none;" 
+            onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
+            onmouseout="this.style.color='#5D6D7E'; this.style.textDecoration='none';">
+            ENSEIRB-MATMECA, 2021-2024
+          </a>
         </h1>
     </div>
     <p style="color: #666;">
-      Analog and Digital Electronics, Programming and Automatic
+      Graduate School in Electronics, Computer Sciences, Telecommunications, Mathematics and Mechanics
     </p>
-    <a href="URL_ENSEIRB" style="color: #666;">
-      ENSEIRB-MATMECA's website
-    </a>
   </div>
 
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
-      <i class="fas fa-book" style="font-size: 30px; float: left; margin-right: 10px;"></i>
+      <i class="fas fa-book" style="font-size: 30px; float: left; margin-right: 10px; color: #309090"></i>
       <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
-        Preparatory Classes to Engineer Schools, 2020-2022
+        CPGE (Preparatory Classes to Engineer Schools), 2018-2021
       </h1>
     </div>
     <p style="color: #666;">
@@ -104,9 +106,10 @@ time: 2024-05-12
 
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
-      <i class="fas fa-robot" 
+      <!-- <i class="fas fa-robot" 
         style="font-size: 30px; float: left; margin-right: 10px;">
-      </i>
+      </i> -->
+      <img src="/config/assets/images/coupe_de_robotique_Dark.png" style="height: 20px; float: left; margin-right: 10px; background: transparent; margin-top: 2px;">
       <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
         <a href="https://www.coupederobotique.fr/" 
           style="color: #5D6D7E; text-decoration: none;" 
@@ -117,19 +120,36 @@ time: 2024-05-12
       </h1>
     </div>
     <p style="color: #666;">
-      Team prototyping of an autonomous robot
+      <a href="https://robotcopper.github.io/HARP/"
+        style="color:#666; text-decoration: none;" 
+        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
+        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
+        HARP
+      </a>
+      project in the hope of winning access to
+      <a href="https://www.eurobot.org/" 
+        style="color:#666; text-decoration: none;" 
+        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
+        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
+        Eurobot
+      </a>
     </p>
   </div>
 
 </div>
 
-<hr>
+---
 
-Je cite systématiquement le travail m'ayant inspiré ou aidé pour parvenir à mes résultats. J'espère que vous en ferez de même si mon travail a pu vous aider.
+<br>
 
-**HARP**, standing for **Holonomic Autonomous Robotic Platform**, is my current main project:
+```note
+I systematically cite the work that inspired or helped me achieve my results. I hope you will do the same if my work has helped you.
+```
+<br>
+
+<!-- **HARP**, standing for **Holonomic Autonomous Robotic Platform**, is my current main project:
 the objective I aim is to demystify robotics by showing that everyone is able to reach state-of-the-art robots.
 
 This project is designed to participate in **Eurobot** and blends **Mechatronics** (Electronics, Mechanics, IT, and Control Systems), **Programming**, and **Machine Learning**.
 
-Take a look here to find out more about the **HARP project**.
+Take a look here to find out more about the **HARP project**. -->

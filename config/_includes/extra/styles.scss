@@ -117,20 +117,23 @@ body{
 }
 //toasts color
 .toasts.note {
-  background-color: rgba(231, 242, 250, 0.9) !important;
-  color: #586069 !important;
+  background-color: #e7f2fa1a !important;
+  color: #9ca4b7 !important;
+}
+.toasts.note .title {
+  background: rgba(106, 176, 222, 0.7);
 }
 .toasts.tip {
-  background-color: rgba(219, 250, 244, 0.9) !important;
-  color: #586069 !important;
+  background-color: rgba(219, 250, 244, 0.1) !important;
+  color: #9ca4b7 !important;
 }
 .toasts.warning {
-  background-color: rgba(251, 233, 217, 0.9) !important;
-  color: #586069 !important;
+  background-color: rgba(251, 233, 217, 0.1) !important;
+  color: #9ca4b7 !important;
 }
 .toasts.danger {
-  background-color: rgba(253, 243, 242, 0.9) !important;
-  color: #586069 !important;
+  background-color: rgba(253, 243, 242, 0.1) !important;
+  color: #9ca4b7 !important;
 }
 
 .sidebar-2 {
