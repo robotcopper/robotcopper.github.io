@@ -33,22 +33,36 @@
             {{- created_time }}-{{ updated_time -}},
         {%- endif -%}
     </span>
-    <a class="text-gray" href="{{ docs.owner_url }}" rel="noreferrer" target="_blank">
+
+    {% comment %} <a class="text-gray" href="{{ docs.owner_url }}" rel="noreferrer" target="_blank">
         {{- author -}}
-    </a>
+    </a> {% endcomment %}
+    
     {% comment %} {{ __.revision | default: "Revision" }}
     <a class="text-gray" href="{{ docs.repository_url }}/commit/{{ docs.build_revision }}" title="{{ docs.build_revision }}" rel="noreferrer" target="_blank">
         {{- docs.build_revision | slice: 0, 7 -}}
     </a> {% endcomment %}
-    {% unless site.url contains "rundocs.io" %}
+    {% comment %} {% unless site.url contains "rundocs.io" %}
         <br>
-        {% comment %} <div class="generator">
+        <div class="generator">
             Built with
             <a href="https://pages.github.com" rel="noreferrer" target="_blank" title="github-pages v{{ docs.versions.github-pages }}">GitHub Pages</a>
             using a
             <a href="https://github.com/{{ theme_alias | split: '@' | first }}" rel="noreferrer" target="_blank" title="{{ generator }} v{{ version }}">theme</a>
             provided by
             <a href="https://rundocs.io" rel="noreferrer" target="_blank">RunDocs</a>.
-        </div> {% endcomment %}
-    {% endunless %}
+        </div>
+    {% endunless %} {% endcomment %}
+
+    
+    Floris Jousselin
+
+    <a href="https://github.com/robotcopper" style="margin-right: 10px; margin-left: 10px; text-decoration: none;">
+    <i class="fab fa-github" style="color: #586069;"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/jousselin-f/" style="text-decoration: none;">
+    <i class="fab fa-linkedin-in" style="color: #586069;"></i>
+    </a>
+
 </div>

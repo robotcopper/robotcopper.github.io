@@ -62,7 +62,7 @@ time: 2024-05-12
         <!-- <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i> -->
         <img src="/config/assets/images/Enseirb_dark.png" style="height: 30px; float: left; margin-right: 10px; background: transparent;">
         <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
-          <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" 
+          <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" rel="noreferrer" target="_blank"
             style="color: #5D6D7E; text-decoration: none;" 
             onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
             onmouseout="this.style.color='#5D6D7E'; this.style.textDecoration='none';">
@@ -98,7 +98,7 @@ time: 2024-05-12
     </div>
     <p style="color: #666;">
       Treasurer of a Robotics Association:
-      <a href="https://eirbot.github.io/" 
+      <a href="https://eirbot.github.io/" rel="noreferrer" target="_blank"
         style="color:#666; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
         onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
@@ -107,7 +107,7 @@ time: 2024-05-12
     </p>
     <p style="color: #666;">
       Fabmanager of a Fablab:
-      <a href="https://www.eirlab.net/" 
+      <a href="https://www.eirlab.net/" rel="noreferrer" target="_blank"
         style="color:#666; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
         onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
@@ -123,7 +123,7 @@ time: 2024-05-12
       </i> -->
       <img src="/config/assets/images/coupe_de_robotique_Dark.png" style="height: 20px; float: left; margin-right: 10px; background: transparent; margin-top: 2px;">
       <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
-        <a href="https://www.coupederobotique.fr/" 
+        <a href="https://www.coupederobotique.fr/" rel="noreferrer" target="_blank"
           style="color: #5D6D7E; text-decoration: none;" 
           onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
           onmouseout="this.style.color='#5D6D7E'; this.style.textDecoration='none';">
@@ -132,14 +132,14 @@ time: 2024-05-12
       </h1>
     </div>
     <p style="color: #666;">
-      <a href="https://robotcopper.github.io/HARP/"
+      <a href="https://robotcopper.github.io/HARP/" rel="noreferrer"
         style="color:#666; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
         onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
         HARP
       </a>
       project in the hope of winning access to
-      <a href="https://www.eurobot.org/" 
+      <a href="https://www.eurobot.org/" rel="noreferrer" target="_blank"
         style="color:#666; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
         onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
