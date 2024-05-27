@@ -59,7 +59,7 @@ body{
 }
 .container {
   color: #bec4be !important;
-  background:#202529 url('{{ site.baseurl }}/config/assets/images/header-bg5.jpg') !important;
+  background:#202529 url('{{ site.baseurl }}/config/assets/images/header-content.jpg') !important;
   background-repeat: repeat !important;
 }
 .breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
@@ -114,10 +114,10 @@ body{
   background-color: rgba(97.6, 97.6, 97.6, 0.3);
 }
 .header {
-  background: #2d5a57 url('{{ site.baseurl }}/config/assets/images/header-bg2.jpg') !important;
+  background: #2d5a57 url('{{ site.baseurl }}/config/assets/images/header-header.jpg') !important;
 }
 .sidebar {
-  background: rgba(38, 44, 49, 0.5); //#262c31;
+  background: rgba(38, 44, 49, 0.9);
 }
 //toasts color
 .toasts.note {
@@ -287,7 +287,7 @@ position: fixed;
   width: 0;
   height: 100%;
   // background:#262c31; //#24292e;// transparent;//$gray-400;// #3c454e;
-  background-image: url('{{ site.baseurl }}/config/assets/images/header-bg3.jpg') !important;
+  background-image: url('{{ site.baseurl }}/config/assets/images/header-archive.jpg') !important;
   display: none;
   &.shift2 {
     width: 295px;
