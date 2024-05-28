@@ -45,9 +45,13 @@ time: 2024-05-12
 
 
 ---
+
 <br>
 
-## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">My Profile<span>
+<div style="text-align:center;" markdown="1">
+## <img src="/config/assets/images/photo_cv.png" style="height: 100px; background: transparent; vertical-align: middle;"> <span style="font-size: 36px; color:#fff; vertical-align: middle;">My Profile</span>
+</div>
+
 
 <div style="background-color: rgba(176, 19, 159, 0.12); padding: 10px; border: 1px solid #fff; border-radius: 10px;">
   I'm a French Electronics Engineer specializing in Robotics and Machine Learning, and I'm passionate about these. My goal is to demystify robotics and machine learning and clear up misunderstandings surrounding these technologies.
