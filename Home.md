@@ -9,6 +9,15 @@ time: 2024-05-12
 
 ## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">Welcome<span>
 
+<p style="font-size: 22px; color:#fff; display: block; text-align: justify;">
+  <em>
+    Welcome to my website, a space dedicated to sharing my writings, creations, experience and discoveries in the fields of Robotics, Mechatronics, Electronics, and Machine Learning. Feel free to explore, read, and be inspired by what you find here if you wish!
+    <br>
+    <br>
+    My ongoing endeavors will continue to enrich this site. Here, you will find:
+  </em>
+</p>
+
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
   <div style="flex: 1; min-width: 300px; background-color: #A3C6C4; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
