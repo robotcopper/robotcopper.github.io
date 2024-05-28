@@ -58,7 +58,7 @@ body{
   background-color: #042927 !important;
 }
 .container {
-  color: #bec4be !important;
+  color: #fff !important;
   background:#202529 url('{{ site.baseurl }}/config/assets/images/header-content.jpg') !important;
   background-repeat: repeat !important;
 }
@@ -122,22 +122,22 @@ body{
 //toasts color
 .toasts.note {
   background-color: #e7f2fa1a !important;
-  color: #9ca4b7 !important;
+  color: #d4e1ff !important;
 }
 .toasts.note .title {
   background: rgba(106, 176, 222, 0.7);
 }
 .toasts.tip {
   background-color: rgba(219, 250, 244, 0.1) !important;
-  color: #9ca4b7 !important;
+  color: #d4e1ff !important;
 }
 .toasts.warning {
   background-color: rgba(251, 233, 217, 0.1) !important;
-  color: #9ca4b7 !important;
+  color: #d4e1ff !important;
 }
 .toasts.danger {
   background-color: rgba(253, 243, 242, 0.1) !important;
-  color: #9ca4b7 !important;
+  color: #d4e1ff !important;
 }
 
 .sidebar-wrap {

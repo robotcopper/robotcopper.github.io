@@ -7,36 +7,36 @@ time: 2024-05-12
 
 <br>
 
-## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">What You Can Find Here<span>
+## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">Welcome<span>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
 
   <div style="flex: 1; min-width: 300px; background-color: #A3C6C4; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
-    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
+    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #fff; font-size: 1.5em; font-weight: bold; color: #003673;">
       Projects Documentation
     </span>
-    <p style="color: #666;">
+    <p style="color: #000;">
       Explore detailed documentation on my open-source projects, covering various aspects of electronics and robotics.
     </p>
   </div>
 
   <div style="flex: 1; min-width: 300px; background-color: #BADDDD; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
-    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
+    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #fff; font-size: 1.5em; font-weight: bold; color: #003673;">
       Templates
     </span>
-    <p style="color: #666;">
+    <p style="color: #000;">
       Find templates that I've created to help streamline your own projects, all available under the BSD 3-Clause license.
     </p>
   </div>
 
   <div style="flex: 1; min-width: 300px; background-color: #C5E8E8; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
-    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #eaecef; font-size: 1.5em; font-weight: bold; color: #5D6D7E;">
+    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #fff; font-size: 1.5em; font-weight: bold; color: #003673;">
       Articles and Tutorials
     </span>
-    <p style="color: #666;">
+    <p style="color: #000;">
       Read articles and tutorials that I have written, sharing knowledge and insights on robotics, mechatronics, and more.
     </p>
   </div>
@@ -65,16 +65,16 @@ time: 2024-05-12
     <div style="overflow: hidden; margin-bottom: 10px;">
         <!-- <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i> -->
         <img src="/config/assets/images/Enseirb_dark.png" style="height: 30px; float: left; margin-right: 10px; background: transparent;">
-        <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+        <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
           <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" rel="noreferrer" target="_blank"
-            style="color: #5D6D7E; text-decoration: none;" 
+            style="color: #6af8ff; text-decoration: none;" 
             onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-            onmouseout="this.style.color='#5D6D7E'; this.style.textDecoration='none';">
+            onmouseout="this.style.color='#6af8ff'; this.style.textDecoration='none';">
             ENSEIRB-MATMECA (2021-2024)
           </a>
         </h1>
     </div>
-    <p style="color: #666;">
+    <p style="color: #fff;">
       Graduate School in Electronics, Computer Sciences, Telecommunications, Mathematics and Mechanics
     </p>
   </div>
@@ -82,11 +82,11 @@ time: 2024-05-12
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
       <i class="fas fa-book" style="font-size: 30px; float: left; margin-right: 10px; color: #309090"></i>
-      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+      <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
         CPGE (Preparatory Classes to Engineer Schools), 2018-2021
       </h1>
     </div>
-    <p style="color: #666;">
+    <p style="color: #fff;">
       Mathematics, Physics and Engineer Sciences
     </p>
   </div>
@@ -96,25 +96,25 @@ time: 2024-05-12
       <i class="fas fa-hand-holding" 
         style="font-size: 30px; float: left; margin-right: 10px; margin-top: -10px; color: #309090;">
       </i>
-      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+      <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
         Volunteer Commitment (2022-2023)
       </h1>
     </div>
-    <p style="color: #666;">
+    <p style="color: #fff;">
       Treasurer of a Robotics Association:
       <a href="https://eirbot.github.io/" rel="noreferrer" target="_blank"
-        style="color:#666; text-decoration: none;" 
+        style="color:#fff; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
+        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';">
         EIRBOT
       </a>
     </p>
-    <p style="color: #666;">
+    <p style="color: #fff;">
       Fabmanager of a Fablab:
       <a href="https://www.eirlab.net/" rel="noreferrer" target="_blank"
-        style="color:#666; text-decoration: none;" 
+        style="color:#fff; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
+        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';">
         EIRLAB
       </a>
     </p>
@@ -126,28 +126,28 @@ time: 2024-05-12
         style="font-size: 30px; float: left; margin-right: 10px;">
       </i> -->
       <img src="/config/assets/images/coupe_de_robotique_Dark.png" style="height: 20px; float: left; margin-right: 10px; background: transparent; margin-top: 2px;">
-      <h1 style="margin: 0; font-size: 1.2em; color: #5D6D7E; padding-bottom: .6em;">
+      <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
         <a href="https://www.coupederobotique.fr/" rel="noreferrer" target="_blank"
-          style="color: #5D6D7E; text-decoration: none;" 
+          style="color: #6af8ff; text-decoration: none;" 
           onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-          onmouseout="this.style.color='#5D6D7E'; this.style.textDecoration='none';">
+          onmouseout="this.style.color='#6af8ff'; this.style.textDecoration='none';">
           French Robotics Cup
         </a>
       </h1>
     </div>
-    <p style="color: #666;">
+    <p style="color: #fff;">
       <a href="https://robotcopper.github.io/HARP/" rel="noreferrer"
-        style="color:#666; text-decoration: none;" 
+        style="color:#fff; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
-        HARP
+        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';" markdown="1">
+        *HARP*
       </a>
       project in the hope of winning access to
       <a href="https://www.eurobot.org/" rel="noreferrer" target="_blank"
-        style="color:#666; text-decoration: none;" 
+        style="color:#fff; text-decoration: none;" 
         onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#666'; this.style.textDecoration='none';">
-        Eurobot
+        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';" markdown="1">
+        **Eurobot**
       </a>
     </p>
   </div>
