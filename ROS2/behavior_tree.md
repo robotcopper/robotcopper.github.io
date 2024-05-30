@@ -13,7 +13,7 @@ This tutorial focuses on integrating custom <span style="color:#9cff71">**Behavi
 
 ## Understanding Behavior Trees (BTs) in Robotics
 
-<span style="color:#9cff71">**Behavior Trees**</span> are the successors to **state machines** and provide a hierarchical representation of robot behavior, organizing actions, conditions, and control flow nodes into a tree structure. At the root of the tree is the main decision-making node, which delegates tasks to child nodes based on predefined conditions and priorities. This hierarchical organization facilitates clear, modular, and scalable behavior design, making <span style="color:#9cff71">**BTs**</span> a popular choice in robotics.
+<span style="color:#9cff71">**Behavior Trees**</span> are the successors of **state machines** and provide a hierarchical representation of robot behavior, organizing actions, conditions, and control flow nodes into a tree structure. At the root of the tree is the main decision-making node, which delegates tasks to child nodes based on predefined conditions and priorities. This hierarchical organization facilitates clear, modular, and scalable behavior design, making <span style="color:#9cff71">**BTs**</span> a popular choice in robotics.
 
 In the context of <span style="color:#47c7ef">**NAV2**</span>, <span style="color:#9cff71">**Behavior Trees**</span> serve as the control mechanism for guiding robot navigation. By defining navigation-related tasks and conditions within the <span style="color:#9cff71">**BT**</span> structure, robots can autonomously plan and execute navigation behaviors while dynamically adapting to changes in the environment.
 
@@ -93,7 +93,7 @@ nav2_behavior_tree
 nav2_behavior_tree
 └── CMakeLists.txt
 ```
-- and add these two lines:
+by adding these two lines:
 	
 ```cmake
 add_library(nav2_goal_distance_condition_bt_node SHARED plugins/condition/goal_distance_condition.cpp)
