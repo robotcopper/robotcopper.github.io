@@ -35,9 +35,9 @@ By following these steps, developers can extend the capabilities of <span style=
 
 Now, let's dive into the practical implementation of integrating <span style="color:#9cff71">**Behavior Trees**</span> with <span style="color:#47c7ef">**NAV2**</span>, starting with setting up the necessary tools and environment.
 
+<br>
 
-
-## Using groot:
+## Using groot
 
 - download and install groot2:
 <br>
@@ -65,8 +65,9 @@ you must first load the NAV2 nodes by opening ```/opt/ros/humble/share/nav2_beha
     </video>
 </div>
 
+<br>
 
-## Adding a custom node to a BT in Humble:
+## Adding a custom node to NAV2 BT in Humble
 	
 In Humble, modifying a NAV2 BT has not yet been made obvious, so here's what we're interested in: adding a custom node.
 In the Navigation2 stack, we will have to act on the nav2_behavior_tree and nav2_bt_navigator packages.
