@@ -58,7 +58,7 @@ time: 2024-05-12
 <br>
 
 <div style="text-align:center;" markdown="1">
-## <img src="/config/assets/images/photo_cv.png" style="height: 100px; background: transparent; vertical-align: middle;"> <span style="font-size: 36px; color:#fff; vertical-align: middle;">My Profile</span>
+## <img src="/config/assets/images/Home/photo_cv.png" style="height: 100px; background: transparent; vertical-align: middle;"> <span style="font-size: 36px; color:#fff; vertical-align: middle;">My Profile</span>
 </div>
 
 
@@ -73,7 +73,7 @@ time: 2024-05-12
   <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
     <div style="overflow: hidden; margin-bottom: 10px;">
         <!-- <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i> -->
-        <img src="/config/assets/images/Enseirb_dark.png" style="height: 30px; float: left; margin-right: 10px; background: transparent;">
+        <img src="/config/assets/images/Home/Enseirb_dark.png" style="height: 30px; float: left; margin-right: 10px; background: transparent;">
         <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
           <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" rel="noreferrer" target="_blank"
             style="color: #6af8ff; text-decoration: none;" 
@@ -134,7 +134,7 @@ time: 2024-05-12
       <!-- <i class="fas fa-robot" 
         style="font-size: 30px; float: left; margin-right: 10px;">
       </i> -->
-      <img src="/config/assets/images/coupe_de_robotique_Dark.png" style="height: 20px; float: left; margin-right: 10px; background: transparent; margin-top: 2px;">
+      <img src="/config/assets/images/Home/coupe_de_robotique_Dark.png" style="height: 20px; float: left; margin-right: 10px; background: transparent; margin-top: 2px;">
       <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
         <a href="https://www.coupederobotique.fr/" rel="noreferrer" target="_blank"
           style="color: #6af8ff; text-decoration: none;" 

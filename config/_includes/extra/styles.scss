@@ -59,7 +59,7 @@ body{
 }
 .container {
   color: #fff !important;
-  background:#000 url('{{ site.baseurl }}/config/assets/images/header-content.jpg');
+  background:#000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-content.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   // background-position: center;
@@ -117,7 +117,7 @@ body{
   background-color: rgba(97.6, 97.6, 97.6, 0.3);
 }
 .header {
-  background: #2d5a57 url('{{ site.baseurl }}/config/assets/images/header-header.jpg') !important;
+  background: #2d5a57 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-header.jpg') !important;
 }
 .sidebar {
   background: rgba(38, 44, 49, 0.8);
@@ -290,7 +290,9 @@ position: fixed;
   width: 0;
   height: 100%;
   // background:#262c31; //#24292e;// transparent;//$gray-400;// #3c454e;
-  background-image: url('{{ site.baseurl }}/config/assets/images/header-archive.jpg') !important;
+  background-image: url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-archive.jpg');
+  background-size: cover;
+  background-position: center;
   display: none;
   &.shift2 {
     width: 295px;
