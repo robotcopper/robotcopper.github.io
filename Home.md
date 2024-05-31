@@ -62,7 +62,7 @@ time: 2024-05-12
 </div>
 
 
-<div style="background-color: rgba(176, 19, 159, 0.12); padding: 10px; border: 1px solid #fff; border-radius: 10px;">
+<div style="background-color: rgba(176, 19, 159, 0.15); padding: 10px; border: 1px solid #fff; border-radius: 10px;">
   I'm a French Electronics Engineer specializing in Robotics and Machine Learning, and I'm passionate about these. My goal is to demystify robotics and machine learning and clear up misunderstandings surrounding these technologies.
 </div>
 <br>

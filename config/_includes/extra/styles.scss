@@ -59,8 +59,11 @@ body{
 }
 .container {
   color: #fff !important;
-  background:#202529 url('{{ site.baseurl }}/config/assets/images/header-content.jpg') !important;
-  background-repeat: repeat !important;
+  background:#000 url('{{ site.baseurl }}/config/assets/images/header-content.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: center;
+  // background-attachment: fixed;
 }
 .breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
   color: #bec4be !important;
@@ -117,7 +120,7 @@ body{
   background: #2d5a57 url('{{ site.baseurl }}/config/assets/images/header-header.jpg') !important;
 }
 .sidebar {
-  background: rgba(38, 44, 49, 0.9);
+  background: rgba(38, 44, 49, 0.8);
 }
 //toasts color
 .toasts.note {
