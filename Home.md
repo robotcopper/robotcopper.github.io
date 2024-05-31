@@ -1,5 +1,4 @@
 ---
-layout: default
 permalink: /index.html # allow renaming of the cover page file
 title: "&nbsp;<i class='fas fa-home'></i>&nbsp; Home"
 time: 2024-05-12
@@ -52,6 +51,35 @@ time: 2024-05-12
 
 </div>
 
+
+---
+
+## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">Gallery<span>
+
+<div class="gallery">
+    <a href="#img1"><img src="/config/assets/images/Home/Gallery/img1.png" alt="Image 1 Description"></a>
+    <a href="#img2"><img src="/config/assets/images/Home/Gallery/img2.png" alt="Image 2 Description"></a>
+    <a href="#img3"><img src="/config/assets/images/Home/Gallery/img3.png" alt="Image 3 Description"></a>
+    <a href="#img4"><img src="/config/assets/images/Home/Gallery/img4.png" alt="Image 4 Description"></a>
+    <a href="#img5"><img src="/config/assets/images/Home/Gallery/img5.jpg" alt="Image 5 Description"></a>
+</div>
+
+<!-- Lightbox sections -->
+<div id="img1" class="lightbox">
+    <img src="/config/assets/images/Home/Gallery/img1.png" alt="Image 1 Description">
+</div>
+<div id="img2" class="lightbox">
+    <img src="/config/assets/images/Home/Gallery/img2.png" alt="Image 2 Description">
+</div>
+<div id="img3" class="lightbox">
+    <img src="/config/assets/images/Home/Gallery/img3.png" alt="Image 3 Description">
+</div>
+<div id="img4" class="lightbox">
+    <img src="/config/assets/images/Home/Gallery/img4.png" alt="Image 4 Description">
+</div>
+<div id="img5" class="lightbox">
+    <img src="/config/assets/images/Home/Gallery/img5.jpg" alt="Image 5 Description">
+</div>
 
 ---
 
@@ -171,10 +199,3 @@ time: 2024-05-12
 I systematically cite the work that inspired or helped me achieve my results. I hope you will do the same if my work has helped you.
 ```
 <br>
-
-<!-- **HARP**, standing for **Holonomic Autonomous Robotic Platform**, is my current main project:
-the objective I aim is to demystify robotics by showing that everyone is able to reach state-of-the-art robots.
-
-This project is designed to participate in **Eurobot** and blends **Mechatronics** (Electronics, Mechanics, IT, and Control Systems), **Programming**, and **Machine Learning**.
-
-Take a look here to find out more about the **HARP project**. -->

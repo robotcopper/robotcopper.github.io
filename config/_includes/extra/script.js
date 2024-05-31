@@ -5,3 +5,9 @@ $("#toggle2").click(function () {
 $("#toggle").click(function () {
   $(".sidebar-wrap-2").toggleClass("shiftbis");
 });
+
+document.addEventListener('click', function(event) {
+  if (event.target.classList.contains('lightbox')) {
+      window.location.hash = '#gallery';
+  }
+});

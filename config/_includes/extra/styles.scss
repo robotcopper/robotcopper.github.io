@@ -289,8 +289,7 @@ position: fixed;
   right: 0;
   width: 0;
   height: 100%;
-  // background:#262c31; //#24292e;// transparent;//$gray-400;// #3c454e;
-  background-image: url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-archive.jpg');
+  background: #000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-archive.jpg');
   background-size: cover;
   background-position: center;
   display: none;
@@ -299,4 +298,46 @@ position: fixed;
     display: block !important;
   }
 
+}
+
+// Lightbox sections
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+}
+.gallery img {
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 4px solid #fff;
+  border-radius: 8px;
+}
+.lightbox:target {
+  display: flex;
 }
