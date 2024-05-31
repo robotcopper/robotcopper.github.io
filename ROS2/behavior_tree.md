@@ -112,7 +112,7 @@ nav2_bt_navigator
 ```cpp
 "nav2_goal_distance_condition_bt_node"
 ```
-![thumbnail_image](/config/assets/images/BT_nav2/bt_navigator_lib_list.png)
+<img src="/config/assets/images/BT_nav2/bt_navigator_lib_list.png" style="background: transparent;">
 
 The customised node is now added and practically ready to use. The only thing left to do is to add it to the *.yaml* navigation configuration file generally called *nav2_params.yaml* the following line to the list of plugins used by the *bt_navigator*:
 
@@ -120,7 +120,7 @@ The customised node is now added and practically ready to use. The only thing le
 - nav2_goal_distance_condition_bt_node
 ```
 
-![thumbnail_image](/config/assets/images/BT_nav2/bt_navigator_param.png)
+<img src="/config/assets/images/BT_nav2/bt_navigator_param.png" style="background: transparent;">
 
 
 Below you will find the **hpp** and **cpp** code mentioned and you can use it as a basis for the development of your own nodes:
