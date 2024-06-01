@@ -8,6 +8,14 @@ $("#toggle").click(function () {
 
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('lightbox')) {
-      window.location.hash = '#gallery';
+      event.preventDefault();
+      window.location.hash = '';
+      window.scrollTo(0, sessionStorage.getItem('scrollPosition'));
   }
+});
+
+document.querySelectorAll('.gallery a').forEach(function(anchor) {
+  anchor.addEventListener('click', function() {
+      sessionStorage.setItem('scrollPosition', window.pageYOffset);
+  });
 });
