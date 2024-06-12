@@ -74,7 +74,7 @@ In the Navigation2 stack, we will have to act on the nav2_behavior_tree and nav2
 	
 Let's consider adding a condition node called GoalDistanceCondition:
 	
-- in the nav2_behavior_tree package we will add these files:
+- in the ***nav2_behavior_tree*** package we will add these files:
 	
 ```	
 nav2_behavior_tree
@@ -87,20 +87,32 @@ nav2_behavior_tree
     └── condition
         └── goal_distance_condition.cpp
 ```
-- still in the package nav2_behavior_tree we are going to modify this file:
+- still in the ***nav2_behavior_tree*** package, we are going to modify these files:
 	
 ```	
 nav2_behavior_tree
-└── CMakeLists.txt
+├── CMakeLists.txt
+└── nav2_tree_nodes.xml
 ```
-by adding these two lines:
+- by adding these two lines to the ***CMakeLists.txt***:
 	
 ```cmake
 add_library(nav2_goal_distance_condition_bt_node SHARED plugins/condition/goal_distance_condition.cpp)
 list(APPEND plugin_libs nav2_goal_distance_condition_bt_node)
 ```
 
-- we then need to modify this file in the nav2_bt_navigator package
+- and in ***nav2_tree_nodes.xml*** by adding your custom node ID. For this exemple:
+	
+```xml  
+<Condition ID="GoalDistance">
+    <input_port name="goal">Destination</input_port>
+    <input_port name="global_frame">Reference frame</input_port>
+    <input_port name="robot_base_frame">Robot base frame</input_port>
+    <input_port name="threshold">threshold</input_port>
+</Condition>
+```
+
+- we then need to modify this file in the ***nav2_bt_navigator*** package
 
 ```	
 nav2_bt_navigator
