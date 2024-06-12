@@ -39,9 +39,9 @@ Now, let's dive into the practical implementation of integrating <span style="co
 
 ## Using groot
 
-- download and install groot2:
+- download and install [groot2](https://www.behaviortree.dev/groot/):
 <br>
-```https://s3.us-west-1.amazonaws.com/download.behaviortree.dev/groot2_linux_installer/Groot2-v1.5.2-linux-installer.run```
+[```https://s3.us-west-1.amazonaws.com/download.behaviortree.dev/groot2_linux_installer/Groot2-v1.5.2-linux-installer.run```](https://s3.us-west-1.amazonaws.com/download.behaviortree.dev/groot2_linux_installer/Groot2-v1.5.2-linux-installer.run)
 		
 - add the path to your bashrc:
 ```bash
