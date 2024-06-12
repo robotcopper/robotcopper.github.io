@@ -60,6 +60,10 @@ time: 2024-05-12
 
 ## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">Gallery<span>
 
+<p align=center>
+Explore a sample of what awaits you here in images.
+</p>
+
 <div class="gallery">
     <a href="#img1"><img src="/config/assets/images/Home/Gallery/img1.png" alt="Image 1 Description"></a>
     <a href="#img2"><img src="/config/assets/images/Home/Gallery/img2.png" alt="Image 2 Description"></a>
