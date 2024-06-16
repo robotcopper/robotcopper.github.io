@@ -65,40 +65,109 @@ Explore a sample of what awaits you here in images.
 </p>
 
 <div class="gallery">
-    <a href="#img1"><img src="/config/assets/images/Home/Gallery/img1.png" alt="Image 1 Description"></a>
-    <a href="#img2"><img src="/config/assets/images/Home/Gallery/img2.png" alt="Image 2 Description"></a>
-    <a href="#img3"><img src="/config/assets/images/Home/Gallery/img3.png" alt="Image 3 Description"></a>
-    <a href="#img4"><img src="/config/assets/images/Home/Gallery/img4.png" alt="Image 4 Description"></a>
-    <a href="#img5"><img src="/config/assets/images/Home/Gallery/img5.jpg" alt="Image 5 Description"></a>
+    <a href="#img1"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.gif"></a>
+    <a href="#img2"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.jpg"></a>
+    <a href="#img3"><img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.jpg"></a>
+    <a href="#img4"><img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.jpg"></a>
+    <a href="#img5"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.jpg"></a>
+    <a href="#img6"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.jpg"></a>
+    <a href="#video7"><img src="/config/assets/images/Home/Gallery/DynamixelConfigurator.gif"></a>
+    <a href="#img8"><img src="/config/assets/images/Home/Gallery/HARP1cao.png"></a>
+    <a href="#img9"><img src="/config/assets/images/Home/Gallery/HARP1_homologation.jpeg"></a>
+    <a href="#video10"><img src="/config/assets/images/Home/Gallery/HARP1game.gif"></a>
+    <a href="#video11"><img src="/config/assets/images/Home/Gallery/LineTracker.gif"></a>
+    <a href="#img12"><img src="/config/assets/images/Home/Gallery/MegaBot.png"></a>
+    <a href="#img13"><img src="/config/assets/images/Home/Gallery/MegaBot_sim.gif"></a>
+    <a href="#img14"><img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.gif"></a>
+    <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.gif"></a>
+    <a href="#video16"><img src="/config/assets/images/Home/Gallery/NimblBot_simu.gif"></a>
+    <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment.gif"></a>
 </div>
 
 <!-- Lightbox sections -->
 <div id="img1" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img1.png">
-    <p>Description courte pour l'image 1</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.gif">
+  <p>Description courte pour l'image 1</p>
 </div>
 <div id="img2" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img2.png">
-    <p>Description courte pour l'image 2</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.jpg">
+  <p>Description courte pour l'image 2</p>
 </div>
 <div id="img3" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img3.png">
-    <p>Description courte pour l'image 3</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.jpg">
+  <p>Description courte pour l'image 3</p>
 </div>
 <div id="img4" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img4.png">
-    <p>Description courte pour l'image 4</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.jpg">
+  <p>Description courte pour l'image 4</p>
 </div>
 <div id="img5" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img5.jpg">
-    <p>Description courte pour l'image 5</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.jpg">
+  <p>Description courte pour l'image 5</p>
 </div>
-
-
-
-
-
-
+<div id="img6" class="lightbox">
+  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.jpg">
+  <p>Description courte pour l'image 6</p>
+</div>
+<div id="video7" class="lightbox">
+  <video controls>
+    <source src="/config/assets/images/Home/Gallery/DynamixelConfigurator.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p>Description courte pour la vidéo 7</p>
+</div>
+<div id="img8" class="lightbox">
+  <img src="/config/assets/images/Home/Gallery/HARP1cao.png">
+  <p>Description courte pour l'image 8</p>
+</div>
+<div id="img9" class="lightbox">
+  <img src="/config/assets/images/Home/Gallery/HARP1_homologation.jpeg">
+  <p>Description courte pour l'image 9</p>
+</div>
+<div id="video10" class="lightbox">
+  <video controls>
+    <source src="/config/assets/images/Home/Gallery/HARP1game.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p>Description courte pour l'image 10</p>
+</div>
+<div id="video11" class="lightbox">
+  <video controls>
+    <source src="/config/assets/images/Home/Gallery/LineTracker.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p>Description courte pour l'image 11</p>
+</div>
+<div id="img12" class="lightbox">
+  <img src="/config/assets/images/Home/Gallery/MegaBot.png">
+  <p>Description courte pour l'image 12</p>
+</div>
+<div id="img13" class="lightbox">
+  <img src="/config/assets/images/Home/Gallery/MegaBot_sim.gif">
+  <p>Description courte pour l'image 13</p>
+</div>
+<div id="img14" class="lightbox">
+  <img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.gif">
+  <p>Description courte pour l'image 14</p>
+</div>
+<div id="img15" class="lightbox">
+  <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.gif">
+  <p>Description courte pour l'image 15</p>
+</div>
+<div id="video16" class="lightbox">
+  <video controls>
+    <source src="/config/assets/images/Home/Gallery/NimblBot_simu.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p>Description courte pour l'image 16</p>
+</div>
+<div id="video17" class="lightbox">
+  <video controls>
+    <source src="/config/assets/images/Home/Gallery/NimblBot_deployment.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <p>Description courte pour l'image 17</p>
+</div>
 ---
 
 <br>
