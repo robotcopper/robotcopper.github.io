@@ -340,5 +340,6 @@ position: fixed;
   border-radius: 8px;
 }
 .lightbox:target {
-  display: flex;
+  display: inline-block;
+  text-align: center;
 }

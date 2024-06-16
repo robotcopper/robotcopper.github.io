@@ -74,19 +74,24 @@ Explore a sample of what awaits you here in images.
 
 <!-- Lightbox sections -->
 <div id="img1" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img1.png" alt="Image 1 Description">
+    <img src="/config/assets/images/Home/Gallery/img1.png">
+    <p>Description courte pour l'image 1</p>
 </div>
 <div id="img2" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img2.png" alt="Image 2 Description">
+    <img src="/config/assets/images/Home/Gallery/img2.png">
+    <p>Description courte pour l'image 2</p>
 </div>
 <div id="img3" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img3.png" alt="Image 3 Description">
+    <img src="/config/assets/images/Home/Gallery/img3.png">
+    <p>Description courte pour l'image 3</p>
 </div>
 <div id="img4" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img4.png" alt="Image 4 Description">
+    <img src="/config/assets/images/Home/Gallery/img4.png">
+    <p>Description courte pour l'image 4</p>
 </div>
 <div id="img5" class="lightbox">
-    <img src="/config/assets/images/Home/Gallery/img5.jpg" alt="Image 5 Description">
+    <img src="/config/assets/images/Home/Gallery/img5.jpg">
+    <p>Description courte pour l'image 5</p>
 </div>
 
 
