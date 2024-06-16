@@ -8,14 +8,20 @@ $("#toggle").click(function () {
 
 document.addEventListener('click', function(event) {
   if (event.target.classList.contains('lightbox')) {
-      event.preventDefault();
-      window.location.hash = '';
-      window.scrollTo(0, sessionStorage.getItem('scrollPosition'));
+    event.preventDefault();
+
+    document.querySelectorAll('video').forEach(function(video) {
+      video.pause();
+      video.currentTime = 0;
+    });
+
+    window.location.hash = '';
+    window.scrollTo(0, sessionStorage.getItem('scrollPosition'));
   }
 });
 
 document.querySelectorAll('.gallery a').forEach(function(anchor) {
   anchor.addEventListener('click', function() {
-      sessionStorage.setItem('scrollPosition', window.pageYOffset);
+    sessionStorage.setItem('scrollPosition', window.pageYOffset);
   });
 });

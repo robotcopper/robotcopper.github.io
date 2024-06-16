@@ -306,9 +306,8 @@ position: fixed;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  max-width: 1200px;
 }
-.gallery img {
+.gallery img, .gallery video{
   margin: 8px;
   border: 2px solid #ddd;
   border-radius: 8px;
@@ -318,7 +317,7 @@ position: fixed;
   transition: transform 0.2s;
   cursor: pointer;
 }
-.gallery img:hover {
+.gallery img:hover, .gallery video:hover{
   transform: scale(1.1);
 }
 .lightbox {
@@ -330,10 +329,8 @@ position: fixed;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999; // set lightbox in foreground
-  justify-content: center;
-  align-items: center;
 }
-.lightbox img {
+.lightbox img, .lightbox video{
   max-width: 90%;
   max-height: 90%;
   border: 4px solid #fff;
