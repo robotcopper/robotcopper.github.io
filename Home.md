@@ -87,56 +87,55 @@ Explore a sample of what awaits you here in images.
 <!-- Lightbox sections -->
 <div id="img1" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2022arm.gif">
-  <p>Description courte pour l'image 1</p>
+  <p>The robotic arm I created during my first participation in the French Robotics Cup,<br>
+  as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
 </div>
 <div id="img2" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2022arm.jpg">
-  <p>Description courte pour l'image 2</p>
+  <p>The robotic arm I created during my first participation in the French Robotics Cup,<br>
+  as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
 </div>
 <div id="img3" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.jpg">
-  <p>Description courte pour l'image 3</p>
+  <p>Me on the competition stage, readjusting the robotic arm before the first match of our Unchart'eirb team at the French Robotics Cup, representing the Eirbot association</p>
 </div>
 <div id="img4" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.jpg">
-  <p>Description courte pour l'image 4</p>
-</div>
+  <p>Behind the yellow robot of our Eirbot team during my second year of engineering school, there is the basket I designed to count red balls using machine learning</p>
+  </div>
 <div id="img5" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.jpg">
-  <p>Description courte pour l'image 5</p>
+  <p>Result of network detection on an image of the validation set created in Blender</p>
 </div>
 <div id="img6" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.jpg">
-  <p>Description courte pour l'image 6</p>
+  <p>Result of the network detection on a real image from the basket used during the French Robotics Cup after that our robot throws a ball into it</p>
 </div>
 <div id="video7" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/DynamixelConfigurator.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
-  <p>Description courte pour la vidéo 7</p>
+  <p>Dynamixel servo motor configurator module that I created during my first year engineering school internship</p>
 </div>
 <div id="img8" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/HARP1cao.png">
-  <p>Description courte pour l'image 8</p>
+  <p>CAD model of HARP1 on the robotics table of the French Robotics Cup made with Onshape</p>
 </div>
 <div id="img9" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/HARP1_homologation.jpeg">
-  <p>Description courte pour l'image 9</p>
+  <p>HARP1 immediately after passing homologation at the 2023 French Robotics Cup</p>
 </div>
 <div id="video10" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/HARP1game.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
-  <p>Description courte pour l'image 10</p>
+  <p>HARP1 running its match routine</p>
 </div>
 <div id="video11" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/LineTracker.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
-  <p>Description courte pour l'image 11</p>
+  <p>First project in my robotics course made with 5 other classmates: a line-following robot</p>
 </div>
 <div id="img12" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/MegaBot.png">
@@ -152,21 +151,19 @@ Explore a sample of what awaits you here in images.
 </div>
 <div id="img15" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.gif">
-  <p>Description courte pour l'image 15</p>
+  <p>Hand pose traking with MediaPipe</p>
 </div>
 <div id="video16" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/NimblBot_simu.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
-  <p>Description courte pour l'image 16</p>
+  <p>HMI to control the robotic arm of Nimbl'bot by hand movements, created during my internship in my second year of engineering school used in simulation</p>
 </div>
 <div id="video17" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/NimblBot_deployment.mp4" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
-  <p>Description courte pour l'image 17</p>
+  <p>Deployed HMI to control the robotic arm of Nimbl'bot by hand movements, created during my internship in my second year of engineering school</p>
 </div>
 ---
 
