@@ -139,15 +139,15 @@ Explore a sample of what awaits you here in images.
 </div>
 <div id="img12" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/MegaBot.png">
-  <p>Description courte pour l'image 12</p>
+  <p>MegaBot: a 250 kg quadruped robot capable of carrying a passenger. From Eirlab, the Bordeaux INP Fablab</p>
 </div>
 <div id="img13" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/MegaBot_sim.gif">
-  <p>Description courte pour l'image 13</p>
+  <p>Implemented creeping gait simulation with quadratic programming to avoid kinematic closed loop</p>
 </div>
 <div id="img14" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.gif">
-  <p>Description courte pour l'image 14</p>
+  <p>Deployment of creeping gait algorithm with quadratic programming to avoid kinematic closed loop</p>
 </div>
 <div id="img15" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.gif">
