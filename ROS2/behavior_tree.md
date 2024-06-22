@@ -308,3 +308,4 @@ BT_REGISTER_NODES(factory)
   factory.registerBuilder<nav2_behavior_tree::GoalDistanceCondition>("GoalDistance", builder);
 }
 ```
+</details>
