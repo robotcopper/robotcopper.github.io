@@ -59,7 +59,7 @@ you must first load the NAV2 nodes by opening ```/opt/ros/humble/share/nav2_beha
 - Once this is done, you can open any BT that depends on these nodes.
 
 <div style="display: flex; justify-content: center;">
-    <video width="854" height="480" controls>
+    <video width="100%" height="480" controls>
         <source src="/config/assets/images/BT_nav2/groot_tuto.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
