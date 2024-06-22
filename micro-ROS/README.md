@@ -1,5 +1,5 @@
 ---
-title: "<img src='/config/assets/images/micro-ROS_logo.png' alt='Logo' style='height: 12px; vertical-align: middle; transform: translateY(0px);'> micro-ROS"
+title: "<img src='/config/assets/images/micro-ROS_logo.png' alt='Logo' style='height: 12px; vertical-align: middle; transform: translateY(0px);'> Micro-ROS"
 time: 2024-06-19
 ---
 
