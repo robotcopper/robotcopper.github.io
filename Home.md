@@ -65,18 +65,18 @@ Explore a sample of what awaits you here in images.
 </p>
 
 <div class="gallery">
-    <a href="#img1"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp"></a>
-    <a href="#img2"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.jpg"></a>
-    <a href="#img3"><img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.jpg"></a>
-    <a href="#img4"><img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.jpg"></a>
-    <a href="#img5"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.jpg"></a>
-    <a href="#img6"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.jpg"></a>
+    <a href="#img1"><img src="/config/assets/images/Home/Gallery/CDFR2022armgif.webp"></a>
+    <a href="#img2"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp"></a>
+    <a href="#img3"><img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.webp"></a>
+    <a href="#img4"><img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.webp"></a>
+    <a href="#img5"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.webp"></a>
+    <a href="#img6"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.webp"></a>
     <a href="#video7"><img src="/config/assets/images/Home/Gallery/DynamixelConfigurator.webp"></a>
-    <a href="#img8"><img src="/config/assets/images/Home/Gallery/HARP1cao.png"></a>
-    <a href="#img9"><img src="/config/assets/images/Home/Gallery/HARP1_homologation.jpeg"></a>
+    <a href="#img8"><img src="/config/assets/images/Home/Gallery/HARP1cao.webp"></a>
+    <a href="#img9"><img src="/config/assets/images/Home/Gallery/HARP1_homologation.webp"></a>
     <a href="#video10"><img src="/config/assets/images/Home/Gallery/HARP1game.webp"></a>
     <a href="#video11"><img src="/config/assets/images/Home/Gallery/LineTracker.webp"></a>
-    <a href="#img12"><img src="/config/assets/images/Home/Gallery/MegaBot.png"></a>
+    <a href="#img12"><img src="/config/assets/images/Home/Gallery/MegaBot.webp"></a>
     <a href="#img13"><img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp"></a>
     <a href="#img14"><img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp"></a>
     <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp"></a>
@@ -86,29 +86,29 @@ Explore a sample of what awaits you here in images.
 
 <!-- Lightbox sections -->
 <div id="img1" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp">
+  <img src="/config/assets/images/Home/Gallery/CDFR2022armgif.webp">
   <p>The robotic arm I created during my first participation in the French Robotics Cup,<br>
   as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
 </div>
 <div id="img2" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.jpg">
+  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp">
   <p>The robotic arm I created during my first participation in the French Robotics Cup,<br>
   as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
 </div>
 <div id="img3" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.jpg">
+  <img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.webp">
   <p>Me on the competition stage, readjusting the robotic arm before the first match of our Unchart'eirb team at the French Robotics Cup, representing the Eirbot association</p>
 </div>
 <div id="img4" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.jpg">
+  <img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.webp">
   <p>Behind the yellow robot of our Eirbot team during my second year of engineering school, there is the basket I designed to count red balls using machine learning</p>
   </div>
 <div id="img5" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.jpg">
+  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.webp">
   <p>Result of network detection on an image of the validation set created in Blender</p>
 </div>
 <div id="img6" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.jpg">
+  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.webp">
   <p>Result of the network detection on a real image from the basket used during the French Robotics Cup after that our robot throws a ball into it</p>
 </div>
 <div id="video7" class="lightbox">
@@ -118,11 +118,11 @@ Explore a sample of what awaits you here in images.
   <p>Dynamixel servo motor configurator module that I created during my first year engineering school internship</p>
 </div>
 <div id="img8" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/HARP1cao.png">
+  <img src="/config/assets/images/Home/Gallery/HARP1cao.webp">
   <p>CAD model of HARP1 on the robotics table of the French Robotics Cup made with Onshape</p>
 </div>
 <div id="img9" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/HARP1_homologation.jpeg">
+  <img src="/config/assets/images/Home/Gallery/HARP1_homologation.webp">
   <p>HARP1 immediately after passing homologation at the 2023 French Robotics Cup</p>
 </div>
 <div id="video10" class="lightbox">
@@ -138,7 +138,7 @@ Explore a sample of what awaits you here in images.
   <p>First project in my robotics course made with 5 other classmates: a line-following robot</p>
 </div>
 <div id="img12" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/MegaBot.png">
+  <img src="/config/assets/images/Home/Gallery/MegaBot.webp">
   <p>MegaBot: a 250 kg quadruped robot capable of carrying a passenger. From Eirlab, the Bordeaux INP Fablab</p>
 </div>
 <div id="img13" class="lightbox">
