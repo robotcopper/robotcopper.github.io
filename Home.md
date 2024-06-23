@@ -65,28 +65,28 @@ Explore a sample of what awaits you here in images.
 </p>
 
 <div class="gallery">
-    <a href="#img1"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.gif"></a>
+    <a href="#img1"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp"></a>
     <a href="#img2"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.jpg"></a>
     <a href="#img3"><img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.jpg"></a>
     <a href="#img4"><img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.jpg"></a>
     <a href="#img5"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.jpg"></a>
     <a href="#img6"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.jpg"></a>
-    <a href="#video7"><img src="/config/assets/images/Home/Gallery/DynamixelConfigurator.gif"></a>
+    <a href="#video7"><img src="/config/assets/images/Home/Gallery/DynamixelConfigurator.webp"></a>
     <a href="#img8"><img src="/config/assets/images/Home/Gallery/HARP1cao.png"></a>
     <a href="#img9"><img src="/config/assets/images/Home/Gallery/HARP1_homologation.jpeg"></a>
-    <a href="#video10"><img src="/config/assets/images/Home/Gallery/HARP1game.gif"></a>
-    <a href="#video11"><img src="/config/assets/images/Home/Gallery/LineTracker.gif"></a>
+    <a href="#video10"><img src="/config/assets/images/Home/Gallery/HARP1game.webp"></a>
+    <a href="#video11"><img src="/config/assets/images/Home/Gallery/LineTracker.webp"></a>
     <a href="#img12"><img src="/config/assets/images/Home/Gallery/MegaBot.png"></a>
-    <a href="#img13"><img src="/config/assets/images/Home/Gallery/MegaBot_sim.gif"></a>
-    <a href="#img14"><img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.gif"></a>
-    <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.gif"></a>
-    <a href="#video16"><img src="/config/assets/images/Home/Gallery/NimblBot_simu.gif"></a>
-    <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment.gif"></a>
+    <a href="#img13"><img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp"></a>
+    <a href="#img14"><img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp"></a>
+    <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp"></a>
+    <a href="#video16"><img src="/config/assets/images/Home/Gallery/NimblBot_simu.webp"></a>
+    <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment.webp"></a>
 </div>
 
 <!-- Lightbox sections -->
 <div id="img1" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.gif">
+  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp">
   <p>The robotic arm I created during my first participation in the French Robotics Cup,<br>
   as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
 </div>
@@ -142,15 +142,15 @@ Explore a sample of what awaits you here in images.
   <p>MegaBot: a 250 kg quadruped robot capable of carrying a passenger. From Eirlab, the Bordeaux INP Fablab</p>
 </div>
 <div id="img13" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/MegaBot_sim.gif">
+  <img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp">
   <p>Implemented creeping gait simulation with quadratic programming to avoid kinematic closed loop</p>
 </div>
 <div id="img14" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.gif">
+  <img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp">
   <p>Deployment of creeping gait algorithm with quadratic programming to avoid kinematic closed loop</p>
 </div>
 <div id="img15" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.gif">
+  <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp">
   <p>Hand pose traking with MediaPipe</p>
 </div>
 <div id="video16" class="lightbox">
