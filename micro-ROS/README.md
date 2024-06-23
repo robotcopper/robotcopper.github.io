@@ -105,7 +105,7 @@ pico
         └── pico_uart_transports.cpp
 ```
 
-Once set up, develop your micro-ROS node `.cpp` and its associated `CMakeLists`. I won't describe the creation of the `.cpp` node and the `CMakeLists` here, I'll leave that to the different dedicated templates. Assuming your `CMakeLists` is configured and your `.cpp` node is ready, generate the `.elf` file for your node:
+Once set up, develop your micro-ROS node `.cpp` and its associated `CMakeLists`. I won't describe the creation of the `.cpp` node and the `CMakeLists` here, I'll leave that to the different dedicated templates. Assuming your `CMakeLists` is configured and your `.cpp` node is ready, generate the `.uf2` file for your node:
 
 ```bash
 cd my_uros_node
@@ -115,12 +115,12 @@ cmake ..
 make
 ```
 
-Your `.elf` file for the node will be in the `build` folder:
+Your `.uf2` file for the node will be in the `build` folder:
 ```
 pico
 └── my_uros_node
     └── build
-        └── main.elf
+        └── main.uf2
 ```
 
 Copy this file to your <span style="color:#c41f4c">**Raspberry Pi Pico**</span> to deploy your <span style="color:#47c7ef">**Micro-ROS**</span>. Congratulations on using <span style="color:#47c7ef">**Micro-ROS**</span>!.
@@ -288,7 +288,7 @@ uros_ws
         └── libmicroros.a
 ```
 
-Copy the `include` directory and `libmicroros.a` file to your Pico project folder. Now, proceed to generate the `.elf` file for your micro-ROS node as described earlier.
+Copy the `include` directory and `libmicroros.a` file to your Pico project folder. Now, proceed to generate the `.uf2` file for your micro-ROS node as described earlier.
 
 <br>
 
