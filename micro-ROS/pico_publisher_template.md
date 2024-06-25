@@ -1,6 +1,6 @@
 ---
 title: Micro-ROS Pico Publisher Template
-date: 2024-06-20
+time: 2024-06-20
 ---
 
 <br>
