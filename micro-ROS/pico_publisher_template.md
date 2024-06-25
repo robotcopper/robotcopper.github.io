@@ -38,7 +38,7 @@ In this tutorial, we will create a <span style="color:#4762a6">**ROS 2**</span> 
 
 <br>
 
-### Publisher Node Code
+## Publisher Node Code
 <hr style="height: 1px; background-color: #dfe2e5; border: none;">
 
 Here is the complete code for the <span style="color:#4762a6">**ROS 2**</span> node using <span style="color:#47c7ef">**Micro-ROS**</span> on <span style="color:#c41f4c">**Raspberry Pi Pico**</span> to publish messages via custom serial communication.
