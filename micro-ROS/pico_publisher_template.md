@@ -52,7 +52,7 @@ extern "C" {
 #include <rcl/error_handling.h> // Error handling for ROS 2
 #include <rclc/rclc.h> // C library for ROS 2
 #include <rclc/executor.h> // Executor for ROS 2
-#include <rmw_microros/rmw_microros.h> // Middleware for Micro-ROS
+#include <rmw_microros/rmw_microros.h> // Middleware for micro-ROS
 
 #include "std_msgs/msg/string.h" // Standard String message for ROS 2
 
@@ -68,6 +68,9 @@ std_msgs__msg__String publisher_msg; // Declare the ROS 2 message
 
 bool message_send = false; // Flag for message sending
 
+const char * publisher_topic_name = "pico_publisher_topic";
+const char * node_name = "pico_node";
+
 // Define the states
 enum states {
   WAITING_AGENT,
@@ -76,7 +79,6 @@ enum states {
   AGENT_DISCONNECTED
 } state;
 
-rcl_timer_t timer; // Declare the ROS 2 timer
 rcl_node_t node; // Declare the ROS 2 node
 rcl_allocator_t allocator; // Declare the memory allocator
 rclc_support_t support; // Declare the ROS 2 support
@@ -100,7 +102,7 @@ bool pingAgent() {
     const int timeout_ms = 100; // Timeout of 100ms
     const uint8_t attempts = 1; // Number of attempts
 
-    rcl_ret_t ret = rmw_uros_ping_agent(timeout_ms, attempts); // Ping the Micro-ROS agent
+    rcl_ret_t ret = rmw_uros_ping_agent(timeout_ms, attempts); // Ping the micro-ROS agent
     return (ret == RCL_RET_OK); // Return true if ping succeeded, false otherwise
 }
 
@@ -110,14 +112,14 @@ void createEntities() {
     rcl_ret_t ret = rclc_support_init(&support, 0, NULL, &allocator); // Initialize the support
     CHECK_RET(ret); // Check and handle the return value
 
-    ret = rclc_node_init_default(&node, "pico_node", "", &support); // Initialize the node
+    ret = rclc_node_init_default(&node, node_name, "", &support); // Initialize the node
     CHECK_RET(ret); // Check and handle the return value
 
     ret = rclc_publisher_init_best_effort(
             &publisher,
             &node,
             ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String),
-            "pico_publisher_topic"); // Initialize the publisher
+            publisher_topic_name); // Initialize the publisher
     CHECK_RET(ret); // Check and handle the return value
 }
 
@@ -187,7 +189,7 @@ int main() {
         pico_serial_transport_close,
         pico_serial_transport_write,
         pico_serial_transport_read
-    ); // Set the custom serial transport for Micro-ROS
+    ); // Set the custom serial transport for micro-ROS
 
     gpio_init(LED_PIN); // Initialize the LED pin
     gpio_set_dir(LED_PIN, GPIO_OUT); // Set the LED pin direction to output
@@ -227,7 +229,7 @@ This code includes several essential parts:
     #include <rcl/error_handling.h> // Error handling for ROS 2
     #include <rclc/rclc.h> // C library for ROS 2
     #include <rclc/executor.h> // Executor for ROS 2
-    #include <rmw_microros/rmw_microros.h> // Middleware for Micro-ROS
+    #include <rmw_microros/rmw_microros.h> // Middleware for micro-ROS
 
     #include "std_msgs/msg/string.h" // Standard String message for ROS 2
 
@@ -243,6 +245,9 @@ This code includes several essential parts:
 
     bool message_send = false; // Flag for message sending
 
+    const char * publisher_topic_name = "pico_publisher_topic";
+    const char * node_name = "pico_node";
+
     // Define the states
     enum states {
     WAITING_AGENT,
@@ -251,7 +256,6 @@ This code includes several essential parts:
     AGENT_DISCONNECTED
     } state;
 
-    rcl_timer_t timer; // Declare the ROS 2 timer
     rcl_node_t node; // Declare the ROS 2 node
     rcl_allocator_t allocator; // Declare the memory allocator
     rclc_support_t support; // Declare the ROS 2 support
@@ -420,6 +424,8 @@ In this code, the lines dedicated to publishing a specific message type and cont
 
 - The inclusion of the dedicated message header file: `#include "std_msgs/msg/string.h"`
 - The declaration of the ROS message: `std_msgs__msg__String publisher_msg;`
+- The declaration of the ROS topic name: `const char * publisher_topic_name = "pico_publisher_topic";`
+- The declaration of the ROS node name: `const char * node_name = "pico_node";`
 - The content of the `publisher_content()` method
 - In the `createEntities()` method, the use of `ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String)` during the publisher initialization
 
@@ -428,5 +434,5 @@ In this code, the lines dedicated to publishing a specific message type and cont
 ## Conclusion
 <hr style="height: 1px; background-color: #dfe2e5; border: none;">
 
-In this tutorial, we explored how to create a <span style="color:#4762a6">**ROS 2**</span> node on <span style="color:#c41f4c">**Raspberry Pi Pico**</span> using <span style="color:#47c7ef">**Micro-ROS**</span>. We configured custom serial communication, initialized <span style="color:#4762a6">**ROS 2**</span> entities like a node and publisher, and implemented a state machine to manage the connection to a <span style="color:#47c7ef">**Micro-ROS**</span> agent. This tutorial gets you started with <span style="color:#47c7ef">**Micro-ROS**</span> on microcontrollers like <span style="color:#c41f4c">**Raspberry Pi Pico**</span>, paving the way for deeper integration with ROS. <br>
+In this tutorial, we explored how to create a <span style="color:#4762a6">**ROS 2**</span> node on <span style="color:#c41f4c">**Raspberry Pi Pico**</span> using <span style="color:#47c7ef">**Micro-ROS**</span> to publish a character string on a topic. We configured custom serial communication, initialized <span style="color:#4762a6">**ROS 2**</span> entities like a node and publisher, and implemented a state machine to manage the connection to a <span style="color:#47c7ef">**Micro-ROS**</span> agent. This tutorial gets you started with <span style="color:#47c7ef">**Micro-ROS**</span> on microcontrollers like <span style="color:#c41f4c">**Raspberry Pi Pico**</span>, paving the way for deeper integration with ROS. <br>
 You can expand this project by adding subscriptions, exploring different message types, or integrating more deeply with existing <span style="color:#4762a6">**ROS 2**</span> components in your robotic network by following one of my other templates. Enjoy exploring <span style="color:#4762a6">**ROS 2**</span> on embedded platforms!
