@@ -452,3 +452,10 @@ In this code, the lines dedicated to subscribing to a specific message type and 
 
 In this tutorial, we explored how to create a <span style="color:#4762a6">**ROS 2**</span> node on <span style="color:#c41f4c">**Raspberry Pi Pico**</span> using <span style="color:#47c7ef">**Micro-ROS**</span> to subscribe a int8 on a topic to make the <span style="color:#c41f4c">**Raspberry Pi Pico**</span> LED blink the number of time it has been sent. We configured custom serial communication, initialized <span style="color:#4762a6">**ROS 2**</span> entities like a node and subscriber, and implemented a state machine to manage the connection to a <span style="color:#47c7ef">**Micro-ROS**</span> agent. This tutorial gets you started with <span style="color:#47c7ef">**Micro-ROS**</span> on microcontrollers like <span style="color:#c41f4c">**Raspberry Pi Pico**</span>, paving the way for deeper integration with ROS. <br>
 You can expand this project by adding more complex behaviours, exploring different message types, or integrating more deeply with existing <span style="color:#4762a6">**ROS 2**</span> components in your robotic network by following one of my other templates. Enjoy exploring <span style="color:#4762a6">**ROS 2**</span> on embedded platforms!
+
+<br>
+<br>
+
+```warning
+All the codes provided in this template are distributed under the BSD 3-Clause licence.
+```

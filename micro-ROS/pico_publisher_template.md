@@ -431,8 +431,22 @@ In this code, the lines dedicated to publishing a specific message type and cont
 
 <br>
 
+```note
+This publisher uses a best-effort QoS (quality of service) that prioritises maximising the message sent over guaranteeing reception. To use reliable QoS, replace `rclc_publisher_init_best_effort` with `rclc_publisher_init_default` in the `createEntities()` method.
+```
+
+<br>
+
 ## Conclusion
 <hr style="height: 1px; background-color: #dfe2e5; border: none;">
 
 In this tutorial, we explored how to create a <span style="color:#4762a6">**ROS 2**</span> node on <span style="color:#c41f4c">**Raspberry Pi Pico**</span> using <span style="color:#47c7ef">**Micro-ROS**</span> to publish a character string on a topic. We configured custom serial communication, initialized <span style="color:#4762a6">**ROS 2**</span> entities like a node and publisher, and implemented a state machine to manage the connection to a <span style="color:#47c7ef">**Micro-ROS**</span> agent. This tutorial gets you started with <span style="color:#47c7ef">**Micro-ROS**</span> on microcontrollers like <span style="color:#c41f4c">**Raspberry Pi Pico**</span>, paving the way for deeper integration with ROS. <br>
 You can expand this project by adding subscriptions, exploring different message types, or integrating more deeply with existing <span style="color:#4762a6">**ROS 2**</span> components in your robotic network by following one of my other templates. Enjoy exploring <span style="color:#4762a6">**ROS 2**</span> on embedded platforms!
+
+
+<br>
+<br>
+
+```warning
+All the codes provided in this template are distributed under the BSD 3-Clause licence.
+```
