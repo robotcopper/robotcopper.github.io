@@ -82,7 +82,7 @@ enum states {
 rcl_node_t node; // Declare the ROS 2 node
 rcl_allocator_t allocator; // Declare the memory allocator
 rclc_support_t support; // Declare the ROS 2 support
-rclc_executor_t executor;
+rclc_executor_t executor; // Declare the ROS 2 executor
 
 #define CHECK_RET(ret) if (ret != RCL_RET_OK) { rcl_reset_error(); } // Macro for silent error handling
 
@@ -148,7 +148,8 @@ void destroyEntities() {
     ret = rcl_node_fini(&node); // Finalize the node
     CHECK_RET(ret); // Check and handle the return value
 
-    rclc_support_fini(&support); // Finalize the support
+    ret = rclc_support_fini(&support); // Finalize the support
+    CHECK_RET(ret); // Check and handle the return value
 }
 
 void handle_state_waiting_agent() {
@@ -231,7 +232,8 @@ int main() {
 
 This code includes several essential parts:
 
-- **Initialization and Configuration**: Includes necessary libraries for <span style="color:#47c7ef">**Micro-ROS**</span>, <span style="color:#4762a6">**ROS 2**</span>, Pico SDK, and declarations of required variables.
+- **Initialization and Configuration**: <br>
+Includes necessary libraries for <span style="color:#47c7ef">**Micro-ROS**</span>, <span style="color:#4762a6">**ROS 2**</span>, Pico SDK, and declarations of required variables.
 
     ```cpp
     #include <stdio.h>
@@ -277,7 +279,8 @@ This code includes several essential parts:
     #define CHECK_RET(ret) if (ret != RCL_RET_OK) { rcl_reset_error(); } // Macro for silent error handling
     ```
 
-- **Subscriber Callback Function**: `subscription_callback(const void * msgin)` initializes and subscribe a <span style="color:#4762a6">**ROS 2**</span> message. 
+- **Subscriber Callback Function**: <br>
+`subscription_callback(const void * msgin)` initializes and subscribe a <span style="color:#4762a6">**ROS 2**</span> message.
 
     ```cpp
     void subscription_callback(const void * msgin){
@@ -293,9 +296,11 @@ This code includes several essential parts:
     }
     ```
 
-- **Agent Connection State Management**: Functions (`pingAgent()`, `createEntities()`, `destroyEntities()`, etc.) manage <span style="color:#4762a6">**ROS 2**</span> entity initialization, publishing, and destruction based on <span style="color:#47c7ef">**Micro-ROS**</span> agent connection state.
+- **Agent Connection State Management**: <br>
+Functions (`pingAgent()`, `createEntities()`, `destroyEntities()`, etc.) manage <span style="color:#4762a6">**ROS 2**</span> entity initialization, publishing, and destruction based on <span style="color:#47c7ef">**Micro-ROS**</span> agent connection state.
 
-- **State Machine**: `state_machine()` controls the workflow based on the current connection state.
+- **State Machine**: <br>
+`state_machine()` controls the workflow based on the current connection state.
 
     ```cpp
     void state_machine() {
@@ -318,7 +323,8 @@ This code includes several essential parts:
     }
     ```
 
-- **Main Loop**: The main `main` loop manages the state machine and the initialisation of GPIOs.
+- **Main Loop**: <br>
+The main `main` loop manages the state machine and the initialisation of GPIOs.
 
     ```cpp
     int main() {
@@ -437,13 +443,17 @@ pico_add_extra_outputs(main)
 The aim of this section is to provide a quick overview of the critical parts involved in subscribing to a messages.<br>
 In this code, the lines dedicated to subscribing to a specific message type and content are as follows:
 
-- The inclusion of the dedicated message header file: `#include "std_msgs/msg/int8.h"`
-- The declaration of the ROS message: `std_msgs__msg__Int8 subscriber_msg;`
-- The declaration of the ROS topic name: `const char * subscriber_topic_name = "pico_subscriber_topic";`
-- The declaration of the ROS node name: `const char * node_name = "pico_node";`
-- The content of the `subscription_callback(const void * msgin)` method
-- In the `createEntities()` method, the use of `ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int8)` during the subscriber initialization
-- In the `handle_state_agent_connected()` method, the use of `rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100));` for the call of the subscriber callback 
+- The inclusion of the dedicated message header file: <br>
+`#include "std_msgs/msg/int8.h"`
+- The declaration of the ROS message: <br>
+`std_msgs__msg__Int8 subscriber_msg;`
+- The declaration of the ROS topic name: <br>
+`const char * subscriber_topic_name = "pico_subscriber_topic";`
+- The declaration of the ROS node name: <br>
+`const char * node_name = "pico_node";`
+- The content of the `subscription_callback(const void * msgin)` method.
+- In the `createEntities()` method, the use of `ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int8)` during the subscriber initialization.
+- In the `handle_state_agent_connected()` method, the use of `rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100));` for the call of the subscriber callback.
 
 <br>
 

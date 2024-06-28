@@ -135,7 +135,8 @@ void destroyEntities() {
     ret = rcl_node_fini(&node); // Finalize the node
     CHECK_RET(ret); // Check and handle the return value
 
-    rclc_support_fini(&support); // Finalize the support
+    ret = rclc_support_fini(&support); // Finalize the support
+    CHECK_RET(ret); // Check and handle the return value
 }
 
 void handle_state_waiting_agent() {
@@ -218,7 +219,8 @@ int main() {
 
 This code includes several essential parts:
 
-- **Initialization and Configuration**: Includes necessary libraries for <span style="color:#47c7ef">**Micro-ROS**</span>, <span style="color:#4762a6">**ROS 2**</span>, Pico SDK, and declarations of required variables.
+- **Initialization and Configuration**: <br>
+Includes necessary libraries for <span style="color:#47c7ef">**Micro-ROS**</span>, <span style="color:#4762a6">**ROS 2**</span>, Pico SDK, and declarations of required variables.
 
     ```cpp
     #include <stdio.h>
@@ -263,7 +265,8 @@ This code includes several essential parts:
     #define CHECK_RET(ret) if (ret != RCL_RET_OK) { rcl_reset_error(); } // Macro for silent error handling
     ```
 
-- **Publisher Content Function**: `publisher_content()` initializes and publishes a <span style="color:#4762a6">**ROS 2**</span> message. 
+- **Publisher Content Function**: <br>
+`publisher_content()` initializes and publishes a <span style="color:#4762a6">**ROS 2**</span> message. 
 
     ```cpp
     void publisher_content() {
@@ -282,7 +285,8 @@ This code includes several essential parts:
 
 - **Agent Connection State Management**: Functions (`pingAgent()`, `createEntities()`, `destroyEntities()`, etc.) manage <span style="color:#4762a6">**ROS 2**</span> entity initialization, publishing, and destruction based on <span style="color:#47c7ef">**Micro-ROS**</span> agent connection state.
 
-- **State Machine**: `state_machine()` controls the workflow based on the current connection state.
+- **State Machine**: <br>
+`state_machine()` controls the workflow based on the current connection state.
 
     ```cpp
     void state_machine() {
@@ -305,7 +309,8 @@ This code includes several essential parts:
     }
     ```
 
-- **Main Loop**: The main `main` loop manages the state machine and the initialisation of GPIOs.
+- **Main Loop**: <br>
+The main `main` loop manages the state machine and the initialisation of GPIOs.
 
     ```cpp
     int main() {
@@ -422,17 +427,21 @@ pico_add_extra_outputs(main)
 The aim of this section is to provide a quick overview of the critical parts involved in publishing messages.<br>
 In this code, the lines dedicated to publishing a specific message type and content are as follows:
 
-- The inclusion of the dedicated message header file: `#include "std_msgs/msg/string.h"`
-- The declaration of the ROS message: `std_msgs__msg__String publisher_msg;`
-- The declaration of the ROS topic name: `const char * publisher_topic_name = "pico_publisher_topic";`
-- The declaration of the ROS node name: `const char * node_name = "pico_node";`
-- The content of the `publisher_content()` method
-- In the `createEntities()` method, the use of `ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String)` during the publisher initialization
+- The inclusion of the dedicated message header file: <br>
+`#include "std_msgs/msg/string.h"`
+- The declaration of the ROS message: <br>
+`std_msgs__msg__String publisher_msg;`
+- The declaration of the ROS topic name: <br>
+`const char * publisher_topic_name = "pico_publisher_topic";`
+- The declaration of the ROS node name: <br>
+`const char * node_name = "pico_node";`
+- The content of the `publisher_content()` method.
+- In the `createEntities()` method, the use of `ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String)` during the publisher initialization.
 
 <br>
 
 ```note
-This publisher uses a best-effort QoS (quality of service) that prioritises maximising the message sent over guaranteeing reception. To use reliable QoS, replace `rclc_publisher_init_best_effort` with `rclc_publisher_init_default` in the `createEntities()` method.
+This publisher uses a best-effort Quality of Service (QoS) that prioritises maximising the message sent over guaranteeing reception. To use reliable QoS, replace `rclc_publisher_init_best_effort` with `rclc_publisher_init_default` in the `createEntities()` method.
 ```
 
 <br>
