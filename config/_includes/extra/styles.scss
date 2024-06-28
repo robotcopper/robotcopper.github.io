@@ -59,10 +59,10 @@ body{
 }
 .container {
   color: #fff !important;
-  background:#000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-content.jpg');
+  background:#000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-content.webp');
   background-size: cover;
   background-repeat: no-repeat;
-  // background-position: center;
+  background-position: center;
   // background-attachment: fixed;
 }
 .breadcrumb-item-selected, .breadcrumb-item[aria-current]:not([aria-current="false"]) {
@@ -290,7 +290,7 @@ position: fixed;
   right: 0;
   width: 0;
   height: 100%;
-  background: #000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-archive.jpg');
+  background: #000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-archive.webp');
   background-size: cover;
   background-position: center;
   display: none;
