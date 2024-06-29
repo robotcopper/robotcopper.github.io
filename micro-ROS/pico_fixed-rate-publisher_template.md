@@ -266,37 +266,40 @@ Adds parameters to the `publisher_content()` method to manage periodic publisher
 
 - **Agent Connection State Management**: 
     - In the `createEntities()` method are to initialise the timer and its executor:
-    ```cpp
-    int period_ms = 1000 / frec;
-    rclc_timer_init_default(
-        &timer,
-        &support,
-        RCL_MS_TO_NS(period_ms),
-        publisher_content);
-    CHECK_RET(ret); // Check and handle the return value
+    
+        ```cpp
+        int period_ms = 1000 / frec;
+        rclc_timer_init_default(
+            &timer,
+            &support,
+            RCL_MS_TO_NS(period_ms),
+            publisher_content);
+        CHECK_RET(ret); // Check and handle the return value
 
-    const rosidl_message_type_support_t * type_support =
-        ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String);
-        
-    ret = rclc_executor_init(&executor, &support.context, 2, &allocator);
-    CHECK_RET(ret); // Check and handle the return value
-    ret = rclc_executor_add_timer(&executor, &timer);
-    CHECK_RET(ret); // Check and handle the return value
-    ```
+        const rosidl_message_type_support_t * type_support =
+            ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, String);
+            
+        ret = rclc_executor_init(&executor, &support.context, 2, &allocator);
+        CHECK_RET(ret); // Check and handle the return value
+        ret = rclc_executor_add_timer(&executor, &timer);
+        CHECK_RET(ret); // Check and handle the return value
+        ```
 
     - The timer and executor are destroyed in the `destroyEntities()` method:
-    ```cpp
-    ret = rcl_timer_fini(&timer); // Finalize the timer
-    CHECK_RET(ret); // Check and handle the return value
     
-    ret = rclc_executor_fini(&executor); // Finalize the executor
-    CHECK_RET(ret); // Check and handle the return value
-    ```
+        ```cpp
+        ret = rcl_timer_fini(&timer); // Finalize the timer
+        CHECK_RET(ret); // Check and handle the return value
+        
+        ret = rclc_executor_fini(&executor); // Finalize the executor
+        CHECK_RET(ret); // Check and handle the return value
+        ```
 
     - When the agent is activated in the `handle_state_agent_connected()` method, the executor spin is executed:
-    ```cpp
-    rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)); // Send content if connected
-    ```
+    
+        ```cpp
+        rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)); // Send content if connected
+        ```
 
 <br>
 
