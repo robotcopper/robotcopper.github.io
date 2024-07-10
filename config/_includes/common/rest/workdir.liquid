@@ -16,4 +16,6 @@
         {%- endif -%}
     {%- endfor -%}
 {%- endcapture -%}
-{%- assign workdir_dirs = items | split: "|" -%}
+{% comment %} {%- assign workdir_dirs = items | split: "|" -%} {% endcomment %}
+{%- assign workdir_dirs = items | split: "|" | sort | reverse -%} {% comment %}  Sort folder names in reverse alphabetical order {% endcomment %}
+{% comment %} {%- assign workdir_dirs = items | split: "|" | sort: 'time' | reverse -%} {% endcomment %}
