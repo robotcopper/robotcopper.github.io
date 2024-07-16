@@ -121,6 +121,9 @@ body{
 .markdown-body table tr:nth-child(2n) {
   background-color: transparent;
 }
+.markdown-body table th, .markdown-body table td {
+  padding: 5px 4px !important;
+}
 //code color
 .markdown-body code, .markdown-body tt {
   background-color: rgba(97.6, 97.6, 97.6, 0.3);

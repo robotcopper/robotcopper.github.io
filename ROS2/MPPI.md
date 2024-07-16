@@ -1,27 +1,27 @@
 ---
 title: "<img src='/config/assets/images/NAV2_logo.png' alt='Logo' style='height: 12px; vertical-align: botom; transform: translateY(0px);'> NAV2: MPPI Parameters Tuning"
-time: 2024-07-09
+time: 2024-07-10
 ---
 
-# MPPI Parameters Tuning in ROS 2 NAV2
+# MPPI Parameters Tuning in <span style="color:#47c7ef">**NAV2**</span>
 
 <br>
 
 ## 1. Introduction
 
-In the world of autonomous robotics, achieving optimal navigation is crucial. ROS 2 NAV2 is a powerful framework designed to handle navigation tasks for robots. Within this framework, the Model Predictive Path Integral (MPPI) control algorithm plays a significant role. However, to harness the full potential of MPPI, careful tuning of its hyperparameters is essential. This article will explore the importance of parameter tuning for MPPI in ROS2 NAV2 and discuss how practicaly it can be handle.
+In the world of autonomous robotics, achieving optimal navigation is crucial. <span style="color:#47c7ef">**NAV2**</span> is a powerful framework designed to handle navigation tasks for robots. Within this framework, the **Model Predictive Path Integral (MPPI)** control algorithm plays a significant role. However, to harness the full potential of MPPI, careful tuning of its hyperparameters is essential. This article will explore the importance of parameter tuning for MPPI in <span style="color:#47c7ef">**NAV2**</span> and discuss how practicaly it can be handle.
 
 <br>
 
-## 2. Overview of ROS 2 NAV2
+## 2. Overview of <span style="color:#47c7ef">**NAV2**</span>
 
-ROS2 NAV2 (Navigation2) is an advanced framework for robotic navigation that builds on the capabilities of the Robot Operating System 2 (ROS 2). It offers a comprehensive set of tools and algorithms for path planning, control, and recovery behaviors. MPPI is one of the control algorithms used within NAV2 to ensure accurate and efficient navigation.
+Navigation stack for <span style="color:#4762a6">**ROS 2**</span> also named <span style="color:#47c7ef">**Navigation2 (NAV2)**</span> is an advanced framework for robotic navigation that builds on the capabilities of the <span style="color:#4762a6">**Robot Operating System 2 (ROS 2)**</span>. It offers a comprehensive set of tools and algorithms for path planning, control, and recovery behaviors. MPPI is one of the control algorithms used within <span style="color:#47c7ef">**NAV2**</span> to ensure accurate and efficient navigation.
 
-NAV2 is designed to be highly modular, enabling developers to customize and extend its functionalities. Key components of NAV2 include global and local planners, controllers, recovery behaviors, and behavior trees. MPPI, as a local control algorithm, is responsible for generating smooth and feasible trajectories for the robot to follow in real-time.
+<span style="color:#47c7ef">**NAV2**</span> is designed to be highly modular, enabling developers to customize and extend its functionalities. Key components of <span style="color:#47c7ef">**NAV2**</span> include global and local planners, controllers, recovery behaviors, and behavior trees. MPPI, as a local control algorithm, is responsible for generating smooth and feasible trajectories for the robot to follow in real-time.
 
 <br>
 
-## 3. Understanding MPPI in NAV2
+## 3. Understanding MPPI in <span style="color:#47c7ef">**NAV2**</span>
 
 MPPI is a sampling-based control algorithm that generates a set of potential trajectories and evaluates them based on a cost function. The algorithm then selects the trajectory with the lowest cost, ensuring optimal navigation. The cost function typically considers factors such as distance to the goal, obstacles, control efforts, ect. Taking a look at the paper behind this algorithm may help to understand how it works (specifically for the gamma parameter):
 
@@ -30,9 +30,9 @@ G. Williams et al. "Information-Theoretic Model Predictive Control: Theory and A
   - PDF : [https://arxiv.org/pdf/1707.02342.pdf](https://arxiv.org/pdf/1707.02342.pdf)
 
 
-In the context of NAV2, MPPI excels at handling dynamic environments and non-linear dynamics, making it suitable for complex navigation tasks. The algorithm's performance, however, heavily depends on the tuning of its hyperparameters, which control various aspects of the sampling and cost evaluation processes. 
+In the context of <span style="color:#47c7ef">**NAV2**</span>, MPPI excels at handling dynamic environments and non-linear dynamics, making it suitable for complex navigation tasks. The algorithm's performance, however, heavily depends on the tuning of its hyperparameters, which control various aspects of the sampling and cost evaluation processes. 
 
-Created by Aleksei Budyakov and adapted & developed for Nav2 by Steve Macenski, the aim of MPPI is to become ["the new default controller in Nav2"](https://github.com/ros-navigation/navigation2/issues/2045#issuecomment-1699788228) as it is the most["advanced predictive trajectory planner in the stack"](https://github.com/ros-navigation/navigation2/issues/3664#issuecomment-1611775148).
+Created by Aleksei Budyakov and adapted & developed for <span style="color:#47c7ef">**NAV2**</span> by Steve Macenski, the aim of MPPI is to become ["the new default controller in NAV2"](https://github.com/ros-navigation/navigation2/issues/2045#issuecomment-1699788228) as it is the most["advanced predictive trajectory planner in the stack"](https://github.com/ros-navigation/navigation2/issues/3664#issuecomment-1611775148).
 
 <br>
 
@@ -255,7 +255,7 @@ Created by Aleksei Budyakov and adapted & developed for Nav2 by Steve Macenski, 
 
 ### Tuning
 
-<table border="1">
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
   <thead>
     <tr>
       <th>Parameter</th>
@@ -283,7 +283,7 @@ Created by Aleksei Budyakov and adapted & developed for Nav2 by Steve Macenski, 
     <tr>
       <td>critics</td>
       <td>
-        It's crucial to choose the right critics to use, and not all critics can be used with all motion models: <br><br>
+        It's crucial to choose the right critics to use, and not all critics can be used with all motion models, here are the minimum critics for each model: <br><br>
         - DiffDrive: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ["GoalCritic", "GoalAngleCritic", "ObstaclesCritic", "PathAngleCritic", "PathFollowCritic", "PreferForwardCritic"]<br>
         - Omni: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ["GoalCritic", "GoalAngleCritic", "ObstaclesCritic", "TwirlingCritic", "PathFollowCritic", "PreferForwardCritic"]<br>
         - Ackermann: &nbsp;["GoalCritic", "GoalAngleCritic", "ObstaclesCritic", "PathAngleCritic", "PathFollowCritic", "PreferForwardCritic"]<br><br>
@@ -408,6 +408,33 @@ Created by Aleksei Budyakov and adapted & developed for Nav2 by Steve Macenski, 
 
 ## 6. MPPI Critics Tuning in Humble
 
+### Constraint Critic
+#### Official Description
+
+ | Parameter   | Type   | Default | Definition                      |
+ | ----------- | ------ | ------- | ------------------------------- |
+ | cost_weight | double | 4.0     | Weight to apply to critic term. |
+ | cost_power  | int    | 1       | Power order to apply to term.   |
+
+#### Tuning
+
+Depending on the motion model's kinematics, this critic determines whether the trajectory speed will comply with the maximum and minimum limits requested and penalises any deviation. Score function <a href="https://github.com/ros-navigation/navigation2/blob/12a9c1d805847709e3b82f8dcfbb43c67b5b2937/nav2_mppi_controller/src/critics/constraint_critic.cpp#L41">here</a>.
+
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
+  <tr>
+    <th>Parameter</th>
+    <th>Tuning</th>
+  </tr>
+  <tr>
+    <td>cost_weight</td>
+    <td>Adjusts the relative influence of the critic in the overall cost calculation. A higher weight makes the critic more influential, which increases its <strong>impact</strong> on optimisation decisions.</td>
+  </tr>
+  <tr>
+    <td>cost_power</td>
+    <td> Affects the <strong>sensitivity</strong> of the cost compared with variations in the critic. </td>
+  </tr>
+</table>
+
 ### Goal Angle Critic
 #### Official Description
 
@@ -422,7 +449,7 @@ Created by Aleksei Budyakov and adapted & developed for Nav2 by Steve Macenski, 
 This critic enables you to control the extent to which the orientation of the robot must coincide with the orientation of the target. <br>
 In my experience, the weight of this critic is generally one of the last to be modified if the final orientation is not to your liking. Please note: you must first be satisfied with the GoalChecker's <code>yaw_goal_tolerance</code> params in the controller.
 
-<table>
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
   <tr>
     <th>Parameter</th>
     <th>Tuning</th>
@@ -456,7 +483,7 @@ This critic enables you to control the extent to which the position of the robot
 In my experience, the weight of this critic is generally one of the last to be modified if the final position is not to your liking. Please note: you must first be satisfied with the GoalChecker's <code>xy_goal_tolerance</code> params in the controller.
 
 
-<table>
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
   <tr>
     <th>Parameter</th>
     <th>Tuning</th>
@@ -489,9 +516,9 @@ In my experience, the weight of this critic is generally one of the last to be m
 
 #### Tuning
 
-This critic enables you to control the extent to which the orientation of the robot must coincide with the orientation of the path generated by the planner. <br>
+This critic enables you to control the extent to which the orientation of the robot must coincide with the local upcoming orientation of the path generated by the planner. <br>
 
-<table>
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
   <tr>
     <th>Parameter</th>
     <th>Tuning</th>
@@ -506,7 +533,7 @@ This critic enables you to control the extent to which the orientation of the ro
   </tr>
   <tr>
     <td>threshold_to_consider</td>
-    <td></td>
+    <td>Ideally, for a smooth transition, it should be defined at the distance of <code>offset_from_furthest</code>. Therefore, I suggest starting by setting it slightly greater than the <code>prune_distance</code>, and then adjusting it according to the desired behavior if necessary.</td>
   </tr>
   <tr>
     <td>offset_from_furthest</td>
@@ -538,6 +565,46 @@ This critic enables you to control the extent to which the orientation of the ro
 
 #### Tuning
 
+This critic enables you to control the extent to which the position of the robot must coincide with the position of the path generated by the planner based on the costmap. Indeed, the aim is to minimise deviations from the path. <br>
+Note that this critic must be balanced with the deviating critics, Cost Critic or Obstacles Critic, who will tend to stray from the path.<br>
+
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
+  <tr>
+    <th>Parameter</th>
+    <th>Tuning</th>
+  </tr>
+  <tr>
+    <td>cost_weight</td>
+    <td>Adjusts the relative influence of the critic in the overall cost calculation. A higher weight makes the critic more influential, which increases its <strong>impact</strong> on optimisation decisions.</td>
+  </tr>
+  <tr>
+    <td>cost_power</td>
+    <td> Affects the <strong>sensitivity</strong> of the cost compared with variations in the critic. </td>
+  </tr>
+  <tr>
+    <td>threshold_to_consider</td>
+    <td>May be set at Goal Critic's <code>threshold_to_consider</code> for a smooth transition.</td>
+  </tr>
+  <tr>
+    <td>offset_from_furthest</td>
+    <td>furthest point = point on the path where at least one of the MPPI trajectories has approached furthest. Defined<a href="https://github.com/ros-navigation/navigation2/blob/12a9c1d805847709e3b82f8dcfbb43c67b5b2937/nav2_mppi_controller/include/nav2_mppi_controller/tools/utils.hpp#L310"> here</a>. <code>offset_from_furthest</code> is the number of points after the furthest one that will be considerated to estimate that the path is followed. The higher the value, the less the deviations from the path will affect the MPPI trajectory. <br>
+    Note that this point is therefore dependent on the length of the paths generated by MPPI, in other words on the <code>prune_distance</code>.</td>
+  </tr>
+  <tr>
+    <td>trajectory_point_step</td>
+    <td>Specifies the step of trajectory points to evaluate for path distance. This reduces computational effort by evaluating path alignment at spaced intervals rather than every single point.</td>
+  </tr>
+  <tr>
+    <td>max_path_occupancy_ratio</td>
+    <td>Sets the maximum proportion of the path that can be occupied by obstacles before this critic is no longer considered. This allows the algorithm to focus on path-following even in dynamic environments, adjusting its behavior based on obstacle presence. The higher the value, the later the avoidance.</td>
+  </tr>
+  <tr>
+    <td>use_path_orientations</td>
+    <td>If set to true, the algorithm considers changes in path orientation, potentially influencing directional adjustments based on the planner's guidance. <br>
+    If set to false, it adheres strictly to the path's intended trajectory without incorporating directional changes based on orientation cues.</td>
+  </tr>  
+</table>
+
 ### Path Follow Critic
 #### Official Description
 
@@ -550,6 +617,32 @@ This critic enables you to control the extent to which the orientation of the ro
  
 #### Tuning
 
+This critic is designed to encourage the robot to choose actions that move it along the planned trajectory towards its goal. This means that the system favours movements that progress in the direction of the goal rather than sideways or away from it.
+
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
+  <tr>
+    <th>Parameter</th>
+    <th>Tuning</th>
+  </tr>
+  <tr>
+    <td>cost_weight</td>
+    <td>Adjusts the relative influence of the critic in the overall cost calculation. A higher weight makes the critic more influential, which increases its <strong>impact</strong> on optimisation decisions.</td>
+  </tr>
+  <tr>
+    <td>cost_power</td>
+    <td> Affects the <strong>sensitivity</strong> of the cost compared with variations in the critic. </td>
+  </tr>
+  <tr>
+    <td>offset_from_furthest</td>
+    <td>furthest point = point on the path where at least one of the MPPI trajectories has approached furthest. Defined<a href="https://github.com/ros-navigation/navigation2/blob/12a9c1d805847709e3b82f8dcfbb43c67b5b2937/nav2_mppi_controller/include/nav2_mppi_controller/tools/utils.hpp#L310"> here</a>. <code>offset_from_furthest</code> is the number of points after the furthest one that will be considerated to estimate that the path is followed. The higher the value, the less the deviations from the path will affect the MPPI trajectory. <br>
+    Note that this point is therefore dependent on the length of the paths generated by MPPI, in other words on the <code>prune_distance</code>.</td>
+  </tr>
+  <tr>
+    <td>threshold_to_consider</td>
+    <td>Can be set at prediction horizon for a smooth transition with goal critics.</td>
+  </tr>
+</table>
+
 ### Prefer Forward Critic
 #### Official Description
 
@@ -561,6 +654,27 @@ This critic enables you to control the extent to which the orientation of the ro
 
 #### Tuning
 
+This critic incentivizes moving in the forward direction, rather than reversing.
+
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
+  <tr>
+    <th>Parameter</th>
+    <th>Tuning</th>
+  </tr>
+  <tr>
+    <td>cost_weight</td>
+    <td>Adjusts the relative influence of the critic in the overall cost calculation. A higher weight makes the critic more influential, which increases its <strong>impact</strong> on optimisation decisions.</td>
+  </tr>
+  <tr>
+    <td>cost_power</td>
+    <td> Affects the <strong>sensitivity</strong> of the cost compared with variations in the critic. </td>
+  </tr>
+  <tr>
+    <td>threshold_to_consider</td>
+    <td>Can be set at Goal Angle Critic's <code>threshold_to_consider</code> for a smooth transition.</td>
+  </tr>
+</table>
+
 ### Twirling Critic
 #### Official Description
 
@@ -571,20 +685,90 @@ This critic enables you to control the extent to which the orientation of the ro
 
 #### Tuning
 
+This criticism only concerns the <code>Omni</code> model, to avoid getting a spinning top robot when the track is followed.
 
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
+  <tr>
+    <th>Parameter</th>
+    <th>Tuning</th>
+  </tr>
+  <tr>
+    <td>cost_weight</td>
+    <td>Adjusts the relative influence of the critic in the overall cost calculation. A higher weight makes the critic more influential, which increases its <strong>impact</strong> on optimisation decisions.</td>
+  </tr>
+  <tr>
+    <td>cost_power</td>
+    <td> Affects the <strong>sensitivity</strong> of the cost compared with variations in the critic. </td>
+  </tr>
+</table>
 
-### Constraint Critic
+### Velocity Deadband Critic
 #### Official Description
 
- | Parameter   | Type   | Default | Definition                      |
- | ----------- | ------ | ------- | ------------------------------- |
- | cost_weight | double | 4.0     | Weight to apply to critic term. |
- | cost_power  | int    | 1       | Power order to apply to term.   |
+ | Parameter           | Type     | Default         | Definition                      |
+ | ------------------- | ------   | --------------- |-------------------------------- |
+ | cost_weight         | double   | 35.0            | Weight to apply to critic term. |
+ | cost_power          | int      | 1               | Power order to apply to term.   |
+ | deadband_velocities | double[] | [0.0, 0.0, 0.0] | The array of deadband velocities [vx, vz, wz]. A zero array indicates that the critic will take no action.                                 |
 
 #### Tuning
 
-### Cost Critic
-#### Official Description
+Since MPPI includes speed and acceleration limits, the velocity_smoother has become practically irrelevant. The only thing missing is the deadband and with this Velocity Deadband Critic we can now get rid of the velocity_smoother.
+
+
+### Cost Critic and Obstacles Critic
+
+Cost Critic and Obstacles Critic can be difficult to differentiate and knowing which of these two avoidance critics to choose can be confusing. <br>
+Based on the <a href="https://github.com/ros-navigation/navigation2/issues/4057#issue-2088411659"> original Cost Critic issue</a>, this is what can be learned from it:
+
+<table border="0" style="border: 3px solid #00AA80; border-collapse: collapse;" >
+  <tr>
+    <th>Critic</th>
+    <th>Advantages</th>
+    <th>Disadvantages</th>
+  </tr>
+  <tr>
+    <td><strong>Obstacles Critic</strong></td>
+    <td>
+      <ul>
+        <li>Fine distance evaluation: provides a precise assessment of collision risks.</li>
+        <li>Detailed collision management: granular risk management for close obstacles.</li>
+        <li>Parameter flexibility: allows fine-tuning for behavior around obstacles.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Increased complexity: adds algorithmic complexity with distance calculations from costs.</li>
+        <li>Higher computational load: estimating distances and footprint inflation increases computational load.</li>
+        <li>Quantization effect: cost-to-distance conversion may introduce quantization effects.</li>
+        <li>Inscribed area precision issue: score remains the same regardless of the exact distance to the obstacle.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Cost Critic (proposed InflationCostCritic)</strong></td>
+    <td>
+      <ul>
+        <li>Simplicity: directly uses cost values, simplifying the calculation.</li>
+        <li>Efficiency: reduces computational load by avoiding complex conversions.</li>
+        <li>Adaptive behavior: flexible in narrow and wide spaces due to the exponential factor.</li>
+        <li>Easier tuning: fewer parameters to adjust, reducing the risk of quantization effects.</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Less precision: does not account for precise distances to obstacles.</li>
+        <li>Fixed critical score: less granular risk management.</li>
+        <li>Dependence on costmap quality: performance relies on the quality and resolution of the costmap.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+With that in mind, it's up to you to decide which of these critics is best suited to your use case. One point to note is that in the event of a narrow zone crossing, Cost Critic seems more likely to generate centred navigation between obstacles than Obstacles Critic.
+
+#### Cost Critic
+##### Official Description
 
  | Parameter            | Type   | Default   | Definition                                         |
  | -------------------- | ------ | --------- |--------------------------------------------------- |
@@ -596,10 +780,8 @@ This critic enables you to control the extent to which the orientation of the ro
  | near_goal_distance   | double | 0.5       | Distance near goal to stop applying preferential obstacle term to allow robot to smoothly converge to goal pose in close proximity to obstacles.           |
  | inflation_layer_name | string | ""        | Name of the inflation layer. If empty, it uses the last inflation layer in the costmap. If you have multiple inflation layers, you may want to specify the name of the layer to use.                                                                                |
 
-#### Tuning
-
-### Obstacles Critic
-#### Official Description
+#### Obstacles Critic
+##### Official Description
 
  | Parameter                 | Type   | Default | Definition                             |
  | ------------------------- | ------ | ------- | -------------------------------------- |
@@ -613,35 +795,26 @@ This critic enables you to control the extent to which the orientation of the ro
  | cost_scaling_factor       | double | 10.0    | Exponential decay factor across inflation radius. This should be the same as for your inflation layer (Humble only)                            |
  | inflation_radius          | double | 0.55    | Radius to inflate costmap around lethal obstacles. This should be the same as for your inflation layer (Humble only)                            |
 
-#### Tuning
-
-### Velocity Deadband Critic
-#### Official Description
-
- | Parameter           | Type     | Default         | Definition                      |
- | ------------------- | ------   | --------------- |-------------------------------- |
- | cost_weight         | double   | 35.0            | Weight to apply to critic term. |
- | cost_power          | int      | 1               | Power order to apply to term.   |
- | deadband_velocities | double[] | [0.0, 0.0, 0.0] | The array of deadband velocities [vx, vz, wz]. A zero array indicates that the critic will take no action.                                 |
-
-#### Tuning
-
-
-
-
-
-
-
 <br>
 
 ## 8. Conclusion
 
-Hyperparameter tuning is a critical step in optimizing the performance of the MPPI controller in ROS2 NAV2. By carefully adjusting parameters such as the number of simulations, regularization coefficients and critics, significant improvements in navigation efficiency and robustness can be achieved.
+Tuning is a critical step in optimizing the performance of the MPPI controller in <span style="color:#4762a6">**ROS 2**</span> <span style="color:#47c7ef">**NAV2**</span>. By carefully adjusting parameters, significant improvements in navigation efficiency and robustness can be achieved.  
+
+<br>
+
+```note
+These guidelines given here are based solely on my experience and understanding of the MPPI and in no circumstances replace the official documentation from which I have drawn inspiration and which I quote in the following references. 
+```
 
 <br>
 
 ## 9. References
 
 - [NAV2 Documentation.](https://docs.nav2.org/configuration/packages/configuring-mppic.html)
-- [nav2_mppi_controller github](https://github.com/ros-navigation/navigation2/tree/main/nav2_mppi_controller)
-- [nav2_mppi_controller github Notes to Users](https://github.com/ros-navigation/navigation2/tree/main/nav2_mppi_controller#notes-to-users)
+- [NAV2_mppi_controller github](https://github.com/ros-navigation/navigation2/tree/humble/nav2_mppi_controller)
+- [NAV2_mppi_controller github Notes to Users](https://github.com/ros-navigation/navigation2/tree/humble/nav2_mppi_controller#notes-to-users)
+
+These references provide comprehensive information on configuring the MPPI controller in the Navigation2 stack, including detailed documentation, source code, and user notes, which form the basis of this discussion.
+
+<br>
