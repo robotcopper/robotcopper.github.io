@@ -4,7 +4,7 @@ time: 2024-06-19
 ---
 
 <div style="display: flex; justify-content: center;">
-    <img src="/config/assets/images/Micro-ROS/banner-light-theme.png" style="background: transparent;" >
+    <img src="/config/assets/images/Micro-ROS/banner-light-theme.png" style="width: 100%;">
 </div>
 
 # Micro-ROS
