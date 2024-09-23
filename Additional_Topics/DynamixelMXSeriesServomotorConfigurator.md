@@ -274,3 +274,8 @@ Almost finished, it is only a question of making the electrical circuit and its 
     Electrical circuit
 </a><br>
 [3D model](https://cad.onshape.com/documents/94720394670121bc889dd342/w/a171c5eb550a3dcf7c7859b6/e/4ac920b9838d332c02344668?renderMode=0&uiState=62e7da4e2cd35275a5ea0e38)
+
+<br>
+<br>
+
+This article can also be found [here](https://www.eirlab.net/2022/08/01/dynamixel-mx-series-servomotor-configurator/)
