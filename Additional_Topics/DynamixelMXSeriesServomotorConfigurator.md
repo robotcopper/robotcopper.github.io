@@ -9,6 +9,16 @@ Dynamixel servo motors can be controlled in different ways : by [Wizard2.0](http
 
 ## Table of Contents
 
+1. [Equipment At My Disposal](#equipment-at-my-disposal)  
+2. [Simple Communication With The Servo Motor](#simple-communication-with-the-servo-motor)  
+3. [Parameter Setting Function](#parameter-setting-function)  
+4. [User Interface](#user-interface)
+5. [Implementation Of The Project](#implementation-of-the-project)<br>
+  5.1 [Electrical Circuit](#electrical-circuit)<br>
+  5.2 [Enclosure](#enclosure)
+6. [Final Test](#final-test)
+7. [Downloadable Resources](#downloadable-resources)
+
 ## Equipment At My Disposal
 
 - An Arduino Uno as motherboard
