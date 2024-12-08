@@ -3,8 +3,15 @@ title: HARP project
 time: 2024-09-23
 ---
 
+<div style="display: flex; justify-content: center;">
+    <img src="/config/assets/images/HARP/Harp_logo_medallion.png" style="background: transparent;" width="15%" >
+</div>
+
 <center>
- <h1 style="font-size: 36px; font-weight: bold;"> HARP (Holonomic Autonomous Robotic Platform) </h1>
+  <h1>
+    <span style="font-family: 'IgnisEtGlaciesSharp'!important; font-size: 60px; font-weight: bold;">H.A.R.P.</span><br>
+    <span style="font-size: 24px;">(Holonomic Autonomous Robotic Platform)</span>
+  </h1>
 </center>
 
 <br>

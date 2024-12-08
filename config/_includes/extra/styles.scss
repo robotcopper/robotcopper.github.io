@@ -368,3 +368,9 @@ position: fixed;
   --toc-11: none !important;
   --toc-12: none !important;
 }
+
+//Custom font
+@font-face {
+    font-family: 'IgnisEtGlaciesSharp';
+    src: url('/config/assets/font/ignis-et-glacies-sharp/Ignis et Glacies Sharp.ttf') format('truetype');
+}
