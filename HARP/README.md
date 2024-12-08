@@ -61,4 +61,12 @@ HARP is designed for participation in [**Eurobot**](https://www.eurobot.org/), i
 
 I’m deeply invested in understanding the full scope of the technologies involved, dedicating time to studying the underlying code, libraries, and relevant research papers. This project is a perfect outlet for my passion for **systems engineering**, where every component must be thoughtfully integrated into the overall system of the robot.
 
+<div style="display: flex; justify-content: center;">
+    <video style="width: 100%; max-width: 850px; display: block;" controls>
+        <source src="/config/assets/images/HARP/video_project_V3_compress.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<br>
 To learn more about the **HARP1 and HARP2 project**, feel free to explore the following article.
