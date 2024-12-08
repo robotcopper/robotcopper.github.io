@@ -57,7 +57,7 @@ HARP is designed for participation in [**Eurobot**](https://www.eurobot.org/), i
 </div>
 
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the mechanical side, I design and fabricate parts using a combination of **laser cutting** and **3D printing**. All hardware is custom-built, from schematic design and PCB routing to soldering. For **HARP1**, I even handled the PCB manufacturing process myself, from etching to assembly. The project covers a broad spectrum of disciplines, ranging from low-level transistor-based circuits to high-level control systems and machine learning algorithms.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;On the mechanical side, I design and fabricate parts using a combination of **laser cutting** and **3D printing**. All hardware is custom-built, from schematic design and PCB routing to soldering. For <span style="font-family: 'IgnisEtGlaciesSharp'!important;font-weight: bold;">HARP1</span>, I even handled the PCB manufacturing process myself, from etching to assembly. The project covers a broad spectrum of disciplines, ranging from low-level transistor-based circuits to high-level control systems and machine learning algorithms.
 
 I’m deeply invested in understanding the full scope of the technologies involved, dedicating time to studying the underlying code, libraries, and relevant research papers. This project is a perfect outlet for my passion for **systems engineering**, where every component must be thoughtfully integrated into the overall system of the robot.
 
@@ -69,4 +69,4 @@ I’m deeply invested in understanding the full scope of the technologies involv
 </div>
 
 <br>
-To learn more about the **HARP1 and HARP2 project**, feel free to explore the following article.
+To learn more about the <span style="font-family: 'IgnisEtGlaciesSharp'!important;font-weight: bold;">HARP1</span> and <span style="font-family: 'IgnisEtGlaciesSharp'!important;font-weight: bold;">HARP2</span> robots, feel free to explore the following article.
