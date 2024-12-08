@@ -46,7 +46,7 @@ $shifted-width: 25px;
   font-size: 15px !important;
 }
 .markdown-body{
-  //font-size: 20px !important;
+  font-size: 19px !important;
   font-family: "Source Sans Pro","Microsoft Yahei",sans-serif !important;
 }
 body{
@@ -67,7 +67,7 @@ body{
 }
 .container {
   color: #fff !important;
-  background:#000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-content.webp');
+  background:#2a3236 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-content_2.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -302,7 +302,7 @@ position: fixed;
   right: 0;
   width: 0;
   height: 100%;
-  background: #000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-archive.webp');
+  background: #000 url('{{ site.baseurl }}/config/assets/images/Backgrounds/header-archive_2.webp');
   background-size: cover;
   background-position: center;
   display: none;
