@@ -374,3 +374,34 @@ position: fixed;
     font-family: 'IgnisEtGlaciesSharp';
     src: url('/config/assets/font/ignis-et-glacies-sharp/Ignis et Glacies Sharp.ttf') format('truetype');
 }
+
+//Custom harp button
+/* Hover effect for all buttons */
+.button_harp {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: white !important;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Default colour */
+
+.button_harp.default {
+  background-color: #5f3db1;
+}
+
+/* Flying over effect */
+.button_harp:hover {
+  background-color: #3a2c5e; 
+  text-decoration: none;
+}
+
+.button_harp.default:hover {
+  background-color: #7a54e3; 
+}
