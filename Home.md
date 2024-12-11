@@ -79,7 +79,7 @@ Explore a sample of what awaits you here in images.
     <a href="#img14"><img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp"></a>
     <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp"></a>
     <a href="#video16"><img src="/config/assets/images/Home/Gallery/NimblBot_simu.webp"></a>
-    <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment.webp"></a>
+    <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment2.gif"></a>
 </div>
 
 <!-- Lightbox sections -->
