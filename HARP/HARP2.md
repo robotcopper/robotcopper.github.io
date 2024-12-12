@@ -92,7 +92,7 @@ time: 2024-12-11
   </div>
 
 <h2 id="electronics" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Electronics</h2>
-  <h3 style="font-style: italic; margin-left: 5%;">Power Board</h3>
+  <div style="font-style: italic; margin-left: 5%; font-size: 1.2em; font-weight: bold;">Power Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; max-width: 18%; max-height: 18%; border-radius: 3px; overflow: hidden;">
       <img src="/config/assets/images/HARP/HARP2/PowerBoard_PCB.png" style="width: 100%; height: 100%; background-color: transparent;">
@@ -105,7 +105,7 @@ time: 2024-12-11
     </div>
   </div>
 
-  <h3 style="text-align: -moz-right; font-style: italic; margin-right: 5%;">Emergency Stop Button Board</h3>
+  <div style="text-align: -moz-right; font-style: italic; margin-right: 5%; font-size: 1.2em; font-weight: bold;">Emergency Stop Button Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
       <p style="color: #d0d0d0; line-height: 35px; text-indent: 20px;">The Emergency Stop Button Board ensures the safe operation of the system by integrating a relay controlled by two push buttons. One button serves as the activation switch to power on the system, while the other functions as an emergency stop button, immediately cutting off power when pressed. This board is a critical safety feature, providing a reliable and straightforward way to quickly halt the system in case of unexpected issues. Its design prioritizes simplicity and robustness, ensuring it meets high safety standards.</p>
@@ -118,7 +118,7 @@ time: 2024-12-11
     </div>
   </div>
 
-  <h3 style="font-style: italic; margin-left: 5%;">Mobile Base Electronic Board</h3>
+  <div style="font-style: italic; margin-left: 5%; font-size: 1.2em; font-weight: bold;">Mobile Base Electronic Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; max-width: 18%; max-height: 18%; border-radius: 3px; overflow: hidden;">
       <img src="/config/assets/images/HARP/HARP2/StepperDriver_board_PCB.png" style="width: 100%; height: 100%; background-color: transparent;">
@@ -132,7 +132,7 @@ time: 2024-12-11
     </div>
   </div>
 
-  <h3 style="text-align: -moz-right; font-style: italic; margin-right: 5%;">IMU Board</h3>
+  <div style="text-align: -moz-right; font-style: italic; margin-right: 5%; font-size: 1.2em; font-weight: bold;">IMU Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;margin-left: 40%;">
       <div style="background-color:#f0ad4e; color:#ffffff; padding:10px; text-align:center; font-size:20px; font-weight:bold; border-radius:5px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">

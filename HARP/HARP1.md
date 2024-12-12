@@ -91,7 +91,7 @@ time: 2024-12-09
   </div>
 
 <h2 id="electronics" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Electronics</h2>
-  <h3 style="font-style: italic; margin-left: 5%;">Power Board</h3>
+  <div style="font-style: italic; margin-left: 5%; font-size: 1.2em; font-weight: bold;">Power Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; max-width: 18%; max-height: 18%; border-radius: 3px; overflow: hidden;">
       <img src="/config/assets/images/HARP/HARP1/PawerBoard_PCB.png" style="width: 100%; height: 100%; background-color: transparent;">
@@ -104,7 +104,7 @@ time: 2024-12-09
     </div>
   </div>
 
-  <h3 style="text-align: -moz-right; font-style: italic; margin-right: 5%;">Emergency Stop Button Board</h3>
+  <div style="text-align: -moz-right; font-style: italic; margin-right: 5%; font-size: 1.2em; font-weight: bold;">Emergency Stop Button Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
       <p style="color: #d0d0d0; line-height: 35px; text-indent: 20px;">The Emergency Stop Button Board ensures the safe operation of the system by integrating a relay controlled by two push buttons. One button serves as the activation switch to power on the system, while the other functions as an emergency stop button, immediately cutting off power when pressed. This board is a critical safety feature, providing a reliable and straightforward way to quickly halt the system in case of unexpected issues. Its design prioritizes simplicity and robustness, ensuring it meets high safety standards.</p>
@@ -117,7 +117,7 @@ time: 2024-12-09
     </div>
   </div>
 
-  <h3 style="font-style: italic; margin-left: 5%;">Limit Switch Management Board</h3>
+  <div style="font-style: italic; margin-left: 5%; font-size: 1.2em; font-weight: bold;">Limit Switch Management Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; max-width: 18%; max-height: 18%; border-radius: 3px; overflow: hidden;">
       <img src="/config/assets/images/HARP/HARP1/Limit_switch_mgmt_PCB.png" style="width: 100%; height: 100%; background-color: transparent;">
@@ -130,7 +130,7 @@ time: 2024-12-09
     </div>
   </div>
 
-  <h3 style="text-align: -moz-right; font-style: italic; margin-right: 5%;">Stepper Driver Board</h3>
+  <div style="text-align: -moz-right; font-style: italic; margin-right: 5%; font-size: 1.2em; font-weight: bold;">Stepper Driver Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
       <p style="color: #d0d0d0; line-height: 35px; text-indent: 20px;">The Stepper Driver Board integrates A4988 drivers to control the three 59 Ncm NEMA 17 stepper motors. This board acts as the interface between the microcontroller and the motors. It serves as the critical interface between the microcontroller and the motors, translating the PWM control signals from the microcontroller into the necessary power to drive the motors efficiently.</p>
@@ -143,7 +143,7 @@ time: 2024-12-09
     </div>
   </div>
 
-  <h3 style="font-style: italic; margin-left: 5%;">Micro Controller Board</h3>
+  <div style="font-style: italic; margin-left: 5%; font-size: 1.2em; font-weight: bold;">Micro Controller Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; max-width: 18%; max-height: 18%; border-radius: 3px; overflow: hidden;">
       <img src="/config/assets/images/HARP/HARP1/HardwareBoard-Arduino_PCB.png" style="width: 100%; height: 100%; background-color: transparent;">
