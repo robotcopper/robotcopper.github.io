@@ -11,8 +11,7 @@ time: 2024-12-09
         <center><div style="margin-top: 0; font-size: 36px; font-weight: bold; line-height: 1.2; border-bottom: 1.5px solid #fff; padding-bottom: 5px;">2022-23&nbsp; – &nbsp;<span style="font-family: 'IgnisEtGlaciesSharp'!important; font-size: 42px;">HARP1</span></div></center>
         <center><div style="font-size: 21px; font-weight: bold; margin: 1em 0;">Approved Robot</div></center>
         <p style="padding-left: 25px;">
-        <strong>Principle:</strong> The robot was designed to retrieve "cakes" from the field and accumulate them in storage zones. 
-        It was also capable of "changing appearance" at the end of the match.
+        <strong>Principle:</strong> <span style="font-family: 'IgnisEtGlaciesSharp'!important;">HARP1</span> was designed to efficiently collect "cakes" from the game field and deliver them to specific storage zones. It also featured a mechanism that allowed it to "change appearance" at the end of the match to showcase during competition.
         </p>
         <div style="font-size: 21px; font-weight: bold; margin: 1em 0; padding-left: 25px;">Specifications:</div>
         <ul style="padding-left: 100px;">
@@ -86,7 +85,7 @@ time: 2024-12-09
 
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
-      <p style="color: #d0d0d0; line-height: 35px; text-indent: 20px;">This robot was designed using Onshape (CAD software). Its frame is made of 5mm MDF layers, laser-cut and assembled with 3mm threaded rods. Additional components are made of PLA and 3D-printed. The dimensions comply with the regulations of the French Robotics Cup. This construction method offers excellent adaptability.</p>
+      <p style="color: #d0d0d0; line-height: 35px; text-indent: 20px;">This robot was designed using Onshape, a CAD software. Its structure consists of 5mm laser-cut MDF layers and assembled using 3mm threaded rods. Additional components are crafted from 3D-printed PLA, ensuring lightweight and customizable elements. The overall dimensions strictly adhere to the regulations of the French Robotics Cup.</p>
     </div>
     <img src="/config/assets/images/HARP/HARP1/Harp1_meca.png" style="max-width: 350px; max-height: 250px; background-color: transparent; display: block; border-radius: 7px;">
   </div>
