@@ -59,7 +59,7 @@ time: 2024-05-12
 ## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">Gallery<span>
 
 <p align=center>
-Explore a sample of what awaits you here in images.
+Browse through a sample of my involvement in images
 </p>
 
 <div class="gallery">
@@ -85,12 +85,12 @@ Explore a sample of what awaits you here in images.
 <!-- Lightbox sections -->
 <div id="img1" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2022armgif.webp">
-  <p>The robotic arm I created during my first participation in the French Robotics Cup,<br>
+  <p>The robotic arm I created for my first participation in the French Robotics Cup,<br>
   as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
 </div>
 <div id="img2" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp">
-  <p>The robotic arm I created during my first participation in the French Robotics Cup,<br>
+  <p>The robotic arm I created for my first participation in the French Robotics Cup,<br>
   as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
 </div>
 <div id="img3" class="lightbox">
@@ -99,15 +99,15 @@ Explore a sample of what awaits you here in images.
 </div>
 <div id="img4" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.webp">
-  <p>Behind the yellow robot of our Eirbot team during my second year of engineering school, there is the basket I designed to count red balls using machine learning</p>
+  <p>The basket I created to count red balls using machine learning behind the yellow robot of our Eirbot team during my second year of engineering school</p>
   </div>
 <div id="img5" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.webp">
-  <p>Result of network detection on an image of the validation set created in Blender</p>
+  <p>Result of network detection of red balls on an image of the validation set created in Blender</p>
 </div>
 <div id="img6" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.webp">
-  <p>Result of the network detection on a real image from the basket used during the French Robotics Cup after that our robot throws a ball into it</p>
+  <p>Result of the network detection of red balls on a real image from the basket used during the French Robotics Cup after that our robot throws a ball into it</p>
 </div>
 <div id="video7" class="lightbox">
   <video controls>
@@ -141,11 +141,11 @@ Explore a sample of what awaits you here in images.
 </div>
 <div id="img13" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp">
-  <p>Implemented creeping gait simulation with quadratic programming to avoid kinematic closed loop</p>
+  <p>Implemented creeping gait simulation on the MegaBot with quadratic programming to avoid kinematic closed loop</p>
 </div>
 <div id="img14" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp">
-  <p>Deployment of creeping gait algorithm with quadratic programming to avoid kinematic closed loop</p>
+  <p>Deployment of creeping gait algorithm on the MegaBot with quadratic programming to avoid kinematic closed loop</p>
 </div>
 <div id="img15" class="lightbox">
   <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp">
@@ -155,13 +155,13 @@ Explore a sample of what awaits you here in images.
   <video controls>
     <source src="/config/assets/images/Home/Gallery/NimblBot_simu.mp4" type="video/mp4">
   </video>
-  <p>HMI to control the robotic arm of Nimbl'bot by hand movements, created during my internship in my second year of engineering school used in simulation</p>
+  <p>HMI to control the robotic arm of Nimbl'bot by hand movements used in simulation. Created during my internship in my second year of engineering school</p>
 </div>
 <div id="video17" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/NimblBot_deployment.mp4" type="video/mp4">
   </video>
-  <p>Deployed HMI to control the robotic arm of Nimbl'bot by hand movements, created during my internship in my second year of engineering school</p>
+  <p>Deployed HMI to control the robotic arm of Nimbl'bot by hand movements. Created during my internship in my second year of engineering school</p>
 </div>
 ---
 
@@ -278,6 +278,6 @@ Explore a sample of what awaits you here in images.
 <br>
 
 ```note
-I systematically cite the work that inspired or helped me achieve my results. I hope you will do the same if my work has helped you.
+I work on citing the works that inspired or assisted me in achieving my results. I kindly ask you to do the same if my work has been of help to you.
 ```
 <br>
