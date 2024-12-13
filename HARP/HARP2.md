@@ -150,6 +150,10 @@ time: 2024-12-11
     </div> -->
   </div>
 
+  <div style="color:#ffffff; padding:10px; text-align:center; font-size:20px; font-weight:bold; border-radius:5px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+    <a href="https://github.com/robotcopper/HARP2_Electronics" target="_blank">Source Files</a>
+  </div>
+
 <br>
 
 <h2 id="micro-controller" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Micro Controller and micro-ROS</h2>
@@ -172,6 +176,10 @@ time: 2024-12-11
       Additionally, the integration of the MoveIt2 stack is planned for actuator control, further enhancing the robot's capabilities. The system is also simulated in Gazebo, providing a platform to test and refine strategies before deployment.<br><br>
       This approach fully exploits the flexibility and modularity of the ROS middleware, enabling efficient development and operation.</p>
     </div>
+  </div>
+
+  <div style="color:#ffffff; padding:10px; text-align:center; font-size:20px; font-weight:bold; border-radius:5px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+    <a href="https://github.com/robotcopper/HARP2_ROS" target="_blank">Source Files</a>
   </div>
 
 <br>

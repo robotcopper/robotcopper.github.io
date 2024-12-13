@@ -156,6 +156,10 @@ time: 2024-12-09
     </div>
   </div>
 
+  <div style="color:#ffffff; padding:10px; text-align:center; font-size:20px; font-weight:bold; border-radius:5px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">
+    <a href="https://github.com/robotcopper/HARP1_Electronics" target="_blank">Source Files</a>
+  </div>
+
 <br>
 
 <h2 id="micro-controller" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Micro Controller and Rosserial</h2>
