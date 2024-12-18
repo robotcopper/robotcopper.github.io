@@ -49,9 +49,61 @@ time: 2024-05-12
 
 </div>
 
+---
+
+<style>
+@media (max-width: 1370px) {
+    .baner_img img {
+      display: none !important;
+    }
+}
+/* Masquer les noms par défaut et les positionner au-dessus de l'image */
+.image-name {
+  position: relative;
+  font-size: 12px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  width: 100%;
+  text-align: center;
+  z-index: 3;
+  bottom: 10px; /* Positionner le texte en bas de l'image */
+  left: 50%; /* Centrer horizontalement */
+  transform: translateX(-50%); /* Centrer parfaitement */
+  padding: 2px;
+}
 
 
+/* Faire apparaître le nom au survol de l'image */
+.baner_img img:hover + .image-name {
+    visibility: visible;
+    opacity: 1;
+}
+</style>
 
+<div style="position: relative; background: url('/config/assets/images/Home/green_baner_3.png') no-repeat center center; background-size: cover; color: white; padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+    <!-- Texte principal avec effet -->
+    <h2 style="font-size: 1.8em; margin: 0; position: relative; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 165, 0, 0.6), 0 0 30px rgba(255, 69, 0, 0.4);">
+        Acknowledged by the robotics community
+    </h2>
+    <p style="font-size: 1.2em; margin: 10px 0;">See the shout-outs my work has received!</p>
+    <a href="/Acknowledgements" style=" text-decoration: none; background: linear-gradient(45deg, #FFC65C, #FF7F00); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">Learn More ➔</a>
+    <!-- Conteneur des images accumulées sur le côté droit -->
+    <div style="position: absolute; top: 20px; right: 20px; width: 120px; height: 200px; display: flex; flex-direction: column; align-items: flex-end; justify-content: flex-start; z-index: 2;">
+      <a href="https://www.openrobotics.org/" target="_blank" class="baner_img" style="position: relative; text-decoration: none;">
+        <!-- Logo Open Robotics -->
+        <img src="/config/assets/images/Home/OpenRobotics_logo.png" alt="Open Robotics Logo" style="position: absolute; top: 0; left: -23px; width: 100px; z-index: 2; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 50%; border: 2px solid white;background: #ffffffe5; transform: rotate(17deg);">
+        <div class="image-name">Open Robotics</div>
+      </a>
+      <a href="https://www.linkedin.com/in/katherineascott/" target="_blank" class="baner_img" style="position: relative; text-decoration: none;">
+        <!-- Photo LinkedIn Katherine Scott -->
+        <img src="https://media.licdn.com/dms/image/v2/C4E03AQG7RUIZifhYkw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516363671231?e=1740009600&v=beta&t=xWoziV6ZOs0fQfvWNDs9c2-bd93C3R5l6-PaR124xxc" alt="Katherine Scott Profile" style=" position: absolute; top: 30px; left: -3px; width: 90px; border-radius: 50%; border: 2px solid white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1; transform: rotate(-5deg);">
+        <div class="image-name" style="bottom:-100px;">Katherine Scott</div>
+      </a>
+    </div>
+</div>
 
 
 ---
