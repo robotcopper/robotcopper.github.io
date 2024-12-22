@@ -7,6 +7,7 @@ gem "pathutil", github: "sdogruyol/pathutil", ref: '6ab144a7706c2bc5fa0dfdfa498e
 gem "nokogiri"
 gem "rouge"
 gem "rexml"
+gem 'jekyll-sitemap'
 group :jekyll_plugins do
     gem "github-pages"
   end

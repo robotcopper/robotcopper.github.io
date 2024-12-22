@@ -22,6 +22,7 @@ plugins:
   - jemoji
   - jekyll-avatar
   - jekyll-mentions
+  - jekyll-sitemap
 
 exclude:
   - Makefile

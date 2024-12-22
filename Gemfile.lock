@@ -304,6 +304,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-rtd-theme!
+  jekyll-sitemap
   nokogiri
   pathutil!
   rexml
