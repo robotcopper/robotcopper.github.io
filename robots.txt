@@ -1,0 +1,12 @@
+User-agent: OpenAI-GPT
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: *
+Allow: /
+Sitemap: https://robotcopper.github.io/sitemap.xml
