@@ -132,6 +132,7 @@ Browse through a sample of my involvement in images
     <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp"></a>
     <a href="#video16"><img src="/config/assets/images/Home/Gallery/NimblBot_simu.webp"></a>
     <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment2.gif"></a>
+    <a href="#video18"><img src="/config/assets/images/Home/Gallery/2dof_arm_DRL.webp"></a>
 </div>
 
 <!-- Lightbox sections -->
@@ -214,6 +215,12 @@ Browse through a sample of my involvement in images
     <source src="/config/assets/images/Home/Gallery/NimblBot_deployment.mp4" type="video/mp4">
   </video>
   <p>Deployed HMI to control the robotic arm of Nimbl'bot by hand movements. Created during my internship in my second year of engineering school</p>
+</div>
+<div id="video18" class="lightbox">
+  <video controls>
+    <source src="/config/assets/images/Home/Gallery/2dof_arm_DRL.mp4" type="video/mp4">
+  </video>
+  <p>PPO Neural Network Training for 2-DOF Robotic Arm End-Effector Control</p>
 </div>
 ---
 
