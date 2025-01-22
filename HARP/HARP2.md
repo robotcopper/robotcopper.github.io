@@ -76,7 +76,7 @@ time: 2024-12-11
 <!-- Example of the sections -->
 <h2 id="overview-diagram" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Overview diagram</h2>
   <div style="display: flex; justify-content: center;">
-      <img src="/config/assets/images/HARP/HARP2/HARP2_poster.png" style="background: transparent; border-radius: 20px; width: 60%" >
+      <img src="/config/assets/images/HARP/HARP2/HARP2_poster2.png" style="background: transparent; border-radius: 20px; width: 60%" >
   </div>
   <p align="center" style="color:#a6a6a6;">Workflow and components of the robot HARP2 (Holonomic Autonomous Robotic Platform 2)</p>
 
