@@ -309,6 +309,7 @@ DEPENDENCIES
   pathutil!
   rexml
   rouge
+  uri
   webrick
 
 BUNDLED WITH

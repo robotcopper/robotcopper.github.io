@@ -8,6 +8,8 @@ gem "nokogiri"
 gem "rouge"
 gem "rexml"
 gem "jekyll-sitemap"
+gem "nokogiri"
+gem "uri"
 group :jekyll_plugins do
     gem "github-pages"
   end
