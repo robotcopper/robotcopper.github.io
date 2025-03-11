@@ -4,12 +4,15 @@ gemspec
 
 gem "webrick"
 gem "pathutil", github: "sdogruyol/pathutil", ref: '6ab144a7706c2bc5fa0dfdfa498e94ff66e944c6'
-gem "nokogiri"
 gem "rouge"
 gem "rexml"
 gem "jekyll-sitemap"
-gem "nokogiri"
-gem "uri"
+gem "nokogiri", '>= 1.18.3'
+gem "uri", '>= 0.13.2'
+
+gem 'csv'
+gem 'faraday-retry'
+
 group :jekyll_plugins do
     gem "github-pages"
   end
