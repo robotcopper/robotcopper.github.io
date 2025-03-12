@@ -9,6 +9,7 @@ gem "rexml"
 gem "jekyll-sitemap"
 gem "nokogiri", '>= 1.18.3'
 gem "uri", '>= 0.13.2'
+gem "json", ">= 2.10.2"
 
 gem 'csv'
 gem 'faraday-retry'
