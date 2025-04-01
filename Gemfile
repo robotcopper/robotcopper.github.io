@@ -7,7 +7,7 @@ gem "pathutil", github: "sdogruyol/pathutil", ref: '6ab144a7706c2bc5fa0dfdfa498e
 gem "rouge"
 gem "rexml"
 gem "jekyll-sitemap"
-gem "nokogiri", '>= 1.18.3'
+gem 'nokogiri', '>= 1.18.4'
 gem "uri", '>= 0.13.2'
 gem "json", ">= 2.10.2"
 
