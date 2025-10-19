@@ -17,6 +17,7 @@ layouts_dir         : config/_layouts
 includes_dir        : config/_includes
 sass:
   sass_dir: config/_sass
+  style: compressed
 
 plugins:
   - jemoji
