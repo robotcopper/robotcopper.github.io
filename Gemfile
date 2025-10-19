@@ -5,9 +5,9 @@ gemspec
 gem "webrick"
 gem "pathutil", github: "sdogruyol/pathutil", ref: '6ab144a7706c2bc5fa0dfdfa498e94ff66e944c6'
 gem "rouge"
-gem "rexml"
+gem "rexml", '>= 3.4.2'
 gem "jekyll-sitemap"
-gem 'nokogiri', '>= 1.18.8'
+gem 'nokogiri', '>= 1.18.9'
 gem "uri", '>= 0.13.2'
 gem "json", ">= 2.10.2"
 
