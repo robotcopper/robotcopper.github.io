@@ -1,0 +1,21 @@
+name: Build Jekyll site
+
+on:
+  pull_request:
+  push:
+    branches:
+      - gh_page
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
