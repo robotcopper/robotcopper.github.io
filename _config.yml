@@ -3,9 +3,8 @@ description: My site
 
 theme: null
 
-# github:
-#   repo: robotcopper/robotcopper.github.io
-#   branch: gh_page
+github:
+  repository: robotcopper/robotcopper.github.io
 
 readme_index:
   with_frontmatter: true
