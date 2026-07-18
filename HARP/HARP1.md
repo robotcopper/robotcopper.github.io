@@ -73,7 +73,7 @@ time: 2024-12-09
 <br>
 
 <!-- Example of the sections -->
-<h2 id="overview-diagram" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Overview diagram</h2>
+<h2 id="overview-diagram" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Overview diagram</h2>
   <div style="display: flex; justify-content: center;">
       <img src="/config/assets/images/HARP/HARP1/HARP1_poster.png" style="background: transparent; border-radius: 20px; width: 50%" >
   </div>
@@ -81,7 +81,7 @@ time: 2024-12-09
 
 <br>
 
-<h2 id="mechanics" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-right: 10%; text-align: -moz-right;">Mechanics</h2>
+<h2 id="mechanics" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-right: 10%; text-align: -moz-right;">Mechanics</h2>
 
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
@@ -90,7 +90,7 @@ time: 2024-12-09
     <img src="/config/assets/images/HARP/HARP1/Harp1_meca.png" style="max-width: 350px; max-height: 250px; background-color: transparent; display: block; border-radius: 7px;">
   </div>
 
-<h2 id="electronics" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Electronics</h2>
+<h2 id="electronics" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Electronics</h2>
   <div style="font-style: italic; margin-left: 5%; font-size: 1.2em; font-weight: bold;">Power Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; max-width: 18%; max-height: 18%; border-radius: 3px; overflow: hidden;">
@@ -162,7 +162,7 @@ time: 2024-12-09
 
 <br>
 
-<h2 id="micro-controller" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Micro Controller and Rosserial</h2>
+<h2 id="micro-controller" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Micro Controller and Rosserial</h2>
 
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
@@ -174,7 +174,7 @@ time: 2024-12-09
 
 <br>
 
-<h2 id="ros" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-right: 10%; text-align: -moz-right;">ROS (Robot Operating System)</h2>
+<h2 id="ros" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-right: 10%; text-align: -moz-right;">ROS (Robot Operating System)</h2>
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <img src="/config/assets/images/HARP/HARP1/ros_logo.png" style="max-width: 350px; max-height: 250px; background-color: transparent; display: block; border-radius: 12px;">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
@@ -184,7 +184,7 @@ time: 2024-12-09
 
 <br>
 
-<h2 id="actuator" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Actuator</h2>
+<h2 id="actuator" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Actuator</h2>
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
       <p style="color: #d0d0d0; line-height: 35px; text-indent: 20px;"><span style="font-family: 'IgnisEtGlaciesSharp'!important;">HARP1</span> featured three actuators, one on each side of the robot, designed as large paddles to securely hold the game elements—referred to as 'cakes'—during transport. Each actuator was powered by an SG90 9g micro servo motor, which controlled the paddle's rotation angle. These servo motors were driven by PWM signals. The actuators played a crucial role in the robot's ability to interact with and efficiently manipulate the game elements during its tasks.</p>

@@ -22,8 +22,8 @@
 
 {% comment %} <hr> {% endcomment %}
 
-<div class="copyright text-center text-gray" role="contentinfo">
-    <i class="fa fa-copyright"></i>
+<div class="copyright text-center text-gray site-footer" role="contentinfo">
+    <span class="footer-copy"><i class="fa fa-copyright"></i>
     <span class="time">
         {%- assign created_time = rest_created_at | date: "%Y" -%}
         {%- assign updated_time = rest_updated_at | date: "%Y" -%}
@@ -33,36 +33,9 @@
             {{- created_time }}-{{ updated_time -}},
         {%- endif -%}
     </span>
-
-    {% comment %} <a class="text-gray" href="{{ docs.owner_url }}" rel="noreferrer" target="_blank">
-        {{- author -}}
-    </a> {% endcomment %}
-    
-    {% comment %} {{ __.revision | default: "Revision" }}
-    <a class="text-gray" href="{{ docs.repository_url }}/commit/{{ docs.build_revision }}" title="{{ docs.build_revision }}" rel="noreferrer" target="_blank">
-        {{- docs.build_revision | slice: 0, 7 -}}
-    </a> {% endcomment %}
-    {% comment %} {% unless site.url contains "rundocs.io" %}
-        <br>
-        <div class="generator">
-            Built with
-            <a href="https://pages.github.com" rel="noreferrer" target="_blank" title="github-pages v{{ docs.versions.github-pages }}">GitHub Pages</a>
-            using a
-            <a href="https://github.com/{{ theme_alias | split: '@' | first }}" rel="noreferrer" target="_blank" title="{{ generator }} v{{ version }}">theme</a>
-            provided by
-            <a href="https://rundocs.io" rel="noreferrer" target="_blank">RunDocs</a>.
-        </div>
-    {% endunless %} {% endcomment %}
-
-    
-    Floris Jousselin
-
-    <a href="https://github.com/robotcopper" style="margin-right: 10px; margin-left: 10px; text-decoration: none;">
-    <i class="fab fa-github" style="color: #586069;"></i>
-    </a>
-
-    <a href="https://www.linkedin.com/in/jousselin-f/" style="text-decoration: none;">
-    <i class="fab fa-linkedin-in" style="color: #586069;"></i>
-    </a>
-
+    Floris Jousselin</span>
+    <span class="footer-links">
+      <a href="https://github.com/robotcopper" aria-label="GitHub" rel="noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jousselin-f/" aria-label="LinkedIn" rel="noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </span>
 </div>

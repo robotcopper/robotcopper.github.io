@@ -1,15 +1,13 @@
 <div class="sidebar-wrap overflow-hidden">
     <div class="sidebar height-full overflow-y-scroll overflow-x-hidden">
-        <div class="header d-flex flex-column p-3 text-center">
-            <div class="title pb-1">
-                <a class="h4 no-underline py-1 px-2 rounded-1" href="{{ site.baseurl }}/" title="{{ site.description }}">
-                    {% comment %} <i class="fa fa-home"></i> {{ site.title }} {% endcomment %}
-                    <img src="{{ site.baseurl }}/config/assets/images/Icons/icon-96x96.png" width="16" height="16" style="filter: brightness(100%) contrast(100%) grayscale(10%)"> {{ site.title }}
-                </a>
-            </div>
-            <span class="version">{{ docs.latest_release.name }}</span>
-            <form class="search pt-2" action="{{ site.baseurl }}/search.html" method="get" autocomplete="off">
-                <input class="form-control input-block input-sm" type="text" name="q" placeholder="{{ __.search_docs | default: 'Searching for something...?' }}">
+        <div class="header d-flex flex-column p-3 site-brand">
+            <a class="brand-link no-underline" href="{{ site.baseurl }}/" title="{{ site.description }}">
+                <img class="brand-mark" src="{{ site.baseurl }}/config/assets/images/Icons/icon-96x96.png" width="36" height="36" alt="">
+                <span class="brand-name">{{ site.title }}</span>
+                <span class="brand-discipline">Systems · Robotics · Mechatronics</span>
+            </a>
+            <form class="search pt-3" action="{{ site.baseurl }}/search.html" method="get" autocomplete="off">
+                <input class="form-control input-block input-sm" type="text" name="q" placeholder="{{ __.search_docs | default: 'Search docs…' }}">
             </form>
         </div>
         <div class="toctree py-2" data-spy="affix" role="navigation" aria-label="main navigation">
@@ -21,27 +19,8 @@
 
 
 <style>
-    .archive {
-        list-style-type: none;
-        margin: 0;
-        padding: 10px;
-    }
-    .year {
-        margin-top: 20px;
-        color: #fff;
-    }
-    .month {
-        margin-left: 20px;
-        color: #00AAA3;
-    }
-    .article {
-        margin-left: 40px;
-        color: #fff;
-    }
-    ul {
-        list-style-type: square;
-    }
-
+    .archive { list-style-type: none; margin: 0; padding: 0.5rem 0.75rem 2rem; }
+    .archive ul { list-style-type: none; padding-left: 0; }
 </style>
 
 
@@ -61,9 +40,7 @@
     </div>
 
     <div class="archive overflow-y-scroll">
-        <center>
-            <h1 style="font-size: 36px; font-weight: bold; color:#fff"> Last news </h1>
-        </center>
+        <h1 class="archive-heading">Last news</h1>
 
         {%- assign sorted_pages = site_pages | sort: 'time' | reverse -%}
         {%- assign current_year = "" -%}
