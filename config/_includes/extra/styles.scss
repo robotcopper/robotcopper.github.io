@@ -970,11 +970,11 @@ body {
 .ack-banner {
   position: relative;
   width: 100%;
-  padding: 2rem 1.75rem;
+  padding: 2rem 9rem 2rem 1.75rem;
   margin: 0.5rem 0 1.5rem;
   border-radius: var(--radius);
   border: 1px solid var(--border-strong);
-  overflow: hidden;
+  overflow: visible;
   background:
     linear-gradient(120deg, rgba(10, 18, 20, 0.88), rgba(18, 50, 48, 0.72)),
     url("/config/assets/images/Home/green_baner_3.png") center / cover no-repeat;
@@ -1023,75 +1023,92 @@ body {
 
 .ack-banner-logos {
   position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  width: 110px;
-  height: 180px;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
 }
 
 .ack-banner .baner_img {
   position: relative;
+  display: block;
+  width: 72px;
+  height: 72px;
   text-decoration: none;
   border: none !important;
+  flex-shrink: 0;
+
+  &.logo-openrobotics {
+    width: 84px;
+    height: 84px;
+    transform: rotate(12deg);
+    z-index: 2;
+  }
+
+  &.logo-katherine {
+    width: 76px;
+    height: 76px;
+    margin-right: 0.5rem;
+    transform: rotate(-8deg);
+    z-index: 1;
+  }
 
   img {
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    object-fit: cover;
     border-radius: 50%;
-    border: 2px solid rgba(255, 255, 255, 0.75);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
-    background: rgba(255, 255, 255, 0.9);
-  }
-
-  &.logo-openrobotics img {
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: 92px;
-    z-index: 2;
-    transform: rotate(14deg);
-  }
-
-  &.logo-katherine img {
-    position: absolute;
-    top: 28px;
-    left: 0;
-    width: 82px;
-    z-index: 1;
-    transform: rotate(-6deg);
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.95);
+    margin: 0 !important;
   }
 }
 
 .image-name {
-  position: relative;
+  position: absolute;
   font-family: $font-mono;
   font-size: 0.65rem;
   color: #111;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 2px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease;
-  width: 100%;
-  text-align: center;
-  z-index: 3;
-  bottom: 8px;
   left: 50%;
+  bottom: -1.4rem;
   transform: translateX(-50%);
-  padding: 2px 4px;
+  white-space: nowrap;
+  padding: 2px 6px;
+  z-index: 3;
+  width: auto;
 }
 
-.baner_img img:hover + .image-name {
+.baner_img:hover .image-name {
   visibility: visible;
   opacity: 1;
 }
 
 .image-name.offset-katherine {
-  bottom: -90px;
+  bottom: -1.4rem;
 }
 
-@media (max-width: 1370px) {
-  .baner_img img {
-    display: none !important;
+@media (max-width: 700px) {
+  .ack-banner {
+    padding-right: 1.75rem;
+  }
+
+  .ack-banner-logos {
+    display: none;
   }
 }
 
@@ -1198,11 +1215,14 @@ body {
   margin-bottom: 1rem;
 
   img {
-    height: 64px;
+    height: 72px;
+    width: 72px;
     vertical-align: middle;
-    border: 1px solid var(--border-strong);
-    border-radius: var(--radius);
+    border: none;
+    border-radius: 50%;
     background: transparent;
+    object-fit: cover;
+    box-shadow: none;
   }
 
   .page-hero-title {

@@ -5,7 +5,6 @@ time: 2024-05-12
 ---
 
 <div class="home-hero">
-  <p class="home-hero-kicker">Electronics engineer · Systems architecture</p>
   <p class="home-hero-name">Floris Jousselin</p>
   <p class="page-hero-lead">
       Welcome to my website, a space dedicated to sharing my <em>writings</em>, <em>creations</em>, <em>experience</em> and <em>discoveries</em> in the fields of <em>Robotics</em>, <em>Mechatronics</em>, <em>Electronics</em>, and <em>Machine Learning</em>. Feel free to <em>explore</em>, read, and <em>be inspired</em> by what you find here if you wish!
@@ -52,7 +51,7 @@ time: 2024-05-12
         <div class="image-name">Open Robotics</div>
       </a>
       <a href="https://www.linkedin.com/in/katherineascott/" target="_blank" class="baner_img logo-katherine">
-        <img src="https://media.licdn.com/dms/image/v2/C4E03AQG7RUIZifhYkw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516363671231?e=1740009600&v=beta&t=xWoziV6ZOs0fQfvWNDs9c2-bd93C3R5l6-PaR124xxc" alt="Katherine Scott Profile" onerror="this.onerror=null; this.src='/config/assets/images/Acknowledgements/Katherine_Scott.jpeg';">
+        <img src="/config/assets/images/Acknowledgements/Katherine_Scott.jpeg" alt="Katherine Scott Profile">
         <div class="image-name offset-katherine">Katherine Scott</div>
       </a>
     </div>
