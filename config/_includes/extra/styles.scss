@@ -875,6 +875,13 @@ body {
   }
 }
 
+a.info-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
 .info-card {
   padding: 1.25rem 1.15rem;
   border-radius: var(--radius);
