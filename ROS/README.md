@@ -4,35 +4,50 @@ time: 2024-07-17
 ---
 
 <div style="text-align: center;">
-  <img src="/config/assets/images/ROS/ROS_banner.png" alt="ros_timeline" style="width: 100%;">
+  <img src="/config/assets/images/ROS/ROS_banner.png" alt="ROS banner" style="width: 100%;">
 </div>
 
-<br>
+# ROS&nbsp;2
 
-# <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN>
+ROS&nbsp;2 is one of the primary software frameworks used to design, integrate, and operate modern robotic systems.
 
-<br>
+Like any middleware, ROS&nbsp;2 is not an end in itself but a tool that enables engineers to build complex robotic applications more efficiently. Its purpose is to provide common abstractions, communication mechanisms, and development infrastructure so that teams can focus on robotics rather than repeatedly solving the same software engineering problems.
 
-[Robot Operating System](https://www.ros.org/) also named <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> is a middleware at the heart of modern robotics. A powerful tool for interconnecting various "bricks". These bricks can include simple algorithms, sensor drivers returning their values, machine learning pipelines, or many other elements.
+The ROS ecosystem extends well beyond its core middleware. Projects such as Micro-ROS, Nav2, ros2_control, Gazebo, RViz, MoveIt, PX4, and many others provide mature building blocks for embedded systems, navigation, manipulation, simulation, control, and autonomy. These components are intended to be adapted, extended, or replaced depending on the requirements of the robotic platform.
 
-The ability of <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> to standardize the inputs and outputs of complex functions while managing communication between these functions via standardized protocols makes it an invaluable tool. What truly sets <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> apart from other middleware is its active community and its well-made [documentation](https://docs.ros.org/en/humble/). Thanks to this community, numerous algorithms and drivers have been standardized, providing a plug-and-play experience for users of these packages.
+Whether developing a small mobile robot or a complex humanoid platform, ROS&nbsp;2 provides a common architectural foundation for building modular, maintainable, observable, and reproducible robotic systems. Like any engineering tool, however, its value comes not from using it as-is, but from understanding when to leverage it, customize it, or replace parts of it to meet the needs of the system.
 
-However, it is important to distinguish the "simple use of packages" from more comprehensive stacks such as NAV2, PX4, MoveIT, ros2_control, and many others. Mastering these stacks enables advanced robotic behaviours to be implemented, leading to complex and effective results. Therefore, mastering these stacks is a real expertise and goes well beyond the "simple" use of <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN>.
+Version compatibility across ROS distros, Ubuntu, and simulators remains a practical concern. The timeline below is a compact map for that — hover to show end-of-life years:
 
-<SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> also offers extensive interoperability with various simulation tools such as Gazebo or Isaac, and can be integrated with visualization tools like Foxglove, PlotJugler, not to mention Rviz, the native visualization tool of <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN>. These integrations enhance the user experience and facilitate the development of comprehensive robotic solutions.
-
-One of the major challenges in using <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> lies in managing the compatibilities between different versions of <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> and tools used around. To navigate these complexities, the following dependency graph provides an overview of <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> compatibility with the Gazebo simulator for exemple.
-
-<div style="text-align: center;">
-  <img src="/config/assets/images/ROS/ros_timeline.png" alt="ros_timeline" style="width: 70%;">
-  <p align="center" style="color:gray;">ROS Timeline: Dependencies with Ubuntu, Gazebo, and Ignition - Dependency graph available <a href="https://github.com/robotcopper/ros_timeline">here</a></p>
+<div class="ros-timeline" tabindex="0" title="Hover to show EOL years">
+  <img class="ros-timeline-base" src="/config/assets/images/ROS/ros_timeline.png" alt="ROS timeline">
+  <img class="ros-timeline-eol" src="/config/assets/images/ROS/ros_timeline_eol.png" alt="ROS timeline with EOL years">
 </div>
+<p align="center" style="color:gray; font-size: 0.9rem;">ROS timeline: Ubuntu, Gazebo, and Ignition — also on <a href="https://github.com/robotcopper/ros_timeline">GitHub</a></p>
 
-Finally, it is worth mentioning Micro_ROS, a remarkable tool that enables the integration of microcontrollers into the <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> architecture. This resolves common communication issues between computers and microcontrollers, making <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> even more versatile.
+This section gathers technical articles, implementation notes, reusable components, and lessons learned from developing mobile robots and integrating complex robotic systems.
 
-In this section, you will find articles detailing the use of <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> and its stacks, along with practical examples to enhance your robotics skills. Explore these resources to discover the full potential of <SPAN STYLE="COLOR:#4762A6">**ROS**</SPAN> and how it can transform your robotics projects.
+<div class="info-cards">
 
-<br>
+  <a class="info-card mint-1" href="{{ '/ROS/behavior_tree/' | relative_url }}">
+    <span class="info-card-title">Behavior trees</span>
+    <p>
+      Implementation notes on structuring robot decisions with behavior trees under ROS&nbsp;2.
+    </p>
+  </a>
 
+  <a class="info-card mint-2" href="{{ '/ROS/MPPI/' | relative_url }}">
+    <span class="info-card-title">MPPI</span>
+    <p>
+      Notes on Model Predictive Path Integral control in the Nav2 stack.
+    </p>
+  </a>
 
+  <a class="info-card mint-3" href="{{ '/micro-ROS/' | relative_url }}">
+    <span class="info-card-title">Micro-ROS</span>
+    <p>
+      Bridging microcontrollers into the ROS&nbsp;2 graph — templates and setup notes.
+    </p>
+  </a>
 
+</div>

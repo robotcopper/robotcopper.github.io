@@ -1293,6 +1293,48 @@ a.info-card {
   }
 }
 
+.ros-timeline {
+  display: block;
+  width: 85%;
+  max-width: 900px;
+  margin: 1rem auto;
+  cursor: default;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+  }
+
+  .ros-timeline-eol {
+    display: none;
+  }
+
+  &:hover .ros-timeline-base,
+  &:focus-within .ros-timeline-base {
+    display: none;
+  }
+
+  &:hover .ros-timeline-eol,
+  &:focus-within .ros-timeline-eol {
+    display: block;
+  }
+}
+
+@media (hover: none) {
+  .ros-timeline {
+    .ros-timeline-base {
+      display: block !important;
+    }
+
+    .ros-timeline-eol {
+      display: block !important;
+      margin-top: 0.75rem;
+    }
+  }
+}
+
 .ack-page-title {
   font-family: $font-display;
   font-size: clamp(1.6rem, 3vw, 2rem);
