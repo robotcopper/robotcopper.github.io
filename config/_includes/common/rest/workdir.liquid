@@ -16,6 +16,18 @@
         {%- endif -%}
     {%- endfor -%}
 {%- endcapture -%}
-{% comment %} {%- assign workdir_dirs = items | split: "|" -%} {% endcomment %}
-{%- assign workdir_dirs = items | split: "|" | sort | reverse -%} {% comment %}  Sort folder names in reverse alphabetical order {% endcomment %}
-{% comment %} {%- assign workdir_dirs = items | split: "|" | sort: 'time' | reverse -%} {% endcomment %}
+{% comment %} Reverse-alpha by default; pin Mentions at the bottom of the root sidebar. {% endcomment %}
+{%- assign workdir_dirs_sorted = items | split: "|" | sort | reverse -%}
+{%- if workdir == "/" -%}
+    {%- capture workdir_dirs_pinned -%}
+        {%- for d in workdir_dirs_sorted -%}
+            {%- unless d contains "Mentions" -%}{{ d }}|{%- endunless -%}
+        {%- endfor -%}
+        {%- for d in workdir_dirs_sorted -%}
+            {%- if d contains "Mentions" -%}{{ d }}|{%- endif -%}
+        {%- endfor -%}
+    {%- endcapture -%}
+    {%- assign workdir_dirs = workdir_dirs_pinned | split: "|" -%}
+{%- else -%}
+    {%- assign workdir_dirs = workdir_dirs_sorted -%}
+{%- endif -%}

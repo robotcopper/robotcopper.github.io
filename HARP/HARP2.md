@@ -74,7 +74,7 @@ time: 2024-12-11
 <br>
 
 <!-- Example of the sections -->
-<h2 id="overview-diagram" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Overview diagram</h2>
+<h2 id="overview-diagram" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Overview diagram</h2>
   <div style="display: flex; justify-content: center;">
       <img src="/config/assets/images/HARP/HARP2/HARP2_poster2.png" style="background: transparent; border-radius: 20px; width: 60%" >
   </div>
@@ -82,7 +82,7 @@ time: 2024-12-11
 
 <br>
 
-<h2 id="mechanics" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-right: 10%; text-align: -moz-right;">Mechanics</h2>
+<h2 id="mechanics" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-right: 10%; text-align: -moz-right;">Mechanics</h2>
 
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
@@ -91,7 +91,7 @@ time: 2024-12-11
     <img src="/config/assets/images/HARP/HARP2/Harp2_meca.jpg" style="max-width: 350px; max-height: 250px; background-color: transparent; display: block; border-radius: 7px;">
   </div>
 
-<h2 id="electronics" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Electronics</h2>
+<h2 id="electronics" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Electronics</h2>
   <div style="font-style: italic; margin-left: 5%; font-size: 1.2em; font-weight: bold;">Power Board</div>
   <div style="display: flex; align-items: center; gap: 20px; overflow: hidden; max-width: 85%; margin-left: 7%;" class="container_harp">
     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0px; max-width: 18%; max-height: 18%; border-radius: 3px; overflow: hidden;">
@@ -156,7 +156,7 @@ time: 2024-12-11
 
 <br>
 
-<h2 id="micro-controller" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Micro Controller and micro-ROS</h2>
+<h2 id="micro-controller" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Micro Controller and micro-ROS</h2>
 
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
@@ -168,7 +168,7 @@ time: 2024-12-11
 
 <br>
 
-<h2 id="ros" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-right: 10%; text-align: -moz-right;">ROS (Robot Operating System)</h2>
+<h2 id="ros" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-right: 10%; text-align: -moz-right;">ROS (Robot Operating System)</h2>
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <img src="/config/assets/images/HARP/HARP1/ros_logo.png" style="max-width: 350px; max-height: 250px; background-color: transparent; display: block; border-radius: 12px;">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;">
@@ -184,7 +184,7 @@ time: 2024-12-11
 
 <br>
 
-<h2 id="actuator" style="line-height: 1.2; border-bottom: 1.5px solid #5f3db1; margin-left: 10%;">Actuator</h2>
+<h2 id="actuator" style="line-height: 1.2; border-bottom: 1.5px solid #00AAA3; margin-left: 10%;">Actuator</h2>
   <div style="display: flex; align-items: center; gap: 20px;overflow: hidden;" class="container_harp">
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px;margin-left: 40%;">
       <div style="background-color:#f0ad4e; color:#ffffff; padding:10px; text-align:center; font-size:20px; font-weight:bold; border-radius:5px; box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);">

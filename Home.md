@@ -1,49 +1,36 @@
 ---
-permalink: /index.html # allow renaming of the cover page file
+permalink: /index.html
 title: "&nbsp;<i class='fas fa-home'></i>&nbsp; Home"
 time: 2024-05-12
 ---
 
-<br>
+<div class="home-hero">
+  <p class="home-hero-name">Floris Jousselin</p>
+  <p class="page-hero-lead">
+    This site is a space to share projects I work on — past and present — and notes I wish I'd had.
+  </p>
+</div>
 
-## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">Welcome<span>
+<div class="info-cards">
 
-<p style="font-size: 22px; color:#fff; display: block; text-align: justify;">
-    Welcome to my website, a space dedicated to sharing my <em>writings</em>, <em>creations</em>, <em>experience</em> and <em>discoveries</em> in the fields of <em>Robotics</em>, <em>Mechatronics</em>, <em>Electronics</em>, and <em>Machine Learning</em>. Feel free to <em>explore</em>, read, and <em>be inspired</em> by what you find here if you wish!
-    <br>
-    <br>
-    My ongoing endeavors will continue to enrich this site. Here, you will find:
-</p>
-
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
-
-  <div style="flex: 1; min-width: 300px; background-color: #A3C6C4; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
-    <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
-    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #fff; font-size: 1.5em; font-weight: bold; color: #003673;">
-      Projects Documentation
-    </span>
-    <p style="color: #000;">
-      Explore detailed documentation on my open-source projects, covering various aspects of electronics and robotics.
+  <a class="info-card mint-1" href="{{ '/HARP/' | relative_url }}">
+    <span class="info-card-title">Projects</span>
+    <p>
+      Docs from projects I build or have built.
     </p>
-  </div>
+  </a>
 
-  <div style="flex: 1; min-width: 300px; background-color: #BADDDD; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
-    <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
-    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #fff; font-size: 1.5em; font-weight: bold; color: #003673;">
-      Templates
-    </span>
-    <p style="color: #000;">
-      Find templates that I've created to help streamline your own projects, all available under the BSD 3-Clause license.
+  <a class="info-card mint-2" href="{{ '/micro-ROS/' | relative_url }}">
+    <span class="info-card-title">Templates</span>
+    <p>
+      Starting points I put together so you don't begin from a blank page — BSD 3-Clause.
     </p>
-  </div>
+  </a>
 
-  <div style="flex: 1; min-width: 300px; background-color: #C5E8E8; padding: 10px; border-radius: 5px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
-    <hr style="border: none; border-top: transparent; margin: 9px 0; background: transparent;">
-    <span style="display: block; padding-bottom: .1em; border-bottom: 1px solid #fff; font-size: 1.5em; font-weight: bold; color: #003673;">
-      Articles and Tutorials
-    </span>
-    <p style="color: #000;">
-      Read articles and tutorials that I have written, sharing knowledge and insights on robotics, mechatronics, and more.
+  <div class="info-card mint-3">
+    <span class="info-card-title">Articles &amp; tutorials</span>
+    <p>
+      Notes on robotics, mechatronics, ROS&nbsp;2, and related topics.
     </p>
   </div>
 
@@ -51,292 +38,211 @@ time: 2024-05-12
 
 ---
 
-<style>
-@media (max-width: 1370px) {
-    .baner_img img {
-      display: none !important;
-    }
-}
-/* Hide default names and position them above the image */
-.image-name {
-  position: relative;
-  font-size: 12px;
-  color: black;
-  background-color: rgb(255, 255, 255);
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  width: 100%;
-  text-align: center;
-  z-index: 3;
-  bottom: 10px; /* Position the text at the bottom of the image */
-  left: 50%; /* Centre horizontally */
-  transform: translateX(-50%); /* Centre perfectly */
-  padding: 2px;
-}
-
-
-/* Show name when hovering over image */
-.baner_img img:hover + .image-name {
-    visibility: visible;
-    opacity: 1;
-}
-</style>
-
-<div style="position: relative; background: url('/config/assets/images/Home/green_baner_3.png') no-repeat center center; background-size: cover; color: white; padding: 20px; text-align: center; font-family: Arial, sans-serif;">
-    <!-- Main text with effect -->
-    <h2 style="font-size: 1.8em; margin: 0; position: relative; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3), 0 0 20px rgba(255, 165, 0, 0.6), 0 0 30px rgba(255, 69, 0, 0.4);">
-        Acknowledged by the robotics community
-    </h2>
-    <p style="font-size: 1.2em; margin: 10px 0;">See the shout-outs my work has received!</p>
-    <a href="/Acknowledgements" style=" text-decoration: none; background: linear-gradient(45deg, #FFC65C, #FF7F00); color: black; padding: 10px 20px; border-radius: 5px; font-weight: bold;">Learn More ➔</a>
-    <!-- Container for images accumulated on the right-hand side -->
-      <div style="position: absolute; top: 20px; right: 20px; width: 120px; height: 200px; display: flex; flex-direction: column; align-items: flex-end; justify-content: flex-start; z-index: 2;">
-      <a href="https://www.openrobotics.org/" target="_blank" class="baner_img" style="position: relative; text-decoration: none;">
-        <!-- Open Robotics logo-->
-        <img src="/config/assets/images/Home/OpenRobotics_logo.png" alt="Open Robotics Logo" style="position: absolute; top: 0; left: -23px; width: 100px; z-index: 2; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 50%; border: 2px solid white;background: #ffffffe5; transform: rotate(17deg);">
+<div class="ack-banner">
+    <h2>Acknowledged by the robotics community</h2>
+    <p>Open Robotics &amp; ROS Discourse — December 2024</p>
+    <a href="{{ '/Mentions/' | relative_url }}" class="ack-cta">Learn more</a>
+    <div class="ack-banner-logos">
+      <a href="https://www.openrobotics.org/" target="_blank" rel="noreferrer" class="baner_img logo-openrobotics">
+        <img src="/config/assets/images/Home/OpenRobotics_logo.png" alt="Open Robotics Logo">
         <div class="image-name">Open Robotics</div>
       </a>
-      <a href="https://www.linkedin.com/in/katherineascott/" target="_blank" class="baner_img" style="position: relative; text-decoration: none;">
-        <!-- LinkedIn Photo Katherine Scott -->
-        <img src="https://media.licdn.com/dms/image/v2/C4E03AQG7RUIZifhYkw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516363671231?e=1740009600&v=beta&t=xWoziV6ZOs0fQfvWNDs9c2-bd93C3R5l6-PaR124xxc" alt="Katherine Scott Profile" style=" position: absolute; top: 30px; left: -3px; width: 90px; border-radius: 50%; border: 2px solid white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); z-index: 1; transform: rotate(-5deg);" onerror="this.onerror=null; this.src='/config/assets/images/Acknowledgements/Katherine_Scott.jpeg';">
-        <div class="image-name" style="bottom:-100px;">Katherine Scott</div>
+      <a href="https://www.linkedin.com/in/katherineascott/" target="_blank" rel="noreferrer" class="baner_img logo-katherine">
+        <img src="/config/assets/images/Acknowledgements/Katherine_Scott.jpeg" alt="Katherine Scott Profile">
+        <div class="image-name offset-katherine">Katherine Scott</div>
       </a>
     </div>
 </div>
 
-
 ---
 
-## <span style="font-size: 36px; font-weight: bold; color:#fff; border-bottom: none; display: block; text-align: center;">Gallery<span>
+## <span class="page-hero-title">Gallery</span>
 
-<p align=center>
-Browse through a sample of my involvement in images
+<p class="section-lead">
+A sample of projects and moments from competitions, labs, and builds.
 </p>
 
 <div class="gallery">
-    <a href="#img1"><img src="/config/assets/images/Home/Gallery/CDFR2022armgif.webp"></a>
-    <a href="#img2"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp"></a>
-    <a href="#img3"><img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.webp"></a>
-    <a href="#img4"><img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.webp"></a>
-    <a href="#img5"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.webp"></a>
-    <a href="#img6"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.webp"></a>
-    <a href="#video7"><img src="/config/assets/images/Home/Gallery/DynamixelConfigurator.webp"></a>
-    <a href="#img8"><img src="/config/assets/images/Home/Gallery/HARP1cao.webp"></a>
-    <a href="#img9"><img src="/config/assets/images/Home/Gallery/HARP1_homologation.webp"></a>
-    <a href="#video10"><img src="/config/assets/images/Home/Gallery/HARP1game.webp"></a>
-    <a href="#video11"><img src="/config/assets/images/Home/Gallery/LineTracker.webp"></a>
-    <a href="#img12"><img src="/config/assets/images/Home/Gallery/MegaBot.webp"></a>
-    <a href="#img13"><img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp"></a>
-    <a href="#img14"><img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp"></a>
-    <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp"></a>
-    <a href="#video16"><img src="/config/assets/images/Home/Gallery/NimblBot_simu.webp"></a>
-    <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment2.gif"></a>
-    <a href="#video18"><img src="/config/assets/images/Home/Gallery/2dof_arm_DRL.webp"></a>
+    <a href="#img1"><img src="/config/assets/images/Home/Gallery/CDFR2022armgif.webp" alt=""></a>
+    <a href="#img2"><img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp" alt=""></a>
+    <a href="#img3"><img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.webp" alt=""></a>
+    <a href="#img4"><img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.webp" alt=""></a>
+    <a href="#img5"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.webp" alt=""></a>
+    <a href="#img6"><img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.webp" alt=""></a>
+    <a href="#video7"><img src="/config/assets/images/Home/Gallery/DynamixelConfigurator.webp" alt=""></a>
+    <a href="#img8"><img src="/config/assets/images/Home/Gallery/HARP1cao.webp" alt=""></a>
+    <a href="#img9"><img src="/config/assets/images/Home/Gallery/HARP1_homologation.webp" alt=""></a>
+    <a href="#video10"><img src="/config/assets/images/Home/Gallery/HARP1game.webp" alt=""></a>
+    <a href="#video11"><img src="/config/assets/images/Home/Gallery/LineTracker.webp" alt=""></a>
+    <a href="#img12"><img src="/config/assets/images/Home/Gallery/MegaBot.webp" alt=""></a>
+    <a href="#img13"><img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp" alt=""></a>
+    <a href="#img14"><img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp" alt=""></a>
+    <a href="#img15"><img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp" alt=""></a>
+    <a href="#video16"><img src="/config/assets/images/Home/Gallery/NimblBot_simu.webp" alt=""></a>
+    <a href="#video17"><img src="/config/assets/images/Home/Gallery/NimblBot_deployment2.gif" alt=""></a>
+    <a href="#video18"><img src="/config/assets/images/Home/Gallery/2dof_arm_DRL.webp" alt=""></a>
 </div>
 
-<!-- Lightbox sections -->
 <div id="img1" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2022armgif.webp">
-  <p>The robotic arm I created for my first participation in the French Robotics Cup,<br>
-  as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2022armgif.webp" alt="">
+  <p>Robotic arm — French Robotics Cup (Unchart'eirb / Eirbot)</p>
 </div>
 <div id="img2" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp">
-  <p>The robotic arm I created for my first participation in the French Robotics Cup,<br>
-  as part of the Unchart'eirb team from the Eirbot association, in my first year of engineering school</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2022arm.webp" alt="">
+  <p>Robotic arm — French Robotics Cup (Unchart'eirb / Eirbot)</p>
 </div>
 <div id="img3" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.webp">
-  <p>Me on the competition stage, readjusting the robotic arm before the first match of our Unchart'eirb team at the French Robotics Cup, representing the Eirbot association</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2022_onstage.webp" alt="">
+  <p>Pre-match setup on stage — French Robotics Cup</p>
 </div>
 <div id="img4" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.webp">
-  <p>The basket I created to count red balls using machine learning behind the yellow robot of our Eirbot team during my second year of engineering school</p>
-  </div>
+  <img src="/config/assets/images/Home/Gallery/CDFR2023_basket_inuse.webp" alt="">
+  <p>Vision-based ball counting basket — competition deployment</p>
+</div>
 <div id="img5" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.webp">
-  <p>Result of network detection of red balls on an image of the validation set created in Blender</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_train.webp" alt="">
+  <p>Ball detection — Blender validation set</p>
 </div>
 <div id="img6" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.webp">
-  <p>Result of the network detection of red balls on a real image from the basket used during the French Robotics Cup after that our robot throws a ball into it</p>
+  <img src="/config/assets/images/Home/Gallery/CDFR2023balldetection_test.webp" alt="">
+  <p>Ball detection — real competition image</p>
 </div>
 <div id="video7" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/DynamixelConfigurator.mp4" type="video/mp4">
   </video>
-  <p>Dynamixel servo motor configurator module that I created during my first year engineering school internship</p>
+  <p>Dynamixel MX series configurator</p>
 </div>
 <div id="img8" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/HARP1cao.webp">
-  <p>CAD model of HARP1 on the robotics table of the French Robotics Cup made with Onshape</p>
+  <img src="/config/assets/images/Home/Gallery/HARP1cao.webp" alt="">
+  <p>HARP1 CAD — Onshape</p>
 </div>
 <div id="img9" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/HARP1_homologation.webp">
-  <p>HARP1 immediately after passing homologation at the 2023 French Robotics Cup</p>
+  <img src="/config/assets/images/Home/Gallery/HARP1_homologation.webp" alt="">
+  <p>HARP1 after homologation — 2023</p>
 </div>
 <div id="video10" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/HARP1game.mp4" type="video/mp4">
   </video>
-  <p>HARP1 running its match routine</p>
+  <p>HARP1 match routine</p>
 </div>
 <div id="video11" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/LineTracker.mp4" type="video/mp4">
   </video>
-  <p>First project in my robotics course made with 5 other classmates: a line-following robot</p>
+  <p>Line-following robot — coursework platform</p>
 </div>
 <div id="img12" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/MegaBot.webp">
-  <p>MegaBot: a 250 kg quadruped robot capable of carrying a passenger. From Eirlab, the Bordeaux INP Fablab</p>
+  <img src="/config/assets/images/Home/Gallery/MegaBot.webp" alt="">
+  <p>MegaBot — 250&nbsp;kg passenger quadruped (Eirlab)</p>
 </div>
 <div id="img13" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp">
-  <p>Implemented creeping gait simulation on the MegaBot with quadratic programming to avoid kinematic closed loop</p>
+  <img src="/config/assets/images/Home/Gallery/MegaBot_sim.webp" alt="">
+  <p>MegaBot creeping gait — simulation (QP closed-loop handling)</p>
 </div>
 <div id="img14" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp">
-  <p>Deployment of creeping gait algorithm on the MegaBot with quadratic programming to avoid kinematic closed loop</p>
+  <img src="/config/assets/images/Home/Gallery/MegaBot_creeping_gait.webp" alt="">
+  <p>MegaBot creeping gait — hardware deployment</p>
 </div>
 <div id="img15" class="lightbox">
-  <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp">
-  <p>Hand pose traking with MediaPipe</p>
+  <img src="/config/assets/images/Home/Gallery/NimblBot_mediapipe.webp" alt="">
+  <p>Hand-pose tracking — MediaPipe</p>
 </div>
 <div id="video16" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/NimblBot_simu.mp4" type="video/mp4">
   </video>
-  <p>HMI to control the robotic arm of Nimbl'bot by hand movements used in simulation. Created during my internship in my second year of engineering school</p>
+  <p>Redundant-arm HMI — simulation</p>
 </div>
 <div id="video17" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/NimblBot_deployment.mp4" type="video/mp4">
   </video>
-  <p>Deployed HMI to control the robotic arm of Nimbl'bot by hand movements. Created during my internship in my second year of engineering school</p>
+  <p>Redundant-arm HMI — deployment</p>
 </div>
 <div id="video18" class="lightbox">
   <video controls>
     <source src="/config/assets/images/Home/Gallery/2dof_arm_DRL.mp4" type="video/mp4">
   </video>
-  <p>PPO Neural Network Training for 2-DOF Robotic Arm End-Effector Control</p>
+  <p>PPO training — 2-DOF arm end-effector control</p>
 </div>
+
 ---
 
-<br>
-
-<div style="text-align:center;" markdown="1">
-## <img src="/config/assets/images/Home/photo_cv.png" style="height: 100px; background: transparent; vertical-align: middle;"> <span style="font-size: 36px; color:#fff; vertical-align: middle;">My Profile</span>
+<div class="profile-heading" markdown="1">
+## <img src="/config/assets/images/Home/photo_cv.png" alt="Floris Jousselin"> <span class="page-hero-title">My Profile</span>
 </div>
 
-
-<div style="background-color: rgba(176, 19, 159, 0.15); padding: 10px; border: 1px solid #fff; border-radius: 10px;">
-  I'm a French Electronics Engineer specializing in Robotics and Machine Learning, and I'm passionate about these. My goal is to demystify robotics and machine learning and clear up misunderstandings surrounding these technologies.
+<div class="profile-intro">
+  I'm a French electronics engineer specializing in robotics and machine learning.
+  What drives me is sharing how robotics can feel straightforward — not the magical black box it is too often made out to be.
 </div>
-<br>
 
+<div class="profile-grid">
 
-<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; background-color: transparent; padding: 0px; border-radius: 10px;">
-  
-  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
-    <div style="overflow: hidden; margin-bottom: 10px;">
-        <!-- <i class="fas fa-microchip" style="font-size: 30px; float: left; margin-right: 10px;"></i> -->
-        <img src="/config/assets/images/Home/Enseirb_dark.png" style="height: 30px; float: left; margin-right: 10px; background: transparent;">
-        <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
-          <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" rel="noreferrer" target="_blank"
-            style="color: #6af8ff; text-decoration: none;" 
-            onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-            onmouseout="this.style.color='#6af8ff'; this.style.textDecoration='none';">
-            ENSEIRB-MATMECA (2021-2024)
+  <div class="profile-item">
+    <div class="profile-item-header">
+        <img src="/config/assets/images/Home/Enseirb_dark.png" class="profile-logo" alt="ENSEIRB-MATMECA">
+        <div class="profile-item-title">
+          <a href="https://enseirb-matmeca.bordeaux-inp.fr/fr" rel="noreferrer" target="_blank">
+            ENSEIRB-MATMECA · 2021–2024
           </a>
-        </h1>
+        </div>
     </div>
-    <p style="color: #fff;">
-      Graduate School in Electronics, Computer Sciences, Telecommunications, Mathematics and Mechanics
+    <p>
+      Engineering school (Bordeaux INP) — electronics, computer science, telecom, mathematics &amp; mechanics.
     </p>
   </div>
 
-  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
-    <div style="overflow: hidden; margin-bottom: 10px;">
-      <i class="fas fa-book" style="font-size: 30px; float: left; margin-right: 10px; color: #309090"></i>
-      <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
-        CPGE (Preparatory Classes to Engineer Schools), 2018-2021
-      </h1>
+  <div class="profile-item">
+    <div class="profile-item-header">
+      <i class="fas fa-book profile-icon"></i>
+      <div class="profile-item-title">
+        CPGE · 2018–2021
+      </div>
     </div>
-    <p style="color: #fff;">
-      Mathematics, Physics and Engineer Sciences
+    <p>
+      French preparatory classes for engineering school — mathematics, physics &amp; engineering sciences.
     </p>
   </div>
 
-  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
-    <div style="overflow: hidden; margin-bottom: 10px;">
-      <i class="fas fa-hand-holding" 
-        style="font-size: 30px; float: left; margin-right: 10px; margin-top: -10px; color: #309090;">
-      </i>
-      <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
-        Volunteer Commitment (2022-2023)
-      </h1>
+  <div class="profile-item">
+    <div class="profile-item-header">
+      <i class="fas fa-hand-holding profile-icon" style="margin-top: -10px;"></i>
+      <div class="profile-item-title">
+        Volunteering · 2022–2023
+      </div>
     </div>
-    <p style="color: #fff;">
-      Treasurer of a Robotics Association:
-      <a href="https://eirbot.github.io/" rel="noreferrer" target="_blank"
-        style="color:#fff; text-decoration: none;" 
-        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';">
-        EIRBOT
-      </a>
+    <p>
+      Treasurer at
+      <a href="https://eirbot.github.io/" rel="noreferrer" target="_blank" class="link-plain">EIRBOT</a>
+      (robotics association)
     </p>
-    <p style="color: #fff;">
-      Fabmanager of a Fablab:
-      <a href="https://www.eirlab.net/" rel="noreferrer" target="_blank"
-        style="color:#fff; text-decoration: none;" 
-        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';">
-        EIRLAB
-      </a>
+    <p>
+      Fab manager at
+      <a href="https://www.eirlab.net/" rel="noreferrer" target="_blank" class="link-plain">EIRLAB</a>
     </p>
   </div>
 
-  <div style="background-color: transparent; padding: 20px; border-radius: 10px; color: #333; font-family: Arial, sans-serif; line-height: 1.6;">
-    <div style="overflow: hidden; margin-bottom: 10px;">
-      <!-- <i class="fas fa-robot" 
-        style="font-size: 30px; float: left; margin-right: 10px;">
-      </i> -->
-      <img src="/config/assets/images/Home/coupe_de_robotique_Dark.png" style="height: 20px; float: left; margin-right: 10px; background: transparent; margin-top: 2px;">
-      <h1 style="margin: 0; font-size: 1.2em; color: #6af8ff; padding-bottom: .6em;">
-        <a href="https://www.coupederobotique.fr/" rel="noreferrer" target="_blank"
-          style="color: #6af8ff; text-decoration: none;" 
-          onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-          onmouseout="this.style.color='#6af8ff'; this.style.textDecoration='none';">
-          French Robotics Cup
-        </a>
-      </h1>
+  <div class="profile-item">
+    <div class="profile-item-header">
+      <img src="/config/assets/images/Home/coupe_de_robotique_Dark.png" class="profile-logo-sm" alt="French Robotics Cup">
+      <div class="profile-item-title">
+        <a href="https://www.coupederobotique.fr/" rel="noreferrer" target="_blank">French Robotics Cup</a>
+      </div>
     </div>
-    <p style="color: #fff;">
-      <a href="https://robotcopper.github.io/HARP/" rel="noreferrer"
-        style="color:#fff; text-decoration: none;" 
-        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';" markdown="1">
-        *HARP*
-      </a>
-      project in the hope of winning access to
-      <a href="https://www.eurobot.org/" rel="noreferrer" target="_blank"
-        style="color:#fff; text-decoration: none;" 
-        onmouseover="this.style.color='#3498DB'; this.style.textDecoration='underline';" 
-        onmouseout="this.style.color='#fff'; this.style.textDecoration='none';" markdown="1">
-        **Eurobot**
-      </a>
+    <p>
+      <a href="{{ '/HARP/' | relative_url }}" class="link-plain"><em>HARP</em></a>
+      — built for the Cup, on the road to
+      <a href="https://www.eurobot.org/" rel="noreferrer" target="_blank" class="link-plain">Eurobot</a>.
     </p>
   </div>
 
 </div>
 
 ---
-
-<br>
 
 ```note
-I work on citing the works that inspired or assisted me in achieving my results. I kindly ask you to do the same if my work has been of help to you.
+I cite the work that helped me. Please do the same if mine helps you.
 ```
-<br>
