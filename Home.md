@@ -27,12 +27,12 @@ time: 2024-05-12
     </p>
   </a>
 
-  <a class="info-card mint-3" href="{{ '/ROS/' | relative_url }}">
+  <div class="info-card mint-3">
     <span class="info-card-title">Articles &amp; tutorials</span>
     <p>
       Notes on robotics, mechatronics, ROS&nbsp;2, and related topics.
     </p>
-  </a>
+  </div>
 
 </div>
 
