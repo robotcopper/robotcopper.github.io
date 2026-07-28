@@ -1,11 +1,11 @@
 ---
-title: Acknowledgements
+title: Mentions
 time: 2024-12-15
 ---
 
 <br>
 
-<h1 class="ack-page-title">They Highlighted My Work</h1>
+<h1 class="ack-page-title">Mentions</h1>
 
 <div class="ack-grid">
     <div class="ack-card">

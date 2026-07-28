@@ -41,7 +41,7 @@ time: 2024-05-12
 <div class="ack-banner">
     <h2>Acknowledged by the robotics community</h2>
     <p>Open Robotics &amp; ROS Discourse — December 2024</p>
-    <a href="{{ '/Acknowledgements/' | relative_url }}" class="ack-cta">Learn more</a>
+    <a href="{{ '/Mentions/' | relative_url }}" class="ack-cta">Learn more</a>
     <div class="ack-banner-logos">
       <a href="https://www.openrobotics.org/" target="_blank" rel="noreferrer" class="baner_img logo-openrobotics">
         <img src="/config/assets/images/Home/OpenRobotics_logo.png" alt="Open Robotics Logo">
