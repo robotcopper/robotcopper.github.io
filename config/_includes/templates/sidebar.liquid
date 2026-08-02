@@ -16,75 +16,54 @@
     </div>
 </div>
 
-
-
 <style>
     .archive { list-style-type: none; margin: 0; padding: 0.5rem 0.75rem 2rem; }
     .archive ul { list-style-type: none; padding-left: 0; }
 </style>
 
+{% comment %} Right rail: thin toggle strip + archive panel (siblings) {% endcomment %}
+<div class="sidebar-wrap-2">
+    <button type="button" id="toggle2" class="btn-octicon-2" aria-label="Toggle Last news" aria-expanded="false" aria-controls="last-news-archive">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+    </button>
+</div>
 
+<div id="last-news-archive" class="archive overflow-y-scroll">
+    <h1 class="archive-heading">Last news</h1>
 
-
-<div class="sidebar-wrap-2 overflow-hidden">
-    <div class="sidebar-2 height-full overflow-y-scroll overflow-x-hidden">
-
-        <div class="bouton"></div>
-
-            <button id="toggle2" aria-label="Toggle2 menu" class="btn-octicon-2 m-0 text-white" type="button">
-                <i class="fa fa-caret-left"></i>
-            </button>
-
-        </div>
-
-    </div>
-
-    <div class="archive overflow-y-scroll">
-        <h1 class="archive-heading">Last news</h1>
-
-        {%- assign sorted_pages = site_pages | sort: 'time' | reverse -%}
-        {%- assign current_year = "" -%}
-        {%- assign current_month = "" -%}
-        {%- for page in sorted_pages -%}
-            {%- if page.time -%}
-                {%- capture page_year -%}
-                    {{ page.time | date: "%Y" }}
-                {%- endcapture -%}
-                {%- capture page_month -%}
-                    {{ page.time | date: "%B" }}
-                {%- endcapture -%}
-                {%- if page_year != current_year -%}
-                    {%- unless forloop.first -%}
-                        </ul>
-                    {%- endunless -%}
-                    <h2 class="year">{{ page_year }}</h2>
-                    <ul class="months">
-                        {%- assign current_year = page_year -%}
-                        {%- assign current_month = "" -%}
-                {%- endif -%}
-                {%- if page_month != current_month -%}
-                    <h3 class="month">{{ page_month }}</h3>
-                    <ul class="articles">
-                        {%- assign current_month = page_month -%}
-                {%- endif -%}
-                <li class="article">{{ page.time | date: "%B %d" }} - <a href="{{ page.url }}">{{ page.title }}</a></li>
-            {%- else -%}
-                {%- capture upcoming_articles -%}
-                    {{ upcoming_articles }}
-                    <li class="article"><a href="{{ page.url }}">{{ page.title }}</a></li>
-                {%- endcapture -%}
+    {%- assign sorted_pages = site_pages | sort: 'time' | reverse -%}
+    {%- assign current_year = "" -%}
+    {%- assign current_month = "" -%}
+    {%- for page in sorted_pages -%}
+        {%- if page.time -%}
+            {%- capture page_year -%}
+                {{ page.time | date: "%Y" }}
+            {%- endcapture -%}
+            {%- capture page_month -%}
+                {{ page.time | date: "%B" }}
+            {%- endcapture -%}
+            {%- if page_year != current_year -%}
+                {%- unless forloop.first -%}
+                    </ul>
+                {%- endunless -%}
+                <h2 class="year">{{ page_year }}</h2>
+                <ul class="months">
+                    {%- assign current_year = page_year -%}
+                    {%- assign current_month = "" -%}
             {%- endif -%}
-        {%- endfor -%}
+            {%- if page_month != current_month -%}
+                <h3 class="month">{{ page_month }}</h3>
+                <ul class="articles">
+                    {%- assign current_month = page_month -%}
+            {%- endif -%}
+            <li class="article">{{ page.time | date: "%B %d" }} - <a href="{{ page.url }}">{{ page.title }}</a></li>
+        {%- else -%}
+            {%- capture upcoming_articles -%}
+                {{ upcoming_articles }}
+                <li class="article"><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {%- endcapture -%}
+        {%- endif -%}
+    {%- endfor -%}
 
         </ul>
-
-        {% comment %} {%- if upcoming_articles != "" -%}
-            <h2 class="year">Upcoming Articles</h2>
-            <ul class="articles">
-                {{ upcoming_articles }}
-            </ul>
-        {%- endif -%} {% endcomment %}
-
-    </div>
-
 </div>
